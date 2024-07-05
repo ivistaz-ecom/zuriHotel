@@ -889,6 +889,12 @@ ul.features-list-offer {
     -webkit-box-orient: vertical;
   }
   
+/* Career form submit button */
+  .disabled {
+    opacity: 0.5 !important;
+    cursor: not-allowed;
+    }
+  
   /* Responsive grid layout based on image sizes */
   @media (min-width: 768px) {
     .masonry {
