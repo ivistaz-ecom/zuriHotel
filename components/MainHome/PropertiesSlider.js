@@ -98,7 +98,7 @@ const PropertiesSlider = ({ section2Ref }) => {
 
                     <Col className='d-flex flex-column border border-2 border-light-subtle p-0 m-2'>
                         <Col>
-                            <Image src='/home/kumarakom_properties_comp.jpg' alt='' width="100%" />
+                            <Image src='/home/bengaluru_properties.jpg' alt='' width="100%" />
                         </Col>
                         <Col className='d-flex flex-row p-3'>
                             <Col md={9}>
