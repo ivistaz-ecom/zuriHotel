@@ -265,7 +265,7 @@ const OffersKumarkomComponent = () => {
               md={4}
             >
               <Image
-                src="/kumarkom/offers/gym_memb.jpg"
+                src="/kumarkom/offers/gym_membership.jpg"
                 alt=""
                 roundedCircle
                 width={180}
@@ -466,7 +466,7 @@ const OffersKumarkomComponent = () => {
             </Col>
             <Col className="d-flex flex-wrap align-content-center justify-content-end p-3">
               <Image
-              src="/kumarkom/offers/gym_memb.jpg"
+              src="/kumarkom/offers/gym_membership.jpg"
                 alt=""
                 roundedCircle
                 width={180}
