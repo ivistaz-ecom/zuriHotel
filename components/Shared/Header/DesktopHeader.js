@@ -245,6 +245,13 @@ const DesktopHeader = () => {
                                                             >
                                                                 <h6 className='header-font'>Ayurveda Packages</h6>
                                                             </Link>
+
+                                                            <Link
+                                                                href="/offers/membership"
+                                                                className='text-decoration-none text-white'
+                                                            >
+                                                                <h6 className='header-font'>Membership</h6>
+                                                            </Link>
                                                         </Col>
                                                     </Container>
                                                 </Container>
