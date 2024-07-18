@@ -5,7 +5,7 @@ import Link from 'next/link'
 const MembershipBanner = () => {
     const BannerImg = {
         backgroundImage: `url('/all_package_img/gym_banner.jpg')`,
-        height: 480,
+        height: 460,
         backgroundSize: 'cover'
     }
 
