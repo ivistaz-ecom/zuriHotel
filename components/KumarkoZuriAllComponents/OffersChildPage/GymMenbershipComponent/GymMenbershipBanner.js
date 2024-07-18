@@ -6,7 +6,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const GymMenbershipBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/kumarkom/offers/gym_membership.jpg')`,
+        backgroundImage: `url('/kumarkom/gym_membership.jpg')`,
         height: 466,
         backgroundSize: 'cover'
     }
