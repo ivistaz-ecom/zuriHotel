@@ -478,7 +478,7 @@ const OffersKumarkomComponent = () => {
              
             </p>
             <Link
-              href="/lake-resorts-in-kumarakom/offers/spa-and-ayurveda-packages"
+               href="/lake-resorts-in-kumarakom/offers/gym-membership/"
               className="bg-black text-center text-decoration-none btn-circle"
             >
               <p className=" mb-0 font11px lh-sm text-white">

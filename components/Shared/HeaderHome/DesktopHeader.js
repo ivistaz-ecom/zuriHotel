@@ -188,7 +188,7 @@ const DesktopHeader = () => {
                                                             </Link>
 
                                                             <Link
-                                                                href="/hotels-in-bengaluru/events/"
+                                                                href="/hotels-in-bengaluru/"
                                                                 className='text-decoration-none text-white'
                                                             >
                                                                 <h6 className='header-font'>The Zuri Whitefield, Bengaluru</h6>
@@ -229,6 +229,12 @@ const DesktopHeader = () => {
                                                                 className='text-decoration-none text-white'
                                                             >
                                                                 <h6 className='header-font'>Ayurveda Packages</h6>
+                                                            </Link>
+                                                            <Link
+                                                                href="/offers/membership"
+                                                                className='text-decoration-none text-white'
+                                                            >
+                                                                <h6 className='header-font'>Membership</h6>
                                                             </Link>
                                                         </Col>
                                                     </Container>

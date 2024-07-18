@@ -252,6 +252,8 @@ const DesktopHeader = () => {
                                                             >
                                                                 <h6 className='header-font'>Membership</h6>
                                                             </Link>
+
+                                                            
                                                         </Col>
                                                     </Container>
                                                 </Container>
