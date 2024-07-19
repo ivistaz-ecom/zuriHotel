@@ -126,7 +126,7 @@ const PropertiesSlider = ({ section2Ref }) => {
 
             {/* Mobile View */}
             <Container className='p-0 d-md-none d-flex flex-column'>
-                <Carousel className=''
+                <Carousel className='z-0'
                     responsive={responsive}
                     removeArrowOnDeviceType={["tablet", "desktop"]}
                     swipeable={true}

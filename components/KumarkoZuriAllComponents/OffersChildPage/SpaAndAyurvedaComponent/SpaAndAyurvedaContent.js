@@ -8,7 +8,7 @@ const SpaAndAyurvedaContent = () => {
             <Container className='pt-md-5 p-2'>
 
                 <Col className='text-center'>
-                    <h6 className='text-decoration-underline text-black'>Western Spa & Ayurveda Packages for Non-Resident Guests</h6>
+                    <h6 className='text-decoration-underline fw-bold text-black'>Western Spa & Ayurveda Packages for Non-Resident Guests</h6>
                 </Col>
 
                 <Col className=" ">
@@ -17,7 +17,7 @@ const SpaAndAyurvedaContent = () => {
 
                   <div className="align-items-start">
                     <div className="mb-4">
-                      <p className="mb-2 fw-bold fs-6">
+                      <p className="mb-2 fw-bold fs-6 text-black ">
                         Maya Spa – Ayurveda Package
                       </p>
                       <div className="mb-0 ps-3 fs-4">
@@ -36,8 +36,8 @@ const SpaAndAyurvedaContent = () => {
                       </div>
                     </div>
 
-                    <div className="mb-4">
-                      <p className="mb-2 fw-bold fs-6">
+                    <div className="my-5">
+                      <p className="mb-2 fw-bold fs-6 text-black">
                         Maya Spa – Western Package
                       </p>
                       <div className="mb-0 ps-3">
@@ -57,7 +57,7 @@ const SpaAndAyurvedaContent = () => {
                     </div>
 
                     <div>
-                      <p className="mb-2 fw-bold fs-6">Membership Benefits:</p>
+                      <p className="fw-bold fs-6 text-black">Membership Benefits:</p>
                       <div className="mb-0 ps-3">
                         <p className="fs-6">
                           Complimentary Wellness consultation.
@@ -75,8 +75,8 @@ const SpaAndAyurvedaContent = () => {
                       </div>
                     </div>
 
-                    <div className="mb-4">
-                      <p className="mb-2 fw-bold fs-6">
+                    <div className="my-5">
+                      <p className="mb-2 fw-bold fs-6 text-black">
                         Package Terms & Conditions:
                       </p>
                       <div className="mb-0 ps-3">
