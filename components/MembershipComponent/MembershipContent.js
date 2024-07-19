@@ -7,7 +7,7 @@ const MembershipContent = () => {
   return (
     <div>
       <Col className="d-md-flex flex-column d-none mt-5 ">
-        <Col className="d-flex flex-md-row mx-auto">
+        <Col className="d-flex flex-md-row ">
           <Col md={7} className="text-md-end text-center pe-md-4">
             <Col className="d-inline-block">
               <Image
@@ -16,7 +16,7 @@ const MembershipContent = () => {
                 fluid
                 className="object-fit-none px-md-5 pb-md-3"
               />
-              <h6 className="text-center">
+              <h6 className="text-end">
                 Western Spa & Ayurveda Packages for NR Guests
               </h6>
             </Col>
@@ -48,7 +48,7 @@ const MembershipContent = () => {
           </Col>
         </Col>
 
-        {/* Gym Menbership */}
+        {/* Gym Membership */}
         <Col className="d-flex flex-row mt-5 mx-auto">
           <Col
             className="d-flex flex-wrap align-content-center justify-content-end p-3"
@@ -71,7 +71,7 @@ const MembershipContent = () => {
                 fluid
                 className="object-fit-none px-md-5 pb-md-3"
               />
-              <h6 className="text-center">Gym Menbership</h6>
+              <h6 className="text-center">Gym Membership</h6>
             </Col>
             <Col className="d-flex justify-md-content-center  align-items-md-start p-0 pe-2">
               <Link
@@ -129,7 +129,7 @@ const MembershipContent = () => {
         <Col className="d-flex flex-column justify-content-center align-items-center text-center py-4">
           <Col className="d-flex flex-column align-items-center gap-4">
             <Image src="/cl.png" alt="" fluid />
-            <h6 className="py-2 text-center">Gym Menbership</h6>
+            <h6 className="py-2 text-center">Gym Membership</h6>
           </Col>
           <Col className="d-flex flex-wrap align-content-center justify-content-end p-3">
             <Image

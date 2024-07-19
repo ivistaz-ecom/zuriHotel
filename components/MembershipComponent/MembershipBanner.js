@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 const MembershipBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/all_package_img/gym_banner.jpg')`,
+        backgroundImage: `url('/all_package_img/membership_banner.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
@@ -13,7 +13,7 @@ const MembershipBanner = () => {
         <Container className='custom-kumarkom-menu-container'>
 
             <Col className='text-center pb-3'>
-                <h3 className='text-custom-grey'>AYURVEDA PACKAGE</h3>
+                <h3 className='text-custom-grey'>MEMBERSHIP</h3>
             </Col>
 
             <Col className='p-0'
