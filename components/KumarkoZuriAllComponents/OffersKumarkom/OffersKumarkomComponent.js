@@ -257,7 +257,7 @@ const OffersKumarkomComponent = () => {
             </Col>
           </Col>
 
-          {/* Gym Menbership */}
+          {/* Gym Membership */}
 
           <Col className="d-flex flex-row pt-5">
             <Col
@@ -281,7 +281,7 @@ const OffersKumarkomComponent = () => {
                   fluid
                   className="object-fit-none px-md-5 pb-md-3"
                 />
-                <h6 className="text-center">Gym Menbership</h6>
+                <h6 className="text-center">Gym Membership</h6>
               </Col>
               {/* <p>1st April 2024 - 30th September 2024</p> */}
               <Col className="d-flex justify-md-content-center  align-items-md-start p-0 pe-2">
@@ -461,7 +461,7 @@ const OffersKumarkomComponent = () => {
         <Col className="d-flex flex-column justify-content-center align-items-center text-center py-4">
             <Col className="d-flex flex-column align-items-center gap-4">
               <Image src="/cl.png" alt="" fluid />
-              <h6 className="py-2 text-center">Gym Menbership
+              <h6 className="py-2 text-center">Gym Membership
               </h6>
             </Col>
             <Col className="d-flex flex-wrap align-content-center justify-content-end p-3">

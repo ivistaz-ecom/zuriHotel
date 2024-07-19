@@ -14,7 +14,7 @@ const GymMenbershipBanner = () => {
     return (
         <Container className='custom-kumarkom-menu-container' style={{}}>
 
-            <h3 className='text-center py-md-4 text-custom-grey'>Western Spa & Ayurveda Packages for Non-Resident Guests</h3>
+            <h3 className='text-center py-md-4 text-custom-grey'>Gym Membership </h3>
 
             <Col className='p-0'
                 style={BannerImg}
