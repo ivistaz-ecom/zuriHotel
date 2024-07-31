@@ -20,25 +20,26 @@ const HomeSliderBanner = () => {
     // Images for mobile and desktop views
     const BannerImages = [
         {
-            desktop: '/home/zuri_slider_banner_1.jpg',
+            desktop: '/home/zuri_slider_banner_01.jpg',
             mobile: '/home/mobile_zuri_slider_banner_1.jpg',
             caption: "TROPICAL DESTINATION",
             subCaption: "The Zuri White Sands, Goa Resort & Casino"
         },
         {
-            desktop: '/home/zuri_slider_banner_2.jpg',
+            desktop: '/home/zuri_slider_banner_02.jpg',
             mobile: '/home/mobile_zuri_slider_banner_2.jpg',
             caption: "GOD’S OWN COUNTRY",
             subCaption: "The Zuri Kumarakom, Kerala Resort & Spa"
         },
         {
-            desktop: '/home/zuri_slider_banner_3.jpg',
+            desktop: '/home/zuri_slider_banner_03.jpg',
             mobile: '/home/mobile_zuri_slider_banner_3.jpg',
             caption: "PREFERRED BUSINESS DESTINATION",
             subCaption: "The Zuri Whitefield, Bengaluru"
         },
     ];
 
+    
     const getBackgroundStyle = (desktopImage, mobileImage) => ({
         backgroundImage: `url(${isMobile ? mobileImage : desktopImage})`,
         height: isMobile ? '60vh' : '100vh',
