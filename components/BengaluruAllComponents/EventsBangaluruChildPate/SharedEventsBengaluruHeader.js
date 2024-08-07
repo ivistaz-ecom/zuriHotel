@@ -13,7 +13,7 @@ const SharedEventsBengaluruHeader = () => {
                 <Col className='d-flex flex-row justify-content-center align-items-center py-3 d-md-flex d-none'>
                     <Link href="/hotels-in-bengaluru"
                         className='text-decoration-none text-black'>
-                        <h6 className='m-0'>Zuri Goa</h6>
+                        <h6 className='m-0'>Zuri Bengaluru</h6>
                     </Link> &nbsp; / &nbsp;
 
                     <Link href="/hotels-in-bengaluru/rooms-suites/"
@@ -71,7 +71,7 @@ const SharedEventsBengaluruHeader = () => {
                         <Col xs={6}>
                             <Link href="/hotels-in-bengaluru"
                                 className='text-decoration-none text-black '>
-                                <h6 className='m-0 menu-font'>Zuri Goa</h6>
+                                <h6 className='m-0 menu-font'>Zuri Bengaluru</h6>
                             </Link>
                         </Col>
 
