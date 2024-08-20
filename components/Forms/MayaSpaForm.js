@@ -12,8 +12,8 @@ const MayaSpaForm = () => {
   const [yourMessage, setMessage] = useState("");
   const [yourPhone, setPhone] = useState("");
   const [yourCountry, setCountry] = useState("");
-  const [yourBookingStartDate, setBookingStartDate] = useState( getTodayDateString());
-  const [yourBookingEndDate, setBookingEndDate] = useState( getTodayDateString());
+  const [yourBookingStartDate, setBookingStartDate] = useState(getTodayDateString());
+  const [yourBookingEndDate, setBookingEndDate] = useState(getTodayDateString());
   const [spinner, setSpinner] = useState(false);
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(true);
@@ -49,9 +49,9 @@ const MayaSpaForm = () => {
     setBookingEndDate(getTodayDateString());
     setErrors({});
     setDisableButton(false);
-}
-    
-    const createPost = () => {
+  }
+
+  const createPost = () => {
     setSpinner(true);
     axios
       .post(
@@ -102,14 +102,20 @@ const MayaSpaForm = () => {
       });
   };
 
+  const handlePhoneChange = (event) => {
+    const input = event.target.value;
+    // Remove all non-numeric characters
+    const numericInput = input.replace(/\D/g, "");
+    setPhone(numericInput);
+  };
+
   return (
     <Container className="p-0 py-5">
       <Col className="">
         <form onSubmit={handleSubmit} style={{ margin: "20px" }}>
           <Row className="d-flex flex-lg-row flex-column gap-lg-0 flex-wrap gap-3">
-
-              {/* Name Field */}
-              <Col md={6} className="pb-md-4">
+            {/* Name Field */}
+            <Col md={6} className="pb-md-4">
               <input
                 type="text"
                 className={`form-control ${
@@ -135,20 +141,15 @@ const MayaSpaForm = () => {
                 id="yourPhone"
                 placeholder="Phone"
                 value={yourPhone}
-                onChange={(event) => setPhone(event.target.value)}
+                onChange={handlePhoneChange}
               />
               {errors.yourPhone && (
                 <div className="invalid-feedback">{errors.yourPhone}</div>
               )}
-              {yourPhone && !/^[0-9+\s()-]*$/.test(yourPhone) && (
-                <span className="r_error">
-                  Please enter a valid phone number
-                </span>
-              )}
             </Col>
 
-              {/* Email Field */}
-              <Col md={6} >
+            {/* Email Field */}
+            <Col md={6}>
               <input
                 type="email"
                 className={`form-control ${
@@ -228,11 +229,11 @@ const MayaSpaForm = () => {
             </Col>
 
             {/* Message Field */}
-            <Col md={12}> 
-              <textarea 
-                rows="4" 
-                className={`form-control w-100 ${ 
-                  errors && errors.yourMessage ? "is-invalid" : "" 
+            <Col md={12}>
+              <textarea
+                rows="4"
+                className={`form-control w-100 ${
+                  errors && errors.yourMessage ? "is-invalid" : ""
                 }`}
                 id="yourMessage"
                 placeholder="Message"
@@ -275,7 +276,6 @@ const MayaSpaForm = () => {
           <Button
             variant="secondary"
             onClick={() => setShowModal(false)}
-            className="bg-purple"
           >
             Close
           </Button>
