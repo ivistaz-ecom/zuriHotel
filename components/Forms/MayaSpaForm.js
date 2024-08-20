@@ -116,7 +116,7 @@ const MayaSpaForm = () => {
                   errors && errors.yourName ? "is-invalid" : ""
                 }`}
                 id="yourName"
-                placeholder="Your Name"
+                placeholder="Name"
                 value={yourName}
                 onChange={(event) => setName(event.target.value)}
               />
@@ -155,7 +155,7 @@ const MayaSpaForm = () => {
                   errors && errors.yourEmail ? "is-invalid" : ""
                 }`}
                 id="yourEmail"
-                placeholder="Your Email"
+                placeholder="Email"
                 value={yourEmail}
                 onChange={(event) => setEmail(event.target.value)}
               />
@@ -228,14 +228,14 @@ const MayaSpaForm = () => {
             </Col>
 
             {/* Message Field */}
-            <Col md={12}>
-              <textarea
-                rows="4"
-                className={`form-control w-100 ${
-                  errors && errors.yourMessage ? "is-invalid" : ""
+            <Col md={12}> 
+              <textarea 
+                rows="4" 
+                className={`form-control w-100 ${ 
+                  errors && errors.yourMessage ? "is-invalid" : "" 
                 }`}
                 id="yourMessage"
-                placeholder="Feedback/Question"
+                placeholder="Message"
                 value={yourMessage}
                 onChange={(event) => setMessage(event.target.value)}
               />
