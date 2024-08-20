@@ -107,8 +107,48 @@ const MayaSpaForm = () => {
       <Col className="">
         <form onSubmit={handleSubmit} style={{ margin: "20px" }}>
           <Row className="d-flex flex-lg-row flex-column gap-lg-0 flex-wrap gap-3">
-            {/* Email Field */}
+
+              {/* Name Field */}
+              <Col md={6} className="pb-md-4">
+              <input
+                type="text"
+                className={`form-control ${
+                  errors && errors.yourName ? "is-invalid" : ""
+                }`}
+                id="yourName"
+                placeholder="Your name"
+                value={yourName}
+                onChange={(event) => setName(event.target.value)}
+              />
+              {errors.yourName && (
+                <div className="invalid-feedback">{errors.yourName}</div>
+              )}
+            </Col>
+
+            {/* Phone Field */}
             <Col md={6} className="pb-md-4">
+              <input
+                type="tel"
+                className={`form-control ${
+                  errors && errors.yourPhone ? "is-invalid" : ""
+                }`}
+                id="yourPhone"
+                placeholder="Phone"
+                value={yourPhone}
+                onChange={(event) => setPhone(event.target.value)}
+              />
+              {errors.yourPhone && (
+                <div className="invalid-feedback">{errors.yourPhone}</div>
+              )}
+              {yourPhone && !/^[0-9+\s()-]*$/.test(yourPhone) && (
+                <span className="r_error">
+                  Please enter a valid phone number
+                </span>
+              )}
+            </Col>
+
+              {/* Email Field */}
+              <Col md={6} >
               <input
                 type="email"
                 className={`form-control ${
@@ -129,45 +169,6 @@ const MayaSpaForm = () => {
                 (error && !yourEmail)) && (
                 <span className="r_error">
                   Please enter a valid email address
-                </span>
-              )}
-            </Col>
-
-            {/* Name Field */}
-            <Col md={6}>
-              <input
-                type="text"
-                className={`form-control ${
-                  errors && errors.yourName ? "is-invalid" : ""
-                }`}
-                id="yourName"
-                placeholder="Your name"
-                value={yourName}
-                onChange={(event) => setName(event.target.value)}
-              />
-              {errors.yourName && (
-                <div className="invalid-feedback">{errors.yourName}</div>
-              )}
-            </Col>
-
-            {/* Phone Field */}
-            <Col md={6}>
-              <input
-                type="tel"
-                className={`form-control ${
-                  errors && errors.yourPhone ? "is-invalid" : ""
-                }`}
-                id="yourPhone"
-                placeholder="Phone"
-                value={yourPhone}
-                onChange={(event) => setPhone(event.target.value)}
-              />
-              {errors.yourPhone && (
-                <div className="invalid-feedback">{errors.yourPhone}</div>
-              )}
-              {yourPhone && !/^[0-9+\s()-]*$/.test(yourPhone) && (
-                <span className="r_error">
-                  Please enter a valid phone number
                 </span>
               )}
             </Col>
