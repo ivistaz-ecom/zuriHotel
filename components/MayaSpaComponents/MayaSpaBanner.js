@@ -12,12 +12,6 @@ const MayaSpaBanner = () => {
         <>
             <Container className='custom-kumarkom-menu-container' style={{}}>
 
-                <Col className='text-center pb-3'>
-                    <h3 className='text-custom-grey'>
-                        CAREERS
-                    </h3>
-                </Col>
-
                 <Col className='p-0'
                     style={BannerImg}
                 >
