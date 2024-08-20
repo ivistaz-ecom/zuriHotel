@@ -116,7 +116,7 @@ const MayaSpaForm = () => {
                   errors && errors.yourName ? "is-invalid" : ""
                 }`}
                 id="yourName"
-                placeholder="Your name"
+                placeholder="Your Name"
                 value={yourName}
                 onChange={(event) => setName(event.target.value)}
               />
@@ -221,6 +221,7 @@ const MayaSpaForm = () => {
                     type="date"
                     value={yourBookingEndDate}
                     onChange={(e) => setBookingEndDate(e.target.value)}
+                    min={getTodayDateString()}
                   />
                 </div>
               </div>
