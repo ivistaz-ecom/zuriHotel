@@ -12,7 +12,7 @@ const index = () => {
       <Header />
       <MayaSpaBanner />
       <MayaSpaContent />
-      {/* <MayaSpaForm /> */}
+      <MayaSpaForm />
       <Footer />
     </div>
   );
