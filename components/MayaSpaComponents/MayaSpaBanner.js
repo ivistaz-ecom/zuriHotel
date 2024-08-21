@@ -4,15 +4,16 @@ import React from 'react'
 import { Col, Container, Image } from 'react-bootstrap'
 const MayaSpaBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/mayaSpa-booking-banner.jpg')`,
+        backgroundImage: `url('/maya_spa_booking_banner.jpg')`,
         height: 460,
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
     }
     return (
         <>
             <Container className='custom-kumarkom-menu-container' style={{}}>
 
-                <Col className='p-0'
+                <Col className='center p-0'
                     style={BannerImg}
                 >
                 </Col>
