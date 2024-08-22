@@ -27,6 +27,17 @@ const MayaSpaForm = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+
+    // Date validation
+    if (yourBookingEndDate < yourBookingStartDate) {
+      setErrors((prevErrors) => ({
+        ...prevErrors,
+        dateError: "The 'To' date cannot be earlier than the 'From' date."
+      }));
+      setDisableButton(false);
+      return;
+    }
+
     setDisableButton(true);
     createPost();
   };
@@ -114,6 +125,7 @@ const MayaSpaForm = () => {
       <Col className="">
         <form onSubmit={handleSubmit} style={{ margin: "20px" }}>
           <Row className="d-flex flex-lg-row flex-column gap-lg-0 flex-wrap gap-3">
+
             {/* Name Field */}
             <Col md={6} className="pb-md-4">
               <input
@@ -216,7 +228,7 @@ const MayaSpaForm = () => {
                 <div className="d-flex flex-column gap-2 col-lg-3">
                   <label htmlFor="checkOut" className="text-black-50">
                     To:
-                  </label>
+                  </label>  
                   <input
                     id="checkOut"
                     type="date"
@@ -226,6 +238,9 @@ const MayaSpaForm = () => {
                   />
                 </div>
               </div>
+              {errors.dateError && (
+                <div className="text-danger mt-2">{errors.dateError}</div>
+              )}
             </Col>
 
             {/* Message Field */}
