@@ -21,8 +21,6 @@ const HomeHeroBanner = () => {
                         width="100%"
                     />
 
-
-
                     <Col className='d-flex flex-row align-items-center pt-1'>
 
                         <Link href="/"
