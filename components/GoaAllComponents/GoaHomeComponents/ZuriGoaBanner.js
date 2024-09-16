@@ -13,7 +13,7 @@ const ZuriGoaBanner = () => {
                 <Player
                     playsInline
                     poster="/assets/poster.png"
-                    src="/goa_resort_casino.mp4"
+                    src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/ZuriHotel/goa_resort_casino.mp4"
                     muted
                     autoPlay
                 />
