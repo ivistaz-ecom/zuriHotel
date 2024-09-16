@@ -13,7 +13,7 @@ const ZuriBengaluruBanner = () => {
                 <Player
                     playsInline
                     poster="/assets/poster.png"
-                    src="/bengaluru.mp4"
+                    src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/ZuriHotel/bengaluru.mp4"
                     muted
                     autoPlay
                 />
