@@ -15,7 +15,7 @@ const HomeHeroBanner = () => {
                     <Player
                         playsInline
                         poster="/assets/poster.png"
-                        src="https://ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/ZuriHotel/kumarkom_kerala.mp4"
+                        src="https:///ivista-digital-bucket.blr1.cdn.digitaloceanspaces.com/ZuriHotel/kumarkom_kerala.mp4"
                         muted
                         autoPlay
                         width="100%"
