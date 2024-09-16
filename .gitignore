@@ -9,7 +9,8 @@
 
 # testing
 /coverage
-
+/public/robots.txt
+/public/sitemap.xml
 # next.js
 /.next/
 /out/
