@@ -26,9 +26,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-bengaluru.mp4*
-goa_resort_casino.mp4*
-kumarkom_kerala.mp4*
+# bengaluru.mp4*
+# goa_resort_casino.mp4*
+# kumarkom_kerala.mp4*
 
 # local env files
 .env*.local
