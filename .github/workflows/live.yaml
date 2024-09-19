@@ -33,7 +33,7 @@ jobs:
           passphrase: ${{ secrets.LIVE_SSH_PASSPHRASE }} # Your live server's SSH passphrase
 
           script: |
-            cd /home/website/react/ZuriHotels
+            cd /home/reactlive/ZuriHotels
              echo ${{ secrets.LIVE_PASSWORD }} | sudo -S git pull origin live
              echo ${{ secrets.LIVE_PASSWORD }} | sudo -S npm install
              echo ${{ secrets.LIVE_PASSWORD }} | sudo -S npm run build
