@@ -1,0 +1,40 @@
+name: Merge and Deploy to Live
+
+on:
+  workflow_dispatch: # Manual trigger
+
+jobs:
+  merge_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'jalal'
+          git config --global user.email 'jalal1985khan@gmail.com'
+
+      # # Merge main into live
+      # - name: Merge Main into Live
+      #   run: |
+      #     git fetch origin
+      #     git checkout live
+      #     git merge origin/main
+      #     git push origin live
+
+      # Deploy to live production server
+      - name: Deploy to Live Server Zuri
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.LIVE_HOST }} # Your live server's IP address
+          username: ${{ secrets.LIVE_USERNAME }} # Your live server's username
+          key: ${{ secrets.LIVE_SSH_PRIVATE_KEY }} # Your live server's SSH private key
+          passphrase: ${{ secrets.LIVE_SSH_PASSPHRASE }} # Your live server's SSH passphrase
+
+          script: |
+            cd /home/website/react/ZuriHotels
+             echo ${{ secrets.LIVE_PASSWORD }} | sudo -S git pull origin live
+             echo ${{ secrets.LIVE_PASSWORD }} | sudo -S npm install
+             echo ${{ secrets.LIVE_PASSWORD }} | sudo -S npm run build
+             echo ${{ secrets.LIVE_PASSWORD }} | sudo -S pm2 restart 1
