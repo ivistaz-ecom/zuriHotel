@@ -1,30 +1,28 @@
-import Link from 'next/link'
-import React from 'react'
-import { Col, Container, Image } from 'react-bootstrap'
+import Link from "next/link";
+import React from "react";
+import { Col, Container, Image } from "react-bootstrap";
 
 const GoaStayOffers = () => {
-    return (
-        <>
-            <Container className='mt-5'>
-                <h3 className='text-center pt-5 text-black '>
-                    GOA
-                </h3>
-                <Col className="underline-center-all">
-                </Col>
+  return (
+    <>
+      <Container className="mt-5">
+        <h3 className="text-center pt-5 text-black ">GOA</h3>
+        <Col className="underline-center-all"></Col>
 
-                <Col className='text-center mt-5' >
-                    <Image src='/cl.png' alt='' fluid />
-                    <h6 className='py-2 pt-4 text-center'>
-                        BENEFIT FROM OUR SPECIAL OFFERS IN GOA
-                    </h6>
-                    <h6 className='mt-4 d-inline-block border border-3 border-top-0 border-end-0 border-start-0 pb-2 '>STAY OFFERS</h6>
-                </Col>
+        <Col className="text-center mt-5">
+          <Image src="/cl.png" alt="" fluid />
+          <h6 className="py-2 pt-4 text-center">
+            BENEFIT FROM OUR SPECIAL OFFERS IN GOA
+          </h6>
+          <h6 className="mt-4 d-inline-block border border-3 border-top-0 border-end-0 border-start-0 pb-2 ">
+            STAY OFFERS
+          </h6>
+        </Col>
+      </Container>
 
-            </Container>
-
-            <Container className='d-md-flex flex-column d-none mt-3'>
-                <Col >
-                    {/* <Col className='d-flex flex-md-row '>
+      <Container className="d-md-flex flex-column d-none mt-3">
+        <Col>
+          {/* <Col className='d-flex flex-md-row '>
                         <Col md={7} className='text-md-end text-center pe-md-4'>
                             <Col className='d-inline-block'>
                                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
@@ -53,7 +51,7 @@ const GoaStayOffers = () => {
                         </Col>
                     </Col> */}
 
-                    {/* <Col className='d-flex flex-row mt-5'>
+          {/* <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
                             <Image src='/all_package_img/winter_package_thumbnail.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
@@ -82,8 +80,7 @@ const GoaStayOffers = () => {
                         </Col>
                     </Col> */}
 
-
-                    {/* <Col className='d-flex flex-row mt-5'>
+          {/* <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
                             <Image src='/all_package_img/winter_package_map_thumb.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
@@ -138,7 +135,9 @@ const GoaStayOffers = () => {
                         </Col>
                     </Col> */}
 
-                    <Col className='d-flex flex-row mt-5'>
+          {/* Monsoon Mania AP Package */}
+
+          {/* <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
                             <Image src='/all_package_img/monson_ap_thumb.png' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
@@ -165,9 +164,10 @@ const GoaStayOffers = () => {
                                 </Link>
                             </Col>
                         </Col>
-                    </Col>
+                    </Col> */}
 
-                    <Col className='d-flex flex-md-row pt-5'>
+          {/* Monsoon Mania MAP Package */}
+          {/* <Col className='d-flex flex-md-row pt-5'>
                         <Col md={7} className='text-md-end text-center pe-md-4'>
                             <Col className='d-inline-block'>
                                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
@@ -193,17 +193,14 @@ const GoaStayOffers = () => {
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
-                    </Col>
-                </Col>
+                    </Col> */}
+        </Col>
+      </Container>
 
-
-            </Container>
-
-
-            {/* Mobile View */}
-            <Container className='p-0 d-flex flex-column d-md-none ' >
-                <Col className='p-2'>
-                    {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center'>
+      {/* Mobile View */}
+      <Container className="p-0 d-flex flex-column d-md-none ">
+        <Col className="p-2">
+          {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>SUMMER GETAWAY PACKAGE ON AP</h6>
@@ -245,7 +242,7 @@ const GoaStayOffers = () => {
                         </Link>
                     </Col> */}
 
-                    <Col className='d-flex flex-column justify-content-center align-items-center text-center'>
+          {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>
@@ -289,13 +286,11 @@ const GoaStayOffers = () => {
                                 KNOW<br /> MORE
                             </p>
                         </Link>
-                    </Col>
+                    </Col> */}
+        </Col>
+      </Container>
+    </>
+  );
+};
 
-
-                </Col>
-            </Container >
-        </>
-    )
-}
-
-export default GoaStayOffers
+export default GoaStayOffers;

@@ -38,8 +38,8 @@ const StayOffersLists = () => {
                             </Col>
                             <p>
 
-                                Package Valid from 01st April 2023 to 31st March 2024 <br />
-                                (Not valid between 20th December 2023 to 03rd January 2024)
+                                Package Valid from 01st April 2024 to 30th September 2024 <br />
+                                {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
                                 <Link
@@ -158,9 +158,9 @@ const StayOffersLists = () => {
                             />
                         </Col>
                         <p>
-                            Package Valid from 01st April 2023 to 31st March 2024
+                            Package Valid from 01st April 2024 to 30th September 2024
                             <br />
-                            (Not valid between 20th December 2023 to 03rd January 2024)
+                            {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/honeymoon-package/"
                             className='bg-black text-center rounded-circle text-decoration-none p-1'>
