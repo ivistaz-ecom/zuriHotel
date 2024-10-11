@@ -203,7 +203,7 @@ const BlogContentWordpress = () => {
                                                         <p>
                                                             READ MORE
                                                             <i
-                                                                class="bi bi-arrow-right text-purple"
+                                                                className="bi bi-arrow-right text-purple"
                                                             >
                                                             </i>
                                                         </p>
@@ -310,7 +310,7 @@ const BlogContentWordpress = () => {
                                                     <p>
                                                         READ MORE
                                                         <i
-                                                            class="bi bi-arrow-right text-purple"
+                                                            className="bi bi-arrow-right text-purple"
                                                         >
                                                         </i>
                                                     </p>

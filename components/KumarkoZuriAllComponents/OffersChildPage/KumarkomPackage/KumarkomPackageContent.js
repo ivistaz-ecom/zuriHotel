@@ -18,7 +18,7 @@ const KumarkomPackageContent = () => {
                 </Col>
 
                 <Col className='d-flex overflow-scroll'>
-                    <table class="table table-bordered text-center">
+                    <table className="table table-bordered text-center">
                         <thead className='w-100'>
                             <tr>
                                 <th scope="col">

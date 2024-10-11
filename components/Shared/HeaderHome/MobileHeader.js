@@ -74,7 +74,7 @@ const MobileHeader = () => {
                 <Row className='d-flex flex-row justify-content-center align-items-center'>
                     <Col xs={1}>
                         <i
-                            class="bi bi-list"
+                            className="bi bi-list"
                             style={{ fontSize: '30px' }}
                             onClick={handleOnClickShow}
                         >

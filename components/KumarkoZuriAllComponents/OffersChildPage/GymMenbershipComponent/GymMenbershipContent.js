@@ -16,7 +16,7 @@ const GymMenbershipContent = () => {
         <Col>
           <div>
             <p className="fs-5 pt-5">Annual Gym Membership Programs:</p>
-            <table class="table table-bordered text-center">
+            <table className="table table-bordered text-center">
               <thead>
                 <tr>
                   <th scope="col">
@@ -93,7 +93,7 @@ const GymMenbershipContent = () => {
           <div>
             <p className="fs-5 pt-5">Membership Benefits:</p>
             <div className="table-responsive">
-              <table class="table table-bordered text-center">
+              <table className="table table-bordered text-center">
                 <thead>
                   <tr>
                     <th scope="col">
