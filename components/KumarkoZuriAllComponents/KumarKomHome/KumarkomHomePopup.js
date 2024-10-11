@@ -38,7 +38,7 @@ const KumarkomHomePopup = () => {
                                 alt=""
                             />
                             <span className='position-absolute end-0 top-0'>
-                                <i class="bi bi-x fs-4 cursor-pointer" onClick={handleClick}></i>
+                                <i className="bi bi-x fs-4 cursor-pointer" onClick={handleClick}></i>
                             </span>
                         </Col>
                         <Col
@@ -46,7 +46,7 @@ const KumarkomHomePopup = () => {
                         >
                             <Col className='position-relative'>
                                 <span className='position-absolute end-0 top-0 z-3 bg-purple'>
-                                    <i class="bi bi-x fs-4 cursor-pointer text-white" onClick={handleClick}></i>
+                                    <i className="bi bi-x fs-4 cursor-pointer text-white" onClick={handleClick}></i>
                                 </span>
                                 <Image
                                     src="/popup/kumarkom-popup/zuri_kumarkom_appreciation_letter.jpeg"
@@ -81,7 +81,7 @@ const KumarkomHomePopup = () => {
                         className='bg-transparent border-0'
                     >
                         <i
-                            class="bi bi-x-square rounded-circle text-purple"
+                            className="bi bi-x-square rounded-circle text-purple"
                         >
                         </i>
                     </button>
