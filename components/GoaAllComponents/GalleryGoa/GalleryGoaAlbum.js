@@ -199,10 +199,10 @@ const GalleryGoaAlbum = () => {
           <Modal.Footer className="border-0 position-absolute w-100 top-50 p-0">
             <Col className="d-flex justify-content-between">
               <Button className="bg-black border-0" onClick={prevImage}>
-                <i class="bi bi-arrow-left-square"></i>
+                <i className="bi bi-arrow-left-square"></i>
               </Button>
               <Button className="bg-black border-0" onClick={nextImage}>
-                <i class="bi bi-arrow-right-square"></i>
+                <i className="bi bi-arrow-right-square"></i>
               </Button>
             </Col>
           </Modal.Footer>

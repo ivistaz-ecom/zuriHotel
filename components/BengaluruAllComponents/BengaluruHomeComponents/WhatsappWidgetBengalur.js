@@ -21,7 +21,7 @@ const ChatWidget = () => {
 
             <Col className='position-fixed end-0 bottom-0 p-lg-5 p-3 z-3'>
 
-                <button type="button" class="btn btn-success d-flex flex-row  justify-content-center align-items-center rounded-4" >
+                <button type="button" className="btn btn-success d-flex flex-row  justify-content-center align-items-center rounded-4" >
                     {/* <div className='whatsapp-hover-show'>
                         Chat with us
                     </div> */}

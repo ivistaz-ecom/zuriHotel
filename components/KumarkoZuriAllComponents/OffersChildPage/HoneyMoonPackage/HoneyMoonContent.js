@@ -20,7 +20,7 @@ const HoneyMoonContent = () => {
                 </Col>
 
                 <Col>
-                    <table class="table table-bordered text-center">
+                    <table className="table table-bordered text-center">
                         <thead>
                             <tr>
                                 <th scope="col">

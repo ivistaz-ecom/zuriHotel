@@ -142,8 +142,8 @@ const ContactForm = () => {
                         </form>
                     }
 
-                    {loading && <h1 class="reg-success mt-4">{post}</h1>}
-                    {error && <h1 class="reg-error mt-4">{post}</h1>}
+                    {loading && <h1 className="reg-success mt-4">{post}</h1>}
+                    {error && <h1 className="reg-error mt-4">{post}</h1>}
                 </Col>
             </Row>
         </Container >

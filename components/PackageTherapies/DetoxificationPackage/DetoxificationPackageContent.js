@@ -18,7 +18,7 @@ const DetoxificationPackageContent = () => {
 
                 {/* Table 1 */}
                 <Col className='d-flex overflow-scroll pt-4'>
-                    <table class="table table-bordered text-center">
+                    <table className="table table-bordered text-center">
                         <thead className='w-100'>
                             <tr>
                                 <th scope="col">
@@ -157,7 +157,7 @@ const DetoxificationPackageContent = () => {
 
                 {/* Table 2 */}
                 <Col className='d-flex overflow-scroll'>
-                    <table class="table table-bordered text-center">
+                    <table className="table table-bordered text-center">
                         <thead className='w-100'>
                             <tr>
                                 <th scope="col">
@@ -351,7 +351,7 @@ const DetoxificationPackageContent = () => {
                     <h6 className='text-decoration-underline text-black py-3'>DAILY SCHEDULE</h6>
 
                     <Col className='d-flex overflow-scroll'>
-                        <table class="table table-bordered text-center">
+                        <table className="table table-bordered text-center">
                             <thead className='w-100'>
                                 <tr>
                                     <th scope="col">
