@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const WinterGetAwayMapPackagesBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/goa/offers/winter-ap-2024-wp-banner.jpg')`,
+        backgroundImage: `url('/goa/offers/Beach-Bon-Fire-3.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
