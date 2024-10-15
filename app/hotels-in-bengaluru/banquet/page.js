@@ -9,7 +9,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/banquet_bengaluru_001.jpg" 
+                    src="/banquetBengaluru001.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
@@ -17,7 +17,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/banquet_bengaluru_002.jpg" 
+                    src="/banquetBengaluru002.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
