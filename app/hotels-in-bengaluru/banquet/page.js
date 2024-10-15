@@ -45,14 +45,14 @@ const BanquetImage = () => {
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
-                 <Image 
+                 {/* <Image 
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
                     src="/bengaluru/banquet/bengaluru-img.jpeg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
-                />
+                /> */}
             </div>
         </div>
     )
