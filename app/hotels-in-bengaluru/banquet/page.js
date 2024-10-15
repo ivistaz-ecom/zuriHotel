@@ -9,7 +9,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/bengaluru/banquet_images/Banquet_bengaluru_1.jpg" 
+                    src="/banquet_bengaluru_001.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
@@ -17,7 +17,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/bengaluru/banquet/Banquet_bengaluru_2.jpg" 
+                    src="/banquet_bengaluru_002.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
@@ -25,7 +25,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/bengaluru/banquet_images/Banquet_bengaluru_3.jpg" 
+                    src="/banquet_bengaluru_003.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
@@ -33,7 +33,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/bengaluru/banquet_images/Banquet_bengaluru_4.jpg" 
+                    src="/banquet_bengaluru_004.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
@@ -41,7 +41,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/bengaluru/banquet_images/Banquet_bengaluru_5.jpg" 
+                    src="/banquet_bengaluru_005.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
