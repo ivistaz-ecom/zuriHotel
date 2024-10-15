@@ -9,7 +9,7 @@ const BanquetImage = () => {
                     className="w-100 h-100" 
                     width={900} 
                     height={600} 
-                    src="/bengaluru/banquet/banquet_bengaluru_1.jpg" 
+                    src="/bengaluru/banquet_images/banquet_bengaluru_1.jpg" 
                     alt="Banquet Banner"
                     style={{width:'100% !important',height:'100% !important'}}
                 />
