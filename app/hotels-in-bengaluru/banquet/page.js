@@ -3,7 +3,10 @@ import React from 'react'
 
 const ImageLists = [
 {imgUrl:'/banquetBengaluru001.jpg'},
-{imgUrl:'/banquetBengaluru001.jpg'},
+{imgUrl:'/banquetBengaluru002.jpg'},
+{imgUrl:'/banquetBengaluru003.jpg'},
+{imgUrl:'/banquetBengaluru004.jpg'},
+{imgUrl:'/banquetBengaluru005.jpg'},
 
 ]
 
