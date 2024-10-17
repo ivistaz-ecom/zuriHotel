@@ -225,6 +225,48 @@ const MobileHeader = () => {
                                 </Col>
                             )}
                         </Col>
+                        
+                        <Col className='text-center p-0 w-100 mt-3'>
+                                <p
+                                    className='font11px text-black'
+                                    onClick={() => handleSubMenuClick('offers')}
+                                >
+                                    Offers
+                                </p>
+
+                                <hr />
+                                {activeSubMenu === 'offers' && (
+                                    <Col className='d-flex gap-3 flex-column'>
+                                        <Link
+                                            href="/offers/stay-offers"
+                                            className='text-decoration-none text-black'
+                                        >
+                                            <h6 className='font11px'>Stay Offers</h6>
+                                        </Link>
+
+                                        <Link
+                                            href="/offers/dining-offers"
+                                            className='text-decoration-none text-black'
+                                        >
+                                            <h6 className='font11px'>Dining Offers</h6>
+                                        </Link>
+
+                                        <Link
+                                            href="/offers/ayurveda-package"
+                                            className='text-decoration-none text-black'
+                                        >
+                                            <h6 className='font11px'>Ayurveda Packages</h6>
+                                        </Link>
+
+                                        <Link
+                                            href="/offers/membership"
+                                            className='text-decoration-none text-black'
+                                        >
+                                            <h6 className='font11px'>Membership</h6>
+                                        </Link>
+                                    </Col>
+                                )}
+                            </Col>
 
                         <Col className='text-center p-0 w-100 mt-3'>
                             <Link

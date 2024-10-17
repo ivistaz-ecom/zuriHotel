@@ -38,7 +38,7 @@ const StayOffersLists = () => {
                             </Col>
                             <p>
 
-                                Package Valid from  01st October 2024 to 31st March 2025. 
+                                Package valid from 01st October 2024 to 31st March 2025. 
                                 <br />(Not valid for 20th December 2024 to 03rd January 2025) <br />
                                 {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
                             </p>
@@ -159,7 +159,7 @@ const StayOffersLists = () => {
                             />
                         </Col>
                         <p>
-                            Package Valid from  01st October 2024 to 31st March 2025. (Not valid for 20th December 2024 to 03rd January 2025)
+                            Package valid from 01st October 2024 to 31st March 2025. (Not valid for 20th December 2024 to 03rd January 2025)
                             <br />
                             {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
                         </p>
@@ -200,7 +200,7 @@ const StayOffersLists = () => {
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>
-                                GETAWAY PACKAGE
+                                 
                             </h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
