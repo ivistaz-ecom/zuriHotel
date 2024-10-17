@@ -38,7 +38,8 @@ const StayOffersLists = () => {
                             </Col>
                             <p>
 
-                                Package Valid from 01st April 2024 to 30th September 2024 <br />
+                                Package Valid from  01st October 2024 to 31st March 2025. 
+                                <br />(Not valid for 20th December 2024 to 03rd January 2025) <br />
                                 {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
@@ -158,7 +159,7 @@ const StayOffersLists = () => {
                             />
                         </Col>
                         <p>
-                            Package Valid from 01st April 2024 to 30th September 2024
+                            Package Valid from  01st October 2024 to 31st March 2025. (Not valid for 20th December 2024 to 03rd January 2025)
                             <br />
                             {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
                         </p>
@@ -195,7 +196,7 @@ const StayOffersLists = () => {
                         </Link>
                     </Col>
 
-                    <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
+                    {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>
@@ -219,7 +220,7 @@ const StayOffersLists = () => {
                                 KNOW<br /> MORE
                             </p>
                         </Link>
-                    </Col>
+                    </Col> */}
 
                     <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>

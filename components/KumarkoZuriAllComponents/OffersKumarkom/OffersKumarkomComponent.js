@@ -50,9 +50,9 @@ const OffersKumarkomComponent = () => {
                 <h6 className="text-center">HONEYMOON PACKAGE</h6>
               </Col>
               <p>
-                Package Valid from 01st April 2024 to 30th September 2024
+               01st October 2024 to 31st March 2025. 
                 <br />
-                {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
+                (Not valid for 20th December 2024 to 03rd January 2025).
               </p>
               <Col className="d-flex justify-md-content-center  align-items-md-start p-0 pe-2">
                 <Link
@@ -319,9 +319,9 @@ const OffersKumarkomComponent = () => {
               />
             </Col>
             <p>
-              Package Valid from 01st April 2024 to 30th September 2024
+             01st October 2024 to 31st March 2025.
               <br />
-              {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
+              (Not valid for 20th December 2024 to 03rd January 2025)
             </p>
             <Link
               href="/lake-resorts-in-kumarakom/offers/honeymoon-package/"
