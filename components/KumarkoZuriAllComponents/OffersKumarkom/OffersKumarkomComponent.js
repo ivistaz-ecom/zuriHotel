@@ -50,7 +50,7 @@ const OffersKumarkomComponent = () => {
                 <h6 className="text-center">HONEYMOON PACKAGE</h6>
               </Col>
               <p>
-               01st October 2024 to 31st March 2025. 
+              Package valid from 01st October 2024 to 31st March 2025. 
                 <br />
                 (Not valid for 20th December 2024 to 03rd January 2025).
               </p>
@@ -319,7 +319,7 @@ const OffersKumarkomComponent = () => {
               />
             </Col>
             <p>
-             01st October 2024 to 31st March 2025.
+            Package valid from 01st October 2024 to 31st March 2025.
               <br />
               (Not valid for 20th December 2024 to 03rd January 2025)
             </p>
