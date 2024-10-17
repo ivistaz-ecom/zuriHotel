@@ -10,8 +10,11 @@ const HoneyMoonContent = () => {
                 <Col className='text-center'>
                     <h6 className='text-decoration-underline text-black'>HONEYMOON PACKAGE</h6>
 
-                    <p>
-                        Package Valid from 01st April 2024 to 30th September 2024
+                    <p className='mt-3'>
+                    Package valid from 01st October 2024 to 31st March 2025.<br/>
+                    </p>
+                    <p className='mt-3'>
+                    (Not valid for 20th December 2024 to 03rd January 2025)
                     </p>
                     <p>
                         02 Nights Package
