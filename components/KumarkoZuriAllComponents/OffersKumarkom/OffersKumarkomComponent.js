@@ -171,7 +171,9 @@ const OffersKumarkomComponent = () => {
                 />
                 <h6 className="text-center">BACKWATER PACKAGE</h6>
               </Col>
-              <p>1st April 2024 - 30th September 2024</p>
+              <p>   Package valid from 01st October 2024 to 31st March 2025. 
+                <br />
+                (Not valid for 20th December 2024 to 03rd January 2025).</p>
               <Col className="d-flex justify-md-content-center  align-items-md-start p-0 pe-2">
                 <Link
                   href="/lake-resorts-in-kumarakom/offers/backwater-package/"
@@ -412,9 +414,9 @@ const OffersKumarkomComponent = () => {
               />
             </Col>
             <p>
-              1st October 2023 – 19th December 2023 &
-              <br />
-              04th January 2024 to 30th September 2024.
+            Package valid from 01st October 2024 to 31st March 2025. 
+                <br />
+                (Not valid for 20th December 2024 to 03rd January 2025).
             </p>
             <Link
               href="/lake-resorts-in-kumarakom/offers/backwater-package/"

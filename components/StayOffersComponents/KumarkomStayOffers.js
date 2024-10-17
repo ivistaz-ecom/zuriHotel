@@ -40,7 +40,7 @@ const StayOffersLists = () => {
 
                                 Package valid from 01st October 2024 to 31st March 2025. 
                                 <br />(Not valid for 20th December 2024 to 03rd January 2025) <br />
-                                {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
+                                
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
                                 <Link
@@ -98,7 +98,8 @@ const StayOffersLists = () => {
                                 </h6>
                             </Col>
                             <p>
-                                1st April 2024 - 30th September 2024
+                            Package valid from 01st October 2024 to 31st March 2025. 
+                            <br />(Not valid for 20th December 2024 to 03rd January 2025) <br />
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
                                 <Link href="/lake-resorts-in-kumarakom/offers/backwater-package/"
@@ -159,9 +160,9 @@ const StayOffersLists = () => {
                             />
                         </Col>
                         <p>
-                            Package valid from 01st October 2024 to 31st March 2025. (Not valid for 20th December 2024 to 03rd January 2025)
+                            Package valid from 01st October 2024 to 31st March 2025. 
                             <br />
-                            {/* (Not valid between 20th December 2023 to 03rd January 2024) */}
+                            (Not valid for 20th December 2024 to 03rd January 2025)
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/honeymoon-package/"
                             className='bg-black text-center rounded-circle text-decoration-none p-1'>
@@ -236,7 +237,8 @@ const StayOffersLists = () => {
                         </Col>
                         <p>
 
-                            Package Valid from 1st October 2023 – 19th December 2023 & 04th January 2024 to 30th September 2024.
+                        Package valid from 01st October 2024 to 31st March 2025. 
+                        <br />(Not valid for 20th December 2024 to 03rd January 2025) <br />
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/backwater-package"
                             className='bg-black text-center rounded-circle text-decoration-none p-1'>
