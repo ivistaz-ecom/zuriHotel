@@ -8,7 +8,7 @@ const OffersGoaHeader = () => {
         <>
             <Container className='custom-kumarkom-menu-container'>
 
-                <h3 className='text-center py-md-4 text-custom-grey'>THE ZURI WHITE SANDS, GOA RESORT & CASINO</h3>
+                <h3 className='text-center py-md-4 text-custom-grey'>WINTER GETAWAY PACKAGE</h3>
 
                 <Col className='d-flex flex-row justify-content-center align-items-center py-3 d-md-flex d-none'>
                     <Link href="/beach-resorts-in-goa"
