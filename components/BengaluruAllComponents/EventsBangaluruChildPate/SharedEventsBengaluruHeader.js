@@ -6,7 +6,7 @@ import Link from 'next/link'
 const SharedEventsBengaluruHeader = () => {
     return (
         <>
-            <Container className='p-0'>
+            <Container className='custom-kumarkom-menu-container position-relative'>
 
                 <h3 className='text-center text-custom-grey'>THE ZURI WHITEFIELD, BENGALURU</h3>
 
