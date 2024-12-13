@@ -26,13 +26,19 @@ const ChristmasBanner = () => {
                     <Col className='d-flex flex-row flex-wrap p-0 align-items-center' >
                         <Link href="/"
                             className='text-decoration-none text-black m-0'>
-                            <h6 className='mb-0 font12px'>Home</h6>
+                            {/* <h6 className='mb-0 font12px ps-lg-0 ps-2'>Home</h6> */}
                         </Link>
                     </Col>
 
-                    <Col className='mt-5'>
-                        <p className=' text-center'>
-                            Curious about how Zuri Hotels can brighten your Christmas and New Year’s celebrations? Contact us and we’ll <br className='d-lg-block d-none' /> provide you with a plan guaranteed to make your holidays unforgettable.
+                    <Col className='mt-lg-5 mt-4 text-center p-lg-0 p-2'>
+                        <p className=' '>
+                            Make this Christmas and New Year unforgettable with Zuri Hotels & Resorts! Experience the joy of the season with dazzling celebrations, gourmet feasts, live entertainment, and luxurious stays. Whether you’re planning a family gathering, a romantic evening, or a lively party with friends, we’ve got something special for everyone.
+                        </p>
+                        <p>
+                            Spaces are filling up fast - don’t miss out on the festivities!
+                        </p>
+                        <p>
+                            Reserve your spot now and make this holiday season one to remember!
                         </p>
                     </Col>
                 </Container>

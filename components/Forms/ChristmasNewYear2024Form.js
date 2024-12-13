@@ -321,16 +321,16 @@ const ChristmasNewYear2024Form = () => {
                                 />
                             </Col>
 
-                            <Col className='mt-4'>
+                            <Col className='mt-lg-4'>
                                 <p className='text-danger'>
-                                    * Mandatory to fill the details
+                                    * All fields are Mandatory
                                 </p>
                             </Col>
                         </Row>
 
                         {spinner && <div className="spinner-border text-light" role="status" />}
 
-                        <button type='submit' className=' mt-4 px-5 py-2 bg-purple border-0 text-white font14px'>Submit</button>
+                        <button type='submit' className=' mt-lg-4 px-5 py-2 bg-purple border-0 text-white font14px'>Submit</button>
                     </form>
 
                     <Modal show={showModal} onHide={() => setShowModal(false)}>
