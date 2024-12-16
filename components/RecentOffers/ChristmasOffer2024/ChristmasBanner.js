@@ -31,7 +31,7 @@ const ChristmasBanner = () => {
                         </Link>
                     </Col>
 
-                    <Col className='mt-lg-5 mt-4 text-center p-lg-0 p-2'>
+                    <Col className='mt-lg-5 mt-4 text-center p-lg-0 p-3'>
                         <p>
                             Make this Christmas and New Year unforgettable with Zuri Hotels & Resorts! Experience the joy of the season with dazzling celebrations, gourmet feasts, live entertainment, and luxurious stays. Whether you’re planning a family gathering, a romantic evening, or a lively party with friends, we’ve got something special for everyone.
                         </p>
