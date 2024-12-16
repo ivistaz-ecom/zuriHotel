@@ -8,6 +8,7 @@ import DatePicker from 'react-datepicker';
 
 const ChristmasNewYear2024Form = () => {
     const [yourName, setName] = useState('');
+    const [yourlName, setlName] = useState('');
     const [yourEmail, setEmail] = useState('');
     const [yourPhone, setPhone] = useState('');
     const [selectHotel, setSelectHotel] = useState('');
@@ -24,6 +25,7 @@ const ChristmasNewYear2024Form = () => {
     const [showModal, setShowModal] = useState(false);
 
     const [errrname, setErrName] = useState(null);
+    const [errrlname, setErrlName] = useState(null);
     const [errremail, setErrEmail] = useState(null);
     const [errrphone, setErrPhone] = useState('');
     const [errrselectHotel, setErrSelectHotel] = useState('');
@@ -40,6 +42,7 @@ const ChristmasNewYear2024Form = () => {
 
         // Reset error messages
         setErrName(null);
+        setErrlName(null);
         setErrEmail(null);
         setErrPhone(null);
         setErrSelectHotel(null);
@@ -49,7 +52,11 @@ const ChristmasNewYear2024Form = () => {
 
         // Validate each field
         if (!yourName) {
-            setErrName('Please enter your name');
+            setErrName('Please enter your first name');
+            valid = false;
+        }
+        if (!yourlName) {
+            setErrlName('Please enter your last name');
             valid = false;
         }
 
@@ -106,6 +113,7 @@ const ChristmasNewYear2024Form = () => {
 
     const resetForm = () => {
         setName('');
+        setlName('');
         setEmail('');
         setPhone('');
         setSelectHotel('');
@@ -121,6 +129,7 @@ const ChristmasNewYear2024Form = () => {
         axios.post(`${siteUrl}wp-json/contact-form-7/v1/contact-forms/7719/feedback`,
             {
                 'your-name': yourName,
+                'your-lname': yourlName,
                 'your-email': yourEmail,
                 'your-phone': yourPhone,
                 'select-hotel': selectHotel,
@@ -182,7 +191,7 @@ const ChristmasNewYear2024Form = () => {
                                     className="form-control"
                                     id="yourName"
                                     name='yourName'
-                                    placeholder="Name"
+                                    placeholder="First Name"
                                     value={yourName}
                                     onChange={event => setName(event.target.value)}
                                 />
@@ -192,11 +201,25 @@ const ChristmasNewYear2024Form = () => {
                             <Col md={6} className='pt-md-4'>
                                 <input
                                     required
+                                    type='text'
+                                    className="form-control"
+                                    id="yourlName"
+                                    name='yourlName'
+                                    placeholder="Last Name"
+                                    value={yourlName}
+                                    onChange={event => setlName(event.target.value)}
+                                />
+                                {!yourlName && <span className="r_error">{errrlname}</span>}
+                            </Col>
+
+                            <Col md={6} className='pt-md-4'>
+                                <input
+                                    required
                                     type='email'
                                     className="form-control"
                                     id="yourEmail"
                                     name='yourEmail'
-                                    placeholder="Your Email"
+                                    placeholder="Email Address"
                                     value={yourEmail}
                                     onChange={event => setEmail(event.target.value)}
                                 />
@@ -212,7 +235,7 @@ const ChristmasNewYear2024Form = () => {
                                     className="form-control"
                                     id="yourPhone"
                                     name='yourPhone'
-                                    placeholder="Phone"
+                                    placeholder="Mobile Number"
                                     value={yourPhone}
                                     onChange={event => {
                                         const value = event.target.value;
@@ -240,7 +263,7 @@ const ChristmasNewYear2024Form = () => {
                                     value={selectHotel}
                                     onChange={(e) => setSelectHotel(e.target.value)}
                                 >
-                                    <option value='' disabled>Preferred hotel for Christmas & New Year</option>
+                                    <option value='' disabled>Preferred Hotel</option>
                                     <option value='whitefield'>The Zuri Whitefield, Bengaluru</option>
                                     <option value='goa'>The Zuri White Sands, Goa Resort & Casino</option>
                                     <option value='kerala'>The Zuri Kumarakom, Kerala</option>
@@ -288,7 +311,7 @@ const ChristmasNewYear2024Form = () => {
                                     className="form-control"
                                     id="candidates"
                                     name='candidates'
-                                    placeholder="Number of Candidates"
+                                    placeholder="Number of Guests"
                                     value={candidates}
                                     onChange={event => {
                                         const value = event.target.value;
@@ -315,7 +338,7 @@ const ChristmasNewYear2024Form = () => {
                                     className="form-control w-100"
                                     id="yourMessage"
                                     name='yourMessage'
-                                    placeholder="Additional Comments"
+                                    placeholder="Additional Requests"
                                     value={yourMessage}
                                     onChange={event => setMessage(event.target.value)}
                                 />
