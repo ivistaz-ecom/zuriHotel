@@ -7,6 +7,8 @@
 
 import Head from "next/head";
 import Script from "next/script";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 export default function RootLayout({ children }) {
   return (

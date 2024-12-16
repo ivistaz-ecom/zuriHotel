@@ -112,6 +112,17 @@ const MobileHeader = () => {
         return (
             <>
                 <Container fluid className='d-flex d-md-none position-sticky sticky-top flex-column bg-white z-3 shadow-sm p-0'>
+                    <Container fluid className='w-100 z-3 p-2 d-flex flex-column justify-content-center align-items-center bg-purple'
+                    // style={{
+                    //     backgroundImage: 'url(/christmas-banner.png)',
+                    //     backgroundSize: 'cover',
+                    //     backgroundPosition: 'top center' // Centering the background image
+                    // }}
+                    >
+                        <p className='mb-0 text-white'>
+                            Make your Christmas and New Year's unforgettable. <br /> <Link href='/christmas-new-year-offers' className='text-white'>Click here to know more</Link>.
+                        </p>
+                    </Container>
                     <Row className='d-flex flex-row flex-wrap justify-content-center align-items-center m-0'>
                         <Col xs={1}>
                             <i
