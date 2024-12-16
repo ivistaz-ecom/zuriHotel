@@ -7,7 +7,7 @@ const BannerAllPage = ({ backgroundImageUrl }) => {
 
     const bannerStyle = {
         backgroundImage: `url('${backgroundImageUrl}')`,
-        height: isMobile ? '45vh' : '466px',
+        height: isMobile ? '75vh' : '466px',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         // backgroundRepeat: 'no-repeat',
