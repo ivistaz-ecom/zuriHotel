@@ -12,7 +12,7 @@ const ChristmasBanner = () => {
         <>
             <Container fluid className='p-0'>
                 <Container className='custom-kumarkom-menu-container px-0'>
-                    <h3 className='text-center py-md-4 text-custom-grey'>Season’s Greetings from Zuri</h3>
+                    <h3 className='text-center py-md-4 text-custom-grey p-2'>Celebrate the Magic of the Festive Season at<br/> The Zuri Hotels & Resorts</h3>
 
                     {/* Desktop banner */}
                     <div className="d-none d-sm-block">
