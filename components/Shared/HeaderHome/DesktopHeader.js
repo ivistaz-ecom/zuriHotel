@@ -55,7 +55,7 @@ const DesktopHeader = () => {
             </style>
 
             <Container fluid className='position-fixed d-lg-flex flex-column d-none border-bottom bg-white z-3 p-0'>
-                <Container fluid className='w-100 z-3 p-2 d-flex flex-column justify-content-center align-items-center bg-purple'
+                {/* <Container fluid className='w-100 z-3 p-2 d-flex flex-column justify-content-center align-items-center bg-purple'
                 // style={{
                 //     backgroundImage: 'url(/christmas-banner.png)',
                 //     backgroundSize: 'cover',
@@ -65,7 +65,7 @@ const DesktopHeader = () => {
                     <p className='mb-0 text-white fs-6'>
                         Make your Christmas and New Year's unforgettable. <Link href='/christmas-new-year-offers' className='text-white cursor-pointer'>Click here to know more</Link>.
                     </p>
-                </Container>
+                </Container> */}
                 <Container fluid className='z-3 bg-white m-0' style={{ zIndex: '100' }} >
                     <Container className='p-0'>
                         <Row>
