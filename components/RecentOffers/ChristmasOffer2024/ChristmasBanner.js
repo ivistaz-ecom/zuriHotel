@@ -103,7 +103,7 @@ const ChristmasBanner = () => {
             <div className="py-2">
               <Image src="/cl.png" alt="" fluid width={25} height={25} />
             </div>
-            <h4 className="fw-bold">Christmas Party Eve</h4>
+            <h4 className="fw-bold">Christmas Eve Party</h4>
             <p className="pb-2">24 December 2024</p>
             <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
               {festiveEvents.slice(0, 3).map((event, index) => (
@@ -148,7 +148,7 @@ const ChristmasBanner = () => {
             <div className="py-2 mt-3">
               <Image src="/cl.png" alt="" fluid width={25} height={25} />
             </div>
-            <h4 className="fw-bold">New Year Party </h4>
+            <h4 className="fw-bold">New Year Eve Party </h4>
             <p className="pb-2">31 December 2024</p>
             <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-3">
               {newYearEvents.map((event, index) => (
