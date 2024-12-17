@@ -2,7 +2,7 @@
 import Link from 'next/link'
 import React, { useState, useEffect } from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-
+import { usePathname } from 'next/navigation';
 import '../../../app/globals.css'
 import DesktopHeaderForm from '../HeaderHome/DesktopHeaderForm'
 
@@ -14,6 +14,7 @@ const DesktopHeader = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [searchResults, setSearchResults] = useState([]);
     const siteUrl = DomainUrl.wpApiUrl;
+    const pathname = usePathname();
 
     const handleMakeReservation = () => {
         setIsMakeReservation(!isMakeReservation);
@@ -69,6 +70,18 @@ const DesktopHeader = () => {
                 }
             </style>
             <Container fluid className='position-fixed d-lg-flex flex-column d-none border-bottom bg-white z-3 p-0'>
+           {/* Conditional rendering for the purple banner */}
+           {pathname !== '/christmas-new-year-offers' && (
+                    <Container fluid className='w-100 z-3 p-2 d-flex flex-column justify-content-center align-items-center bg-purple'>
+                        <p className='mb-0 text-white fs-6'>
+                            Make your Christmas and New Year's unforgettable.{' '}
+                            <Link href='/christmas-new-year-offers' className='text-white cursor-pointer'>
+                                Click here to know more
+                            </Link>
+                            .
+                        </p>
+                    </Container>
+                )}
                 <Container fluid className='z-3 bg-white m-0' style={{ zIndex: '100' }} >
                     <Container className='p-0'>
                         <Row>
