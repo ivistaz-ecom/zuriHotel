@@ -69,15 +69,15 @@ const ChristmasBanner = () => {
             Celebrate the Magic of the Festive Season at<br/> The Zuri Hotels & Resorts
           </p>
 
-          {/* Desktop banner */}
+          {/* Desktop banner
           <div className="d-none d-sm-block">
             <BannerAllPage backgroundImageUrl={desktopImageUrl} />
           </div>
 
-          {/* Mobile banner */}
+          Mobile banner
           <div className="d-block d-md-none ">
             <BannerAllPage backgroundImageUrl={mobileImageUrl} />
-          </div>
+          </div> */}
 
           {/* Description */}
           <Col className="mt-lg-5 mt-4 text-center p-lg-0 p-3">
