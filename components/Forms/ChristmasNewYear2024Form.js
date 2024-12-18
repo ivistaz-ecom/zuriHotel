@@ -78,18 +78,8 @@ const ChristmasNewYear2024Form = () => {
       valid = false;
     }
 
-    if (!eventType) {
-      setErrEventType("Please select an event type");
-      valid = false;
-    }
-
     if (!candidates) {
       setErrCandidates("Please enter the number of candidates");
-      valid = false;
-    }
-
-    if (!startDate || !endDate) {
-      setErrDate("Please select your check-in and check-out dates");
       valid = false;
     }
 
@@ -308,8 +298,6 @@ const ChristmasNewYear2024Form = () => {
                 )}
               </Col>
 
-             
-
               <Col md={6} className="pt-md-4">
                 <DatePicker
                   selected={startDate}
@@ -323,7 +311,6 @@ const ChristmasNewYear2024Form = () => {
                   className="form-control w-100"
                   isClearable // Allow users to clear the selection
                 />
-                {errrDate && <span className="r_error">{errrDate}</span>}
               </Col>
 
               <Col md={6} className="pt-md-4">
@@ -356,7 +343,7 @@ const ChristmasNewYear2024Form = () => {
 
               <Col md={12} className="pt-md-4">
                 <textarea
-                  required
+                  
                   rows="4"
                   cols="50"
                   className="form-control w-100"
@@ -368,9 +355,9 @@ const ChristmasNewYear2024Form = () => {
                 />
               </Col>
 
-              <Col className="mt-lg-4">
+              {/* <Col className="mt-lg-4">
                 <p className="text-danger">* All fields are Mandatory</p>
-              </Col>
+              </Col> */}
             </Row>
 
             {spinner && (
