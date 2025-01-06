@@ -122,7 +122,7 @@ const MobileHeader = () => {
           fluid
           className="d-flex d-md-none position-sticky sticky-top flex-column bg-white z-3 shadow-sm p-0"
         >
-          {pathname !== "/christmas-new-year-offers" && (
+          {/* {pathname !== "/christmas-new-year-offers" && (
             <Container
               fluid
               className="w-100 z-3 p-2 d-flex flex-column justify-content-center align-items-center bg-purple"
@@ -145,7 +145,7 @@ const MobileHeader = () => {
                 .
               </p>
             </Container>
-          )}
+          )} */}
           <Row className="d-flex flex-row flex-wrap justify-content-center align-items-center m-0">
             <Col xs={1}>
               <i
