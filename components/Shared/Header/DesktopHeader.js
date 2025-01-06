@@ -68,7 +68,7 @@ const DesktopHeader = () => {
         className="position-fixed d-lg-flex flex-column d-none border-bottom bg-white z-3 p-0"
       >
         {/* Conditional rendering for the purple banner */}
-        {pathname !== "/christmas-new-year-offers" && (
+        {/* {pathname !== "/christmas-new-year-offers" && (
           <Container
             fluid
             className="w-100 z-3 p-2 d-flex flex-column justify-content-center align-items-center bg-purple"
@@ -85,7 +85,7 @@ const DesktopHeader = () => {
               .
             </p>
           </Container>
-        )}
+        )} */}
         <Container fluid className="z-3 bg-white m-0" style={{ zIndex: "100" }}>
           <Container className="p-0">
             <Row>
