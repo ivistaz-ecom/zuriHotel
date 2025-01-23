@@ -22,7 +22,7 @@ const Package = ({ title, price, inclusions }) => (
 const festiveEvents = [
   {
     title: "",
-    location: "Karibu “Multi-Cuisine Dining”",
+    location: "Dummy Goa image”",
     imageUrl: "/valentines_day/multi-cuisine_dining.jpg",
   },
 ];
@@ -30,7 +30,7 @@ const festiveEvents = [
 const OffersGoa = () => {
   const packages = [
     {
-      title: 'Karibu “Indian” (Poolside)',
+      title: ' Dummy Karibu “Indian” (Poolside)',
       price: 'INR 7999 AI (Per Couple)',
       inclusions: [
         "Candle Light table setup.",

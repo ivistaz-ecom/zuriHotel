@@ -67,6 +67,11 @@ const Offers = () => {
     },
     {
       title: "",
+      location: "Karibu “Multi-Cuisine Dining”",
+      imageUrl: "/valentines_day/kirubu_whitefield.jpg",
+    },
+    {
+      title: "",
       location: "Incanto “Italian”",
       imageUrl: "/valentines_day/Incanto_italian.jpg",
     },
