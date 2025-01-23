@@ -12,12 +12,12 @@ const ChristmasNewYear2024Form = () => {
   const [yourEmail, setEmail] = useState("");
   const [yourPhone, setPhone] = useState("");
   const [selectHotel, setSelectHotel] = useState("");
-  const [eventType, setEventType] = useState("");
+  // const [eventType, setEventType] = useState("");
   const [candidates, setCandidates] = useState("");
   const [yourMessage, setMessage] = useState("");
 
-  const [startDate, setStartDate] = useState(null);
-  const [endDate, setEndDate] = useState(null);
+  // const [startDate, setStartDate] = useState(null);
+  // const [endDate, setEndDate] = useState(null);
 
   const [spinner, setSpinner] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -46,9 +46,9 @@ const ChristmasNewYear2024Form = () => {
     setErrEmail(null);
     setErrPhone(null);
     setErrSelectHotel(null);
-    setErrEventType(null);
+    // setErrEventType(null);
     setErrCandidates(null);
-    setErrDate(null);
+    // setErrDate(null);
 
     // Validate each field
     if (!yourName) {
@@ -95,14 +95,14 @@ const ChristmasNewYear2024Form = () => {
     }
   };
 
-  const handleDateChange = (dates) => {
-    const [start, end] = dates;
-    setStartDate(start);
-    setEndDate(end);
+  // const handleDateChange = (dates) => {
+  //   const [start, end] = dates;
+  //   setStartDate(start);
+  //   setEndDate(end);
 
-    // Clear error if both dates are selected
-    if (start && end) setErrDate("");
-  };
+  //   // Clear error if both dates are selected
+  //   if (start && end) setErrDate("");
+  // };
 
   const resetForm = () => {
     setName("");
@@ -110,11 +110,11 @@ const ChristmasNewYear2024Form = () => {
     setEmail("");
     setPhone("");
     setSelectHotel("");
-    setEventType("");
+    // setEventType("");
     setCandidates("");
     setMessage("");
-    setStartDate(null);
-    setEndDate(null);
+    // setStartDate(null);
+    // setEndDate(null);
   };
 
   const createPost = () => {
@@ -128,9 +128,9 @@ const ChristmasNewYear2024Form = () => {
           "your-email": yourEmail,
           "your-phone": yourPhone,
           "select-hotel": selectHotel,
-          "event-type": eventType,
-          "your-todate": startDate,
-          "your-fromdate": endDate,
+          // "event-type": eventType,
+          // "your-todate": startDate,
+          // "your-fromdate": endDate,
           candidates: candidates,
           "your-message": yourMessage,
         },
@@ -253,7 +253,7 @@ const ChristmasNewYear2024Form = () => {
                 {errrphone && <span className="r_error">{errrphone}</span>}
               </Col>
 
-              <Col md={6} className="pt-md-4">
+              {/* <Col md={6} className="pt-md-4">
                 <select
                   required
                   className="form-control"
@@ -271,7 +271,7 @@ const ChristmasNewYear2024Form = () => {
                 {errrEventType && (
                   <span className="r_error">{errrEventType}</span>
                 )}
-              </Col>
+              </Col> */}
 
               <Col md={6} className="pt-md-4">
                 <select
@@ -291,14 +291,14 @@ const ChristmasNewYear2024Form = () => {
                   <option value="goa">
                     The Zuri White Sands, Goa Resort & Casino
                   </option>
-                  <option value="kerala">The Zuri Kumarakom, Kerala</option>
+                  {/* <option value="kerala">The Zuri Kumarakom, Kerala</option> */}
                 </select>
                 {errrselectHotel && (
                   <span className="r_error">{errrselectHotel}</span>
                 )}
               </Col>
 
-              <Col md={6} className="pt-md-4">
+              {/* <Col md={6} className="pt-md-4">
                 <DatePicker
                   selected={startDate}
                   onChange={handleDateChange}
@@ -311,7 +311,7 @@ const ChristmasNewYear2024Form = () => {
                   className="form-control w-100"
                   isClearable // Allow users to clear the selection
                 />
-              </Col>
+              </Col> */}
 
               <Col md={6} className="pt-md-4">
                 <input

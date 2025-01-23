@@ -19,10 +19,18 @@ const Package = ({ title, price, inclusions }) => (
   </div>
 );
 
-const Offers = () => {
+const festiveEvents = [
+  {
+    title: "",
+    location: "Karibu “Multi-Cuisine Dining”",
+    imageUrl: "/valentines_day/multi-cuisine_dining.jpg",
+  },
+];
+
+const OffersGoa = () => {
   const packages = [
     {
-      title: 'Infinity “Indian” (Poolside)',
+      title: 'Karibu “Indian” (Poolside)',
       price: 'INR 7999 AI (Per Couple)',
       inclusions: [
         "Candle Light table setup.",
@@ -33,49 +41,13 @@ const Offers = () => {
         "Instant Photo with Frames",
       ],
     },
-    {
-      title: 'Karibu “Multi-Cuisine Dining”',
-      price: 'INR 5499 AI (Per Couple)',
-      inclusions: [
-        "Candle Light table setup.",
-        "Exclusively curated Valentines Special Multi-Cuisine gala buffet dinner.",
-        "Choice of Vegetarian and Non-Vegetarian selection with dessert.",
-        "Love Cake gesture of celebration",
-        "Chocolates and Rose as, souvenir",
-        "Instant Photo with Frames",
-      ],
-    },
-    {
-      title: 'Incanto “Italian”',
-      price: 'INR 6999 AI (Per Couple)',
-      inclusions: [
-        "Candle Light table setup.",
-        "Exclusively curated 5 course Italian set menu",
-        "Choice of either Vegetarian or Non-Vegetarian Menu.",
-        "Love Cake gesture of celebration",
-        "Chocolates Box and Rose as, souvenir.",
-        "Instant Photo with Frames",
-      ],
-    },
-  ];
-
-  const festiveEvents = [
-    {
-      title: "",
-      location: "Infinity “Indian” (Poolside)",
-      imageUrl: "/valentines_day/whitefield_pool_side.jpg",
-    },
-    {
-      title: "",
-      location: "Incanto “Italian”",
-      imageUrl: "/valentines_day/Incanto_italian.jpg",
-    },
   ];
 
   return (
     <>
       <style>
         {`
+
         h5 {
             color: #913065;
         }
@@ -156,11 +128,12 @@ const Offers = () => {
                 font-size: 40px;
             }
           }
+
         `}
       </style>
       <Container fluid className="p-lg-0 p-2">
         <Container>
-          <Row className="gy-4">
+        <Row className="gy-4">
             {festiveEvents.map((event, index) => (
               <Col
                 key={index}
@@ -191,4 +164,4 @@ const Offers = () => {
   );
 };
 
-export default Offers;
+export default OffersGoa;
