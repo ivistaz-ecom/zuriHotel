@@ -5,26 +5,29 @@ import { Col, Container, Row } from "react-bootstrap";
 import BannerAllPage from "../../BannerAllPage";
 import Image from "next/image";
 import Offers from "./Offers";
+import OffersGoa from "./OffersGoa";
 
 // Card Data Array
 const festiveEvents = [
   {
-    title: "Zuri Whitefield",
+    title: "",
     location: "Infinity “Indian” (Poolside)",
     imageUrl: "/valentines_day/whitefield_pool_side.jpg",
   },
   {
-    title: "Zuri Whitefield",
-    location: "Karibu “Multi-Cuisine Dining”",
-    imageUrl: "/valentines_day/multi-cuisine_dining.jpg",
-  },
-  {
-    title: "Zuri Whitefield",
+    title: "",
     location: "Incanto “Italian”",
     imageUrl: "/valentines_day/Incanto_italian.jpg",
   },
 ];
 
+const goeEvents = [
+  {
+    title: "",
+    location: "Karibu “Multi-Cuisine Dining”",
+    imageUrl: "/valentines_day/multi-cuisine_dining.jpg",
+  },
+];
 const ChristmasBanner = () => {
   const desktopImageUrl = "/valentines_day/valentines_day_banner.jpg"; // Image for desktop view
   const mobileImageUrl = "/valentines_day/valentines_day_mobile_banner.jpg"; // Image for mobile view
@@ -58,34 +61,31 @@ const ChristmasBanner = () => {
           <div className="d-block d-md-none ">
             <BannerAllPage backgroundImageUrl={mobileImageUrl} />
           </div>
-
           <Container className="pt-5">
-            <div className="d-flex flex-lg-row flex-column gap-lg-4 justify-content-center">
-                <div onClick={handleOnclikEvent} className="text-center">
-                  <p
-                    className="pb-2 text-center font12px cursor-pointer"
-                    style={{
-                      borderBottom: isOnclickShow ? "2px solid #8b3f88" : "0px",
-                      color: isOnclickShow ? "#8b3f88" : "black",
-                    }}
-                  >
-                    Zuri Whitefield
-                  </p>
-                </div>
+            <div className="d-flex flex-lg-row gap-3 gap-lg-4 justify-content-center">
+              <div onClick={handleOnclikEvent} className="text-center">
+                <p
+                  className="pb-2 text-center font12px cursor-pointer"
+                  style={{
+                    borderBottom: isOnclickShow ? "2px solid #8b3f88" : "0px",
+                    color: isOnclickShow ? "#8b3f88" : "black",
+                  }}
+                >
+                  Zuri Whitefield
+                </p>
+              </div>
 
-                <div onClick={handleOnclikEvent1} className="text-center">
-                  <p
-                    className="pb-2 text-center font12px cursor-pointer"
-                    style={{
-                      borderBottom: isOnclickShow1
-                        ? "2px solid #8b3f88"
-                        : "0px",
-                      color: isOnclickShow1 ? "#8b3f88" : "black",
-                    }}
-                  >
-                    Zuri Goa
-                  </p>
-                </div>
+              <div onClick={handleOnclikEvent1} className="text-center">
+                <p
+                  className="pb-2 text-center font12px cursor-pointer"
+                  style={{
+                    borderBottom: isOnclickShow1 ? "2px solid #8b3f88" : "0px",
+                    color: isOnclickShow1 ? "#8b3f88" : "black",
+                  }}
+                >
+                  Zuri Goa
+                </p>
+              </div>
             </div>
           </Container>
            
@@ -97,6 +97,7 @@ const ChristmasBanner = () => {
                   <Image src="/cl.png" alt="" fluid width={25} height={25} />
                 </div>
                 <h4 className="fw-bold">Valentine's day Party</h4>
+                <p>(Whitefield, Bengaluru)</p>
                 <p className="pb-2">14 January 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {festiveEvents.slice(0, 3).map((event, index) => (
@@ -119,14 +120,18 @@ const ChristmasBanner = () => {
               <Offers />
             </div>
           )}
-          {isOnclickShow1 && <div> <div className="text-center mt-4">
+          {isOnclickShow1 && (
+            <div>
+              {" "}
+              <div className="text-center mt-4">
                 <div className="py-2">
                   <Image src="/cl.png" alt="" fluid width={25} height={25} />
                 </div>
                 <h4 className="fw-bold">Valentine's day Party</h4>
+                <p>Goa</p>
                 <p className="pb-2">14 January 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
-                  {festiveEvents.slice(0, 3).map((event, index) => (
+                  {goeEvents.slice(0, 3).map((event, index) => (
                     <div key={index} xs={12} md={4} className="">
                       <div className="text-center">
                         <Image
@@ -142,7 +147,10 @@ const ChristmasBanner = () => {
                     </div>
                   ))}
                 </div>
-              </div></div>}
+              </div>
+              <OffersGoa />
+            </div>
+          )}
         </Container>
       </Container>
     </>
