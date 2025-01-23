@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 
 const Package = ({ title, price, inclusions }) => (
   <div className="package-card p-4 mt-4 rounded position-relative">
@@ -19,6 +19,13 @@ const Package = ({ title, price, inclusions }) => (
   </div>
 );
 
+const festiveEvents = [
+  {
+    title: "",
+    location: "Karibu “Multi-Cuisine Dining”",
+    imageUrl: "/valentines_day/multi-cuisine_dining.jpg",
+  },
+];
 
 const OffersGoa = () => {
   const packages = [
@@ -126,19 +133,27 @@ const OffersGoa = () => {
       </style>
       <Container fluid className="p-lg-0 p-2">
         <Container>
-          <Row className="">
-            {packages.map((pkg, index) => (
+        <Row className="gy-4">
+            {festiveEvents.map((event, index) => (
               <Col
                 key={index}
                 xs={12}
                 md={6}
                 lg={6}
-                className={index === 2 ? "mx-auto" : ""}
+                className={index === 1 ? "mx-auto" : ""}
               >
+                <Image
+                  src={event.imageUrl}
+                  alt={event.location}
+                  width={500}
+                  height={300}
+                  className="img-fluid d-md-none d-flex"
+                />
+                {/* <h5 className="mt-2 fw-bold d-md-none d-flex">{event.location}</h5> */}
                 <Package
-                  title={pkg.title}
-                  price={pkg.price}
-                  inclusions={pkg.inclusions}
+                  title={packages[index]?.title}
+                  price={packages[index]?.price}
+                  inclusions={packages[index]?.inclusions}
                 />
               </Col>
             ))}

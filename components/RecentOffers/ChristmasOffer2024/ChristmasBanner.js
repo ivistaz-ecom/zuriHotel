@@ -101,7 +101,7 @@ const ChristmasBanner = () => {
                 <p className="pb-2">14 January 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {festiveEvents.slice(0, 3).map((event, index) => (
-                    <div key={index} xs={12} md={4} className="">
+                    <div key={index} xs={12} md={4} className="d-none d-md-flex">
                       <div className="text-center">
                         <Image
                           src={event.imageUrl}
@@ -132,7 +132,7 @@ const ChristmasBanner = () => {
                 <p className="pb-2">14 January 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {goeEvents.slice(0, 3).map((event, index) => (
-                    <div key={index} xs={12} md={4} className="">
+                    <div key={index} xs={12} md={4} className="d-none d-md-flex">
                       <div className="text-center">
                         <Image
                           src={event.imageUrl}
