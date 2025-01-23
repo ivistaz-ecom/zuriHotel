@@ -142,7 +142,7 @@ const OffersGoa = () => {
                 lg={6}
                 className={index === 1 ? "mx-auto" : ""}
               >
-                
+
                 <Image
                   src={event.imageUrl}
                   alt={event.location}
@@ -164,5 +164,8 @@ const OffersGoa = () => {
     </>
   );
 };
+
+
+
 
 export default OffersGoa;
