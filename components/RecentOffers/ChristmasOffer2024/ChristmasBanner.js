@@ -16,6 +16,11 @@ const festiveEvents = [
   },
   {
     title: "",
+    location: "Karibu “Multi-Cuisine Dining”",
+    imageUrl: "/valentines_day/kirubu_whitefield.jpg",
+  },
+  {
+    title: "",
     location: "Incanto “Italian”",
     imageUrl: "/valentines_day/Incanto_italian.jpg",
   },
@@ -108,7 +113,7 @@ const ChristmasBanner = () => {
                           alt={event.title}
                           width={200}
                           height={200}
-                          className="img-fluid"
+                          className="img-fluid h-75"
                         />
                         <h5 className="mt-2 fw-bold">{event.title}</h5>
                         <p className="text-muted">{event.location}</p>
@@ -139,7 +144,7 @@ const ChristmasBanner = () => {
                           alt={event.title}
                           width={200}
                           height={200}
-                          className="img-fluid"
+                          className="img-fluid h-75"
                         />
                         <h5 className="mt-2 fw-bold">{event.title}</h5>
                         <p className="text-muted">{event.location}</p>
