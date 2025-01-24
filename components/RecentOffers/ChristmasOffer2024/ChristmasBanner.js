@@ -54,6 +54,9 @@ const ChristmasBanner = () => {
     <>
       <Container fluid className="p-0">
         <Container className="custom-kumarkom-menu-container px-0">
+          <h1 className="d-none d-md-block text-center py-md-4 text-custom-grey p-2">
+            Celebrate Love in Luxury at The Zuri Hotels & Resorts
+          </h1>
           {/* <h3 className="d-none d-md-block text-center py-md-4 text-custom-grey p-2">
           Celebrate the Magic of the Festive Season at
           <br className=""/> The Zuri Hotels & Resorts
@@ -66,7 +69,32 @@ const ChristmasBanner = () => {
           <div className="d-block d-md-none ">
             <BannerAllPage backgroundImageUrl={mobileImageUrl} />
           </div>
-          <Container className="pt-5">
+          <div className="mt-lg-5 mt-4 text-center p-lg-0 p-3">
+            <p>
+              This Valentine’s Day, immerse yourself in romance at The Zuri
+              Hotels & Resorts! Indulge in a symphony of luxurious experiences,
+              designed to make your celebration of love truly unforgettable.
+              Enjoy an evening of fine dining with specially curated gourmet
+              menus, enchanting live music, and an atmosphere dripping with
+              elegance and allure.
+            </p>
+
+            <p>
+              Perfect for couples seeking a romantic getaway or those looking to
+              rekindle the sparks, our bespoke packages offer everything from
+              spa treatments for two to scenic sunset views in our exquisite
+              settings.
+            </p>
+            <p>
+              Book your romantic retreat now—spaces are limited and filling up
+              quickly!
+            </p>
+            <p>
+              Make this Valentine’s Day extraordinary; celebrate your love at
+              The Zuri, where memories last a lifetime!
+            </p>
+          </div>
+          <Container className="pt-4">
             <div className="d-flex flex-lg-row gap-3 gap-lg-4 justify-content-center">
               <div onClick={handleOnclikEvent} className="text-center">
                 <p
@@ -93,11 +121,10 @@ const ChristmasBanner = () => {
               </div>
             </div>
           </Container>
-           
           {isOnclickShow && (
             <div>
               {/* Event Layout Using Map */}
-              <div className="text-center mt-4">
+              <div className="text-center mt-2">
                 <div className="py-2">
                   <Image src="/cl.png" alt="" fluid width={25} height={25} />
                 </div>
@@ -106,7 +133,12 @@ const ChristmasBanner = () => {
                 <p className="pb-2">14 January 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {festiveEvents.slice(0, 3).map((event, index) => (
-                    <div key={index} xs={12} md={4} className="d-none d-md-flex">
+                    <div
+                      key={index}
+                      xs={12}
+                      md={4}
+                      className="d-none d-md-flex"
+                    >
                       <div className="text-center">
                         <Image
                           src={event.imageUrl}
@@ -128,7 +160,7 @@ const ChristmasBanner = () => {
           {isOnclickShow1 && (
             <div>
               {" "}
-              <div className="text-center mt-4">
+              <div className="text-center mt-2">
                 <div className="py-2">
                   <Image src="/cl.png" alt="" fluid width={25} height={25} />
                 </div>
@@ -137,7 +169,12 @@ const ChristmasBanner = () => {
                 <p className="pb-2">14 January 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {goeEvents.slice(0, 3).map((event, index) => (
-                    <div key={index} xs={12} md={4} className="d-none d-md-flex">
+                    <div
+                      key={index}
+                      xs={12}
+                      md={4}
+                      className="d-none d-md-flex"
+                    >
                       <div className="text-center">
                         <Image
                           src={event.imageUrl}
