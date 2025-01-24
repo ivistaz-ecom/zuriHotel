@@ -128,9 +128,9 @@ const ChristmasBanner = () => {
                 <div className="py-2">
                   <Image src="/cl.png" alt="" fluid width={25} height={25} />
                 </div>
-                <h4 className="fw-bold">Valentine's day Party</h4>
+                <h4 className="fw-bold">Valentine's Candlelight Dinner</h4>
                 <p>(Whitefield, Bengaluru)</p>
-                <p className="pb-2">14 January 2025</p>
+                <p className="pb-2">14 February 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {festiveEvents.slice(0, 3).map((event, index) => (
                     <div
@@ -164,9 +164,9 @@ const ChristmasBanner = () => {
                 <div className="py-2">
                   <Image src="/cl.png" alt="" fluid width={25} height={25} />
                 </div>
-                <h4 className="fw-bold">Valentine's day Party</h4>
-                <p>Goa</p>
-                <p className="pb-2">14 January 2025</p>
+                <h4 className="fw-bold">Valentine's Candlelight Dinner</h4>
+                <p>(Goa)</p>
+                <p className="pb-2">14 February 2025</p>
                 <div className="d-flex flex-lg-row flex-column justify-content-center gap-lg-5 gap-1">
                   {goeEvents.slice(0, 3).map((event, index) => (
                     <div
