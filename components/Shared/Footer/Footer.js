@@ -213,4 +213,5 @@ const Footer = ({ rating }) => {
     )
 }
 
+
 export default Footer
