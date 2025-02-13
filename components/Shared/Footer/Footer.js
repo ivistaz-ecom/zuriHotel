@@ -77,7 +77,7 @@ const Footer = ({ rating }) => {
                                 </Link>
                             </div>
                             <div>
-                                <Link href="/footer/classification_2024.pdf"
+                                <Link href="/footer/classification_2025.pdf"
                                     target='_blank'
                                     className='text-black text-decoration-none'>
                                     Classification
@@ -212,5 +212,6 @@ const Footer = ({ rating }) => {
         </>
     )
 }
+
 
 export default Footer
