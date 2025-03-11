@@ -30,7 +30,7 @@ const OffersKumarkomBannerSlider = () => {
                                 md={4} style={{ height: 460 }}>
                                 <h5 className='text-white'>THE LAST MINUTE DEAL</h5>
                                 <span className='border border-1 w-100 my-2'></span>
-                                <p className='text-white'>15% OFF On BAR Rates</p>
+                                <p className='text-white'>15% OFF On room with breakfast bookings</p>
                                 <p className='text-white'>15% Discount on Spa treatment</p>
                                 <p className='text-white'>15% on Food & Soft Beverages</p>
                             </Col>
@@ -43,7 +43,7 @@ const OffersKumarkomBannerSlider = () => {
                                 md={4} style={{ height: 460 }}>
                                 <h5 className='text-white'>ADVANCED BOOKING OFFER</h5>
                                 <span className='border border-1 w-100 my-2'></span>
-                                <p className='text-white'>25% OFF on BAR Rates</p>
+                                <p className='text-white'>25% OFF on room with breakfast bookings</p>
                                 <p className='text-white'>15% Discount on Spa treatment</p>
                                 <p className='text-white'>15% on Food & Soft Beverages</p>
                             </Col>
