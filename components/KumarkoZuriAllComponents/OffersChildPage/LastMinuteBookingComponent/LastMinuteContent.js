@@ -33,8 +33,7 @@ const LastMinuteContent = () => {
         <hr className='p-0 m-0'/>
         <Col>
           <h6 className='text-black pt-4'>Conditions:</h6>
-          <p>All offers are subject to availability at the time of booking. </p>
-          <p>This offer cannot be combined with any other promotions and are not applicable for group reservations. </p>
+          <p>If a cancellation is received within 7 days of the arrival date or if the room is not utilized, 100% of the total package cost shall be charged as retention.</p>
         </Col>
         <hr className='p-0 m-0'/>
         <Col className='text-center my-4'>
