@@ -227,7 +227,7 @@ const ContactUsTap = () => {
                       +91 848 490 6204{" "}
                     </a>
                   </p>
-                  <p>Mr. Rajarshi Dutta</p>
+                  {/* <p>Mr. Rajarshi Dutta</p>
                   <p className="mb-0">
                     Email:{" "}
                     <a
@@ -245,7 +245,7 @@ const ContactUsTap = () => {
                     >
                       +91 895 615 2715{" "}
                     </a>
-                  </p>
+                  </p> */}
                 </Col>
 
                 <Col className="text-center">
