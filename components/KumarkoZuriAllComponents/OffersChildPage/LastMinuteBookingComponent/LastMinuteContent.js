@@ -27,13 +27,13 @@ const LastMinuteContent = () => {
         <hr className='p-0 m-0'/>   
         <Col>
           <h6 className='text-black pt-4'>Cancellation Policy</h6>
-          <p>Advance Purchase: A 7-day prior cancellation policy applies.</p>
-          <p>No-Show: In case of a No-Show, the total price of the reservation will be charged.</p>
+          <p>If a cancellation is received within 7 days of the arrival date or if the room is not utilized, 100% of the total package cost shall be charged as retention.</p>
         </Col>
         <hr className='p-0 m-0'/>
         <Col>
           <h6 className='text-black pt-4'>Conditions:</h6>
-          <p>If a cancellation is received within 7 days of the arrival date or if the room is not utilized, 100% of the total package cost shall be charged as retention.</p>
+          <p>All offers are subject to availability at the time of booking. </p>
+          <p>This offer cannot be combined with any other promotions and are not applicable for group reservations. </p>
         </Col>
         <hr className='p-0 m-0'/>
         <Col className='text-center my-4'>
