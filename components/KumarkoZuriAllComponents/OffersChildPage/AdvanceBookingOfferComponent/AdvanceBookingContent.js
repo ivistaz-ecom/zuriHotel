@@ -29,7 +29,7 @@ const AdvanceBookingContent = () => {
           <hr className='p-0 m-0' />
           <Col>
             <h6 className='text-black pt-4'>Conditions:</h6>
-            <p>Booking must be made at least 21 days in advance.</p>
+            <p>Only bookings made 21 days or more in advance for stays are eligible for this offer.</p>
             <p>All offers are subject to availability at the time of booking. </p>
             <p>This offer cannot be combined with any other promotions and are not applicable for group reservations. </p>
           </Col>
