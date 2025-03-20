@@ -324,7 +324,7 @@ const StayOffersLists = () => {
                         </Col>
                         <Col className="d-flex flex-wrap align-content-center justify-content-end p-3">
                             <Image
-                                src="/stay_offers/spiritual_retreat_thumbnail.png"
+                                src="/stay_offers/last_minute_kumarkom_thumbnail.jpg"
                                 alt=""
                                 roundedCircle
                                 width={180}
