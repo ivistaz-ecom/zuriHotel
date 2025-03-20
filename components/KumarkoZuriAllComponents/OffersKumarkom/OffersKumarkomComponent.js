@@ -418,7 +418,7 @@ const OffersKumarkomComponent = () => {
         <Col className="d-flex flex-column justify-content-center align-items-center text-center mb-4">
             <Col className="d-flex flex-column align-items-center gap-4">
               <Image src="/cl.png" alt="" fluid />
-              <h6 className="py-2 text-center">LAST MINUTE BOOKING OFFER</h6>
+              <h6 className="py-2 text-center">SPIRITUAL RETREAT IN KERALA</h6>
             </Col>
             <Col className="d-flex flex-wrap align-content-center justify-content-end p-3">
               <Image
@@ -494,7 +494,7 @@ const OffersKumarkomComponent = () => {
 
             </p>
             <Link
-              href="/lake-resorts-in-kumarakom/offers/advance-booking-offer"
+              href="/lake-resorts-in-kumarakom/offers/last-minute-offer"
               className="bg-black text-center text-decoration-none btn-circle"
             >
               <p className=" mb-0 font11px lh-sm text-white">
