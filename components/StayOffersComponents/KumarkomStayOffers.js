@@ -24,7 +24,7 @@ const StayOffersLists = () => {
                 {/* Desktop View */}
                 <Col className='d-md-flex flex-column d-none mt-5'>
 
-                <Col className="d-flex flex-md-row pt-5">
+                    <Col className="d-flex flex-md-row pt-5">
                         <Col md={7} className="text-md-end text-center pe-md-4">
                             <Col className="d-inline-block">
                                 <Image
@@ -121,7 +121,7 @@ const StayOffersLists = () => {
                         </Col>
                         <Col className="d-flex flex-wrap align-content-center ">
                             <Image
-                                src="/stay_offers/spiritual_retreat_thumbnail.png"
+                                src="/stay_offers/last_minute_kumarkom_thumbnail.jpg"
                                 alt=""
                                 roundedCircle
                                 width={180}
@@ -259,7 +259,7 @@ const StayOffersLists = () => {
             <Container className='p-0 d-flex flex-column d-md-none '>
                 <Col className='p-2'>
 
-                <Col className="d-flex flex-column justify-content-center align-items-center text-center mb-4">
+                    <Col className="d-flex flex-column justify-content-center align-items-center text-center mb-4">
                         <Col className="d-flex flex-column align-items-center gap-4">
                             <Image src="/cl.png" alt="" fluid />
                             <h6 className="py-2 text-center">LAST MINUTE BOOKING OFFER</h6>
@@ -336,7 +336,7 @@ const StayOffersLists = () => {
 
                         </p>
                         <Link
-                            href="/lake-resorts-in-kumarakom/offers/advance-booking-offer"
+                            href="/lake-resorts-in-kumarakom/offers/last-minute-offer"
                             className="bg-black text-center text-decoration-none btn-circle"
                         >
                             <p className=" mb-0 font11px lh-sm text-white">
