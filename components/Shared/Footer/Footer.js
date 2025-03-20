@@ -200,14 +200,14 @@ const Footer = ({ rating }) => {
                     </Col>
                 </Row>
                 <hr />
-                <p>
-                    E-brochures &gt;
-                    <span className='text-black'> <Link href="/footer/zuri_bengaluru.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Whitefield, Bengaluru</Link> / <Link href="/footer/zuri_kumarkom.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Kumarakom, Kerala Resort & Spa</Link> / <Link href="/footer/zuri_goa.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri White Sands, Goa Resort & Casino</Link></span>
-                </p>
                 {/* <p>
                     E-brochures &gt;
-                    <span className='text-black'> <Link href="/footer/zuri_bengaluru_e_brochure.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Whitefield, Bengaluru</Link> / <Link href="/footer/zuri_kumarakom_e_brochure.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Kumarakom, Kerala Resort & Spa</Link> / <Link href="/footer/zuri_goa_e_brochure.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri White Sands, Goa Resort & Casino</Link></span>
+                    <span className='text-black'> <Link href="/footer/zuri_bengaluru.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Whitefield, Bengaluru</Link> / <Link href="/footer/zuri_kumarkom.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Kumarakom, Kerala Resort & Spa</Link> / <Link href="/footer/zuri_goa.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri White Sands, Goa Resort & Casino</Link></span>
                 </p> */}
+                <p>
+                    E-brochures &gt;
+                    <span className='text-black'> <Link href="/footer/zuri_bengaluru_e_brochure.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Whitefield, Bengaluru</Link> / <Link href="/footer/zuri_kumarakom_e_brochure.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri Kumarakom, Kerala Resort & Spa</Link> / <Link href="/footer/zuri_goa_e_brochure.pdf" className='text-decoration-none text-black' target='_blank'>The Zuri White Sands, Goa Resort & Casino</Link></span>
+                </p>
             </Container>
 
             <Container fluid className='p-3 text-center bg-black'>
