@@ -24,9 +24,7 @@ const LastMinuteBanner = () => {
                     className='text-decoration-none text-black m-0'>
                     <h6 className='mb-0 font12px'>Home</h6>
                 </Link>
-
                 /
-
                 <Link href="/hotels-in-bengaluru"
                     className='text-decoration-none mb-0'>
                     <h6 className=' font12px m-0 text-black'>Bengaluru</h6>
