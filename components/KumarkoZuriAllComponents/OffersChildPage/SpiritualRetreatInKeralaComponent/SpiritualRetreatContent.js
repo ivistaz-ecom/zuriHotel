@@ -6,8 +6,8 @@ const SpiritualRetreatContent = () => {
         <Container className="d-flex flex-column">
 
             <div className="container">
-                <h3 className='text-center py-md-4 text-custom-grey my-2'>SPIRITUAL RETREAT IN KERALA</h3>
-                <div className="table-responsive">
+                {/* <h3 className='text-center py-md-4 text-custom-grey my-2'>SPIRITUAL RETREAT IN KERALA</h3> */}
+                <div className="table-responsive pt-5">
                     <table className="table table-bordered ">
                         <thead>
                             <tr>
