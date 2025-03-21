@@ -50,14 +50,14 @@ const MobileHeader = () => {
         const handleFormSubmit = (e) => {
             e.preventDefault();
             // Handle form submission logic here, e.g., send data to backend
-            console.log('Form submitted:', {
-                selectedHotel,
-                selectedCheckInDate,
-                selectedCheckOutDate,
-                selectedRooms,
-                selectedAdults,
-                selectedChildren,
-            });
+            // console.log('Form submitted:', {
+            //     selectedHotel,
+            //     selectedCheckInDate,
+            //     selectedCheckOutDate,
+            //     selectedRooms,
+            //     selectedAdults,
+            //     selectedChildren,
+            // });
         };
 
         function getTodayDateString() {

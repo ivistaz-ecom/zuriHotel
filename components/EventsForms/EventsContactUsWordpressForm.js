@@ -86,7 +86,7 @@ const EventsContactUsWordpressForm = () => {
         setPost(response.data.message);
         // setErrMessage(response.data['invalid_fields'][1]['message']);
         const msg = response.data.status;
-        console.log(response.data);
+        // console.log(response.data);
         if (msg == "mail_sent") {
           setLoading(true);
           setSpinner(false);

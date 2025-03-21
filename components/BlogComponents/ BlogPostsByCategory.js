@@ -37,7 +37,7 @@ const BlogPostsByCategory = ({ categoryId }) => {
 
                 const data = await response.json();
                 setPosts(data);
-                console.log(data);
+                // console.log(data);
                 if (categoryId !== null) {
                     const totalPagesHeader = response.headers.get('X-WP-TotalPages');
                     setTotalPages(totalPagesHeader ? parseInt(totalPagesHeader, 10) : 1);
