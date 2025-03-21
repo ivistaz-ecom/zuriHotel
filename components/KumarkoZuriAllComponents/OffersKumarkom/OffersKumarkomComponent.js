@@ -35,7 +35,8 @@ const OffersKumarkomComponent = () => {
                   fluid
                   className="object-fit-none px-md-5 pb-md-3"
                 />
-                <h6 className="text-center">SPIRITUAL RETREAT IN KERALA</h6>
+                <h6 className="text-end">SPIRITUAL RETREAT IN KERALA</h6>
+                <p>Validity: 1st April 2025 to 31st March 2026 <br />(excluding 20th December 2025 to 4th January 2026)</p>
               </Col>
               <p>
 
@@ -415,7 +416,7 @@ const OffersKumarkomComponent = () => {
       <Container className="p-0 d-flex flex-column d-md-none ">
         <Col className="p-2">
 
-        <Col className="d-flex flex-column justify-content-center align-items-center text-center mb-4">
+          <Col className="d-flex flex-column justify-content-center align-items-center text-center mb-4">
             <Col className="d-flex flex-column align-items-center gap-4">
               <Image src="/cl.png" alt="" fluid />
               <h6 className="py-2 text-center">SPIRITUAL RETREAT IN KERALA</h6>
@@ -430,6 +431,8 @@ const OffersKumarkomComponent = () => {
                 className="rounded-circle kumarkom-image-overlay"
               />
             </Col>
+            <p>Validity: 1st April 2025 to 31st March 2026 <br />(excluding 20th December 2025 to 4th January 2026)</p>
+
             <p>
 
             </p>

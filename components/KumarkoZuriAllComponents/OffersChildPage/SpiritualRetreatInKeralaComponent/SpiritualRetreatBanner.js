@@ -18,7 +18,7 @@ const SpiritualRetreatBanner = () => {
     return (
         <Container className='custom-kumarkom-menu-container'>
             <Col className='pb-3'>
-                <h3 className='text-center py-md-4 text-custom-grey'>SPIRITUAL RETREAT IN KERALA</h3>
+                <h3 className='text-center py-md-4 text-custom-grey'>Sacred Sojourn: A Spiritual Retreat in Kerala</h3>
             </Col>
 
             {/* Desktop Banner */}
