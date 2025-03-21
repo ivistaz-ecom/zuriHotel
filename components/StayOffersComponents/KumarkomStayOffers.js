@@ -34,6 +34,7 @@ const StayOffersLists = () => {
                                     className="object-fit-none px-md-5 pb-md-3"
                                 />
                                 <h6 className="text-center">SPIRITUAL RETREAT IN KERALA</h6>
+                                <p>Validity: 1st April 2025 to 31st March 2026 <br />(excluding 20th December 2025 to 4th January 2026)</p>
                             </Col>
                             <p>
 
@@ -262,7 +263,7 @@ const StayOffersLists = () => {
                     <Col className="d-flex flex-column justify-content-center align-items-center text-center mb-4">
                         <Col className="d-flex flex-column align-items-center gap-4">
                             <Image src="/cl.png" alt="" fluid />
-                            <h6 className="py-2 text-center">LAST MINUTE BOOKING OFFER</h6>
+                            <h6 className="py-2 text-center">SPIRITUAL RETREAT IN KERALA</h6>
                         </Col>
                         <Col className="d-flex flex-wrap align-content-center justify-content-end p-3">
                             <Image
@@ -274,6 +275,7 @@ const StayOffersLists = () => {
                                 className="rounded-circle kumarkom-image-overlay"
                             />
                         </Col>
+                        <p>Validity: 1st April 2025 to 31st March 2026 <br />(excluding 20th December 2025 to 4th January 2026)</p>
                         <p>
 
                         </p>
