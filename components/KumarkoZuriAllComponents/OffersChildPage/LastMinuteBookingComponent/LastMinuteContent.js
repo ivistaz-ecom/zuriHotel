@@ -4,12 +4,9 @@ import Link from 'next/link'
 
 
 const LastMinuteContent = () => {
-  const today = new Date();
-  const availableFrom = new Date(today);
-  availableFrom.setDate(today.getDate() + 21); // Start from 21 days later
-  const formattedAvailableFrom = availableFrom.toISOString().split("T")[0];
 
-  const synxisURL = `https://be.synxis.com/?adult=1&arrive=${formattedAvailableFrom}&chain=17869&child=0&currency=INR&hotel=64786&level=hotel&locale=en-US&productcurrency=INR`;
+  const synxisURL = `https://be.synxis.com/?adult=1&chain=17869&child=0&currency=INR&hotel=64786&level=hotel&locale=en-US&productcurrency=INR`;
+
 
   return (
     <>
