@@ -3,6 +3,14 @@ import { Button, Col, Container } from 'react-bootstrap'
 import Link from 'next/link'
 
 const AdvanceBookingContent = () => {
+
+  const today = new Date();
+  const availableFrom = new Date(today);
+  availableFrom.setDate(today.getDate() + 21); // Start from 21 days later
+  const formattedAvailableFrom = availableFrom.toISOString().split("T")[0];
+
+  const synxisURL = `https://be.synxis.com/?adult=1&arrive=${formattedAvailableFrom}&chain=17869&child=0&currency=INR&hotel=64786&level=hotel&locale=en-US&productcurrency=INR`;
+
   return (
     <>
       <Container className='d-flex flex-column'>
@@ -35,11 +43,7 @@ const AdvanceBookingContent = () => {
           </Col>
           <hr className='p-0 m-0' />
           <Col className='text-center my-4'>
-            <Link
-              href='https://be.synxis.com/?_ga=2.21871420.62180047.1693482265-2038087003.1664255723&_gac=1.251856763.1690453396.CjwKCAjwq4imBhBQEiwA9Nx1Bi6aiGcfgk-uDDRypiK5UqXgtik--oBXV3gga2OF4WXNJFxRCRxuCRoCl0wQAvD_BwE&adult=1&arrive=2023-09-06&chain=17869&child=0&currency=INR&depart=2023-09-07&hotel=64786&level=hotel&locale=en-US&rate=PROHMP&rooms=1'
-              target='_blank'
-              className='text-decoration-none'
-            >
+            <Link href={synxisURL} target="_blank" className="text-decoration-none">
               <p className='bg-purple d-inline-block text-white px-4 py-2'>Book Now</p>
             </Link>
           </Col>
