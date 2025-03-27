@@ -3,6 +3,7 @@ import React from 'react'
 import { Button, Col, Container } from 'react-bootstrap'
 
 const HoneyMoonContent = () => {
+    const synxisURL = `https://be.synxis.com/?adult=1&chain=17869&child=0&currency=INR&hotel=64786&level=hotel&locale=en-US&productcurrency=INR`;
     return (
         <>
             <Container className='pt-md-5 p-2'>
@@ -11,10 +12,10 @@ const HoneyMoonContent = () => {
                     <h6 className='text-decoration-underline text-black'>HONEYMOON PACKAGE</h6>
 
                     <p className='mt-3'>
-                    Package valid from 01st October 2024 to 31st March 2025.<br/>
+                        Package valid from 01st October 2024 to 31st March 2025.<br />
                     </p>
                     <p className='mt-3'>
-                    (Not valid for 20th December 2024 to 03rd January 2025)
+                        (Not valid for 20th December 2024 to 03rd January 2025)
                     </p>
                     <p>
                         02 Nights Package
@@ -131,7 +132,7 @@ const HoneyMoonContent = () => {
 
                         <Col className='text-center my-4'>
                             <Link
-                                href='https://be.synxis.com/?_ga=2.21871420.62180047.1693482265-2038087003.1664255723&_gac=1.251856763.1690453396.CjwKCAjwq4imBhBQEiwA9Nx1Bi6aiGcfgk-uDDRypiK5UqXgtik--oBXV3gga2OF4WXNJFxRCRxuCRoCl0wQAvD_BwE&adult=1&arrive=2023-09-06&chain=17869&child=0&currency=INR&depart=2023-09-07&hotel=64786&level=hotel&locale=en-US&rate=PROHMP&rooms=1'
+                                href={synxisURL}
                                 target='_blank'
                                 className='text-decoration-none '
                             >

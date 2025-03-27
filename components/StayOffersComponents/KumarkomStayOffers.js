@@ -33,7 +33,7 @@ const StayOffersLists = () => {
                                     fluid
                                     className="object-fit-none px-md-5 pb-md-3"
                                 />
-                                <h6 className="text-center">SPIRITUAL RETREAT IN KERALA</h6>
+                                <h6 className="text-end">SPIRITUAL RETREAT IN KERALA</h6>
                                 <p>Validity: 1st April 2025 to 31st March 2026 <br />(excluding 20th December 2025 to 4th January 2026)</p>
                             </Col>
                             <p>
