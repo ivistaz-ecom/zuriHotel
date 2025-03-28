@@ -19,6 +19,9 @@ const LastMinuteBanner = () => {
             >
             </Col>
 
+
+
+
             <Col className='d-flex flex-row flex-wrap p-0 align-items-center pt-1 ps-lg-0 ps-1'>
 
                 <Link href="/" className='text-decoration-none text-black m-0'>
