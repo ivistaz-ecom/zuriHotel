@@ -19,20 +19,20 @@ const LastMinuteBanner = () => {
             >
             </Col>
 
-            <Col className='d-flex flex-row flex-wrap p-0 align-items-center' >
-                <Link href="/"
-                    className='text-decoration-none text-black m-0'>
+            <Col className='d-flex flex-row flex-wrap p-0 align-items-center pt-1 ps-lg-0 ps-1'>
+
+                <Link href="/" className='text-decoration-none text-black m-0'>
                     <h6 className='mb-0 font12px'>Home</h6>
                 </Link>
-                /
-                <Link href="/hotels-in-bengaluru"
+
+                <Link href="/lake-resorts-in-kumarakom"
                     className='text-decoration-none mb-0'>
-                    <h6 className=' font12px m-0 text-black'>Bengaluru</h6>
+                    <h6 className='font12px mb-0 text-black breadcrumbs'>Lake Resorts In Kumarakom</h6>
                 </Link>
-                /
-                <Link href="/hotels-in-bengaluru/offers/"
+
+                <Link href="/lake-resorts-in-kumarakom/offers/"
                     className='text-decoration-none mb-0'>
-                    <h6 className='text-custom-megenta font12px m-0'>Offers</h6>
+                    <h6 className='text-custom-megenta font12px mb-0 breadcrumbs'>Offers</h6>
                 </Link>
             </Col>
         </Container>
