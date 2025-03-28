@@ -34,6 +34,7 @@ const LastMinuteBanner = () => {
                     <h6 className='text-custom-megenta font12px mb-0 breadcrumbs'>Offers</h6>
                 </Link>
             </Col>
+
         </Container>
     )
 }
