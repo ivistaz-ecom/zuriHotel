@@ -12,53 +12,56 @@ const HoneyMoonContent = () => {
                     <h6 className='text-decoration-underline text-black'>HONEYMOON PACKAGE</h6>
 
                     <p className='mt-3'>
-                        Package valid from 01st October 2024 to 31st March 2025.<br />
+                        Package valid from 01st April 2025 to 31st March 2026.
+                        <br />
                     </p>
                     <p className='mt-3'>
-                        (Not valid for 20th December 2024 to 03rd January 2025)
+                        (Not valid for 20th December 2025 to 03rd January 2026)
                     </p>
                     <p>
                         02 Nights Package
                     </p>
 
                 </Col>
-
                 <Col>
-                    <table className="table table-bordered text-center">
-                        <thead>
-                            <tr>
-                                <th scope="col">
-                                    <p className='text-custom-grey mb-0' >ZURI LAGOON VIEW ROOM	</p>
-                                </th>
-                                <th scope="col">
-                                    <p className='text-custom-grey mb-0' >ZURI DELUXE LAGOON VIEW ROOM</p>
-                                </th>
-                                <th scope="col">
-                                    <p className='text-custom-grey mb-0' >ZURI LAGOON VIEW COTTAGE</p>
-                                </th>
-                                <th scope="col">
-                                    <p className='text-custom-grey mb-0' >PRESIDENTIAL POOL VILLA</p>
-                                </th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">
-                                    <p className='text-custom-grey mb-0' > INR 45,000.00/- </p>
-                                </th>
-                                <td>
-                                    <p className='text-custom-grey mb-0' >INR 50,000.00/- </p>
-                                </td>
-                                <td>
-                                    <p className='text-custom-grey mb-0' >INR 55,000.00/- </p>
-                                </td>
-                                <td>
-                                    <p className='text-custom-grey mb-0' >INR 1,10,000.00/- </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div className="table-responsive">
+                        <table className="table table-bordered text-center">
+                            <thead>
+                                <tr>
+                                    <th scope="col">
+                                        <p className='text-custom-grey mb-0'>ZURI LAGOON VIEW ROOM</p>
+                                    </th>
+                                    <th scope="col">
+                                        <p className='text-custom-grey mb-0'>ZURI DELUXE LAGOON VIEW ROOM</p>
+                                    </th>
+                                    <th scope="col">
+                                        <p className='text-custom-grey mb-0'>ZURI LAGOON VIEW COTTAGE</p>
+                                    </th>
+                                    <th scope="col">
+                                        <p className='text-custom-grey mb-0'>PRESIDENTIAL POOL VILLA</p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">
+                                        <p className='text-custom-grey mb-0'>INR 45,000.00/-</p>
+                                    </th>
+                                    <td>
+                                        <p className='text-custom-grey mb-0'>INR 50,000.00/-</p>
+                                    </td>
+                                    <td>
+                                        <p className='text-custom-grey mb-0'>INR 55,000.00/-</p>
+                                    </td>
+                                    <td>
+                                        <p className='text-custom-grey mb-0'>INR 1,10,000.00/-</p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </Col>
+
 
                 <Col className='d-flex flex-column flex-wrap gap-md-5 gap-3'>
                     <Col className='pt-md-5 pt-3'>

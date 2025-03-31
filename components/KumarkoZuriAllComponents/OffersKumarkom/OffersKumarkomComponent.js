@@ -160,9 +160,9 @@ const OffersKumarkomComponent = () => {
                 <h6 className="text-center">HONEYMOON PACKAGE</h6>
               </Col>
               <p>
-                Package valid from 01st October 2024 to 31st March 2025.
+                Package valid from 01st April 2025 to 31st March 2026.
                 <br />
-                (Not valid for 20th December 2024 to 03rd January 2025).
+                (Not valid for 20th December 2025 to 03rd January 2026).
               </p>
               <Col className="d-flex justify-md-content-center  align-items-md-start p-0 pe-2">
                 <Link
@@ -281,9 +281,9 @@ const OffersKumarkomComponent = () => {
                 />
                 <h6 className="text-center">BACKWATER PACKAGE</h6>
               </Col>
-              <p>   Package valid from 01st October 2024 to 31st March 2025.
+              <p>   Package valid from 01st April 2025 to 31st March 2026.
                 <br />
-                (Not valid for 20th December 2024 to 03rd January 2025).</p>
+                (Not valid for 20th December 2025 to 03rd January 2026).</p>
               <Col className="d-flex justify-md-content-center  align-items-md-start p-0 pe-2">
                 <Link
                   href="/lake-resorts-in-kumarakom/offers/backwater-package/"
@@ -523,9 +523,9 @@ const OffersKumarkomComponent = () => {
               />
             </Col>
             <p>
-              Package valid from 01st October 2024 to 31st March 2025.
+              Package valid from 01st April 2025 to 31st March 2026.
               <br />
-              (Not valid for 20th December 2024 to 03rd January 2025)
+              (Not valid for 20th December 2025 to 03rd January 2026)
             </p>
             <Link
               href="/lake-resorts-in-kumarakom/offers/honeymoon-package/"
@@ -616,9 +616,9 @@ const OffersKumarkomComponent = () => {
               />
             </Col>
             <p>
-              Package valid from 01st October 2024 to 31st March 2025.
+              Package valid from 01st April 2025 to 31st March 2026.
               <br />
-              (Not valid for 20th December 2024 to 03rd January 2025).
+              (Not valid for 20th December 2025 to 03rd January 2026).
             </p>
             <Link
               href="/lake-resorts-in-kumarakom/offers/backwater-package/"
