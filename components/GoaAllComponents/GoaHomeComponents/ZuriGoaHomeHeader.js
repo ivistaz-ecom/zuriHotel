@@ -35,6 +35,12 @@ const ZuriGoaHomeHeader = () => {
                     </Link>
                     &nbsp; / &nbsp;
 
+                    <Link href="/beach-resorts-in-goa/restaurants/"
+                        className='text-decoration-none text-black'>
+                        <h6 className='m-0'>Casino</h6>
+                    </Link>
+                    &nbsp; / &nbsp;
+
                     <Link href="/beach-resorts-in-goa/casino/"
                         className='text-decoration-none text-black'>
                         <h6 className='m-0'>Casino</h6>
