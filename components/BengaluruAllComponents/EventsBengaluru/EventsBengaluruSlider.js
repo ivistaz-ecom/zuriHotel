@@ -69,6 +69,14 @@ const EventsBengaluruSlider = () => {
     return (
 
         <>
+        {/* <style>
+            {
+                `
+                ul.react-multi-carousel-track {
+    margin-bottom: 40px;
+}`
+            }
+        </style> */}
             <Container className='p-md-0 px-md-5 p-2 mt-5' style={{}}>
 
                 <Col className='d-flex flex-column align-items-center text-center'>
@@ -80,7 +88,7 @@ const EventsBengaluruSlider = () => {
                 </Col>
 
                 <Col className='d-md-none d-block'>
-                    <Carousel className=''
+                    <Carousel className='py-5'
                         responsive={responsive}
                         removeArrowOnDeviceType={["tablet", "desktop"]}
                         swipeable={false}
@@ -93,7 +101,7 @@ const EventsBengaluruSlider = () => {
                             />
 
                             <Link
-                                href="/hotels-in-bengaluru/rooms-suites/zuri-room/"
+                                href="/hotels-in-bengaluru/events/weddings/"
                                 style={buttonHover}
                                 onMouseEnter={handleMouseEnter}
                                 onMouseLeave={handleMouseLeave}
@@ -107,7 +115,7 @@ const EventsBengaluruSlider = () => {
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                             <Link
-                                href="/hotels-in-bengaluru/rooms-suites/club-room/"
+                                href="/hotels-in-bengaluru/events/meetings/"
                                 style={buttonHover1}
                                 onMouseEnter={handleMouseEnter1}
                                 onMouseLeave={handleMouseLeave1}
@@ -154,7 +162,7 @@ const EventsBengaluruSlider = () => {
 
             </Container>
 
-            <Container fluid className='p-0 pt-5 text-center'>
+            <Container fluid className='p-0 pt-2 text-center'>
                 <Col className='my-5 py-5' style={AmitiesBg}>
                     <Image src='/cl.png' alt='' fluid />
                     <h6 className='pt-3 text-center'>BUSINESS FACILITIES</h6>
