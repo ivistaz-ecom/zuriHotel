@@ -135,12 +135,14 @@ const KumarkomGallery = () => {
                 </Modal.Footer>
             </Modal>
 
-
-            <Col className='d-flex flex-column align-items-center py-4 p-2'>
+            <Row className='py-5 p-2 justify-content-center gap-4'>
+                <Col md={2} xs={6} >
+                    <Image src='/kumarkom/kumarkom-home/tc_white_winner_gif_2025.gif' alt='' fluid className='shadow p-2 rounded-circle' />
+                </Col>
                 <Col md={2} xs={6} >
                     <Image src='/kumarkom/kumarkom-home/tc_white_winner_gif_2024.gif' alt='' fluid className='shadow p-2 rounded-circle' />
                 </Col>
-            </Col>
+            </Row>
 
             <Col className='d-flex flex-column align-items-center py-4 p-2'>
                 <Col md={6} className='text-center'>
