@@ -137,10 +137,10 @@ const KumarkomGallery = () => {
 
             <Row className='py-5 p-2 justify-content-center gap-4'>
                 <Col md={2} xs={6} >
-                    <Image src='/kumarkom/kumarkom-home/tc_white_winner_gif_2025.gif' alt='' fluid className='shadow p-2 rounded-circle' />
+                    <Image src='/kumarkom/kumarkom-home/tc_white_winner_gif_2025.gif' alt='Zuri Kumarakom has been awarded Trip Advisor Traveller’s Choice award 2025' fluid className='shadow p-2 rounded-circle' />
                 </Col>
                 <Col md={2} xs={6} >
-                    <Image src='/kumarkom/kumarkom-home/tc_white_winner_gif_2024.gif' alt='' fluid className='shadow p-2 rounded-circle' />
+                    <Image src='/kumarkom/kumarkom-home/tc_white_winner_gif_2024.gif' alt='Zuri Kumarakom has been awarded Trip Advisor Traveller’s Choice award 2024' fluid className='shadow p-2 rounded-circle' />
                 </Col>
             </Row>
 
