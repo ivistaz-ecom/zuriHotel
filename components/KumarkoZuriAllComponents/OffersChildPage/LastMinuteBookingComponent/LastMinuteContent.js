@@ -22,12 +22,12 @@ const LastMinuteContent = () => {
               <li>Wi-Fi</li>
             </ul>
           </Col>
-          <hr className='p-0 m-0' />
-          <Col>
+          {/* <hr className='p-0 m-0' /> */}
+          {/* <Col>
             <h6 className='text-black pt-4'>Guarantee Policy:</h6>
             <p>Prepayment: The total price of the reservation may be charged at any time after booking.</p>
             <p>Payment Options: RuPay and BHIM UPI payment options are available at the hotel.</p>
-          </Col>
+          </Col> */}
           <hr className='p-0 m-0' />
           <Col>
             <h6 className='text-black pt-4'>Cancellation Policy</h6>
