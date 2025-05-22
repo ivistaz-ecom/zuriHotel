@@ -46,7 +46,7 @@ const AyurvedaPackageContent = () => {
                             </Col>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center '>
-                            <Image src='/kumarkom/offers/rejuvenation_package_thumb_1.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/rejuvenation_programmer_2025.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -55,7 +55,7 @@ const AyurvedaPackageContent = () => {
 
                     <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
-                            <Image src='/kumarkom/offers/panchakarma_package_thumb_2.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/ayurvedha_panchakarma.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -115,7 +115,7 @@ const AyurvedaPackageContent = () => {
 
                     <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
-                            <Image src='/kumarkom/offers/weight_management_package_thumb_4.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/weight_management.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -167,7 +167,7 @@ const AyurvedaPackageContent = () => {
                             </Col>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center '>
-                            <Image src='/kumarkom/offers/mental_wellness_package_thumb_5.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/mental_wellness_2025.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -245,7 +245,7 @@ const AyurvedaPackageContent = () => {
                             <h6 className='py-2 text-center'>REJUVENATION PACKAGE</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/kumarkom/offers/rejuvenation_package_thumb_1.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/rejuvenation_programmer_2025.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -272,7 +272,7 @@ const AyurvedaPackageContent = () => {
                             <h6 className='py-2 text-center'>PANCHAKARMA PACKAGE</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/kumarkom/offers/panchakarma_package_thumb_2.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/ayurvedha_panchakarma.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -324,7 +324,7 @@ const AyurvedaPackageContent = () => {
                             <h6 className='py-2 text-center'>WEIGHT MANAGEMENT PACKAGE</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/kumarkom/offers/weight_management_package_thumb_4.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/weight_management.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -352,7 +352,7 @@ const AyurvedaPackageContent = () => {
                             <h6 className='py-2 text-center'>MENTAL WELLNESS PACKAGE</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/kumarkom/offers/mental_wellness_package_thumb_5.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/mental_wellness_2025.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>

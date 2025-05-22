@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const WeigthManagementBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/kumarkom/offers/weight_management_banner.jpg')`,
+        backgroundImage: `url('/kumarkom/offers/weight_management.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
