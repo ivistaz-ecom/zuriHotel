@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const MentalWellnessBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/kumarkom/offers/mental_wellness_banner.png')`,
+        backgroundImage: `url('/kumarkom/offers/mental_wellness_2025.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
