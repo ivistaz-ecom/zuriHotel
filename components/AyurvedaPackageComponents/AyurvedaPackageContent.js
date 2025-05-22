@@ -170,7 +170,7 @@ const AyurvedaPackageContent = () => {
                             />
                         </Col>
                     </Col>
-
+{/* 
                     <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
                             <Image src='/kumarkom/offers/antiaging_package_thumb_6.jpg' alt='' roundedCircle width={180} height={180}
@@ -198,9 +198,9 @@ const AyurvedaPackageContent = () => {
                                 </Link>
                             </Col>
                         </Col>
-                    </Col>
+                    </Col> */}
 
-                    <Col className='d-flex flex-md-row pt-4'>
+                    {/* <Col className='d-flex flex-md-row pt-4'>
                         <Col md={7} className='text-md-end text-center pe-md-4'>
                             <Col className='d-inline-block'>
                                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
@@ -227,7 +227,7 @@ const AyurvedaPackageContent = () => {
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
-                    </Col>
+                    </Col> */}
 
                 </Col>
             </Container>
@@ -293,7 +293,7 @@ const AyurvedaPackageContent = () => {
                     <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
-                            <h6 className='py-2 text-center'>DETOXIFICATION PACKAGE</h6>
+                            <h6 className='py-2 text-center'>SKIN CARE AND BEAUTY CARE PROGRAMME</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
                             <Image src='/kumarkom/offers/skincare_package.jpg' alt='' roundedCircle width={180} height={180}
@@ -368,7 +368,7 @@ const AyurvedaPackageContent = () => {
                         </Link>
                     </Col>
 
-                    <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
+                    {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>ANTIAGING PACKAGE</h6>
@@ -391,9 +391,9 @@ const AyurvedaPackageContent = () => {
                                 KNOW<br /> MORE
                             </p>
                         </Link>
-                    </Col>
+                    </Col> */}
 
-                    <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
+                    {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>KARKIDAKAM AYURVEDA TREATMENT</h6>
@@ -416,7 +416,7 @@ const AyurvedaPackageContent = () => {
                                 KNOW<br /> MORE
                             </p>
                         </Link>
-                    </Col>
+                    </Col> */}
                 </Col>
             </Container>
         </>
