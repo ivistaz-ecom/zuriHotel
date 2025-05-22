@@ -30,9 +30,9 @@ const AyurvedaPackageContent = () => {
                             <p>
                                 Rejuvenation – The term itself means “reversing the aging process”
                                 <br />
-                                and
-                                <br />
-                                this program aims at making one feel younger.
+                                and  this program aims at making one feel younger.
+
+
                             </p>
                             <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2'>
                                 <Link href="/lake-resorts-in-kumarakom/offers/rejuvenation-package-programme/"
@@ -91,9 +91,8 @@ const AyurvedaPackageContent = () => {
                             <p>
                                 A Detoxification programme is vital to help you to prevent disease
                                 <br />
-                                and to
-                                <br />
-                                facilitate an incredible sense of well-being and happiness.
+                                and to facilitate an incredible sense of well-being and happiness.
+
                             </p>
                             <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2'>
                                 <Link href="/lake-resorts-in-kumarakom/offers/detoxification-programme/"
@@ -127,9 +126,8 @@ const AyurvedaPackageContent = () => {
                             <p>
                                 From the perspective of Ayurveda, losing weight is not about
                                 <br />
-                                starving or
-                                <br />
-                                suppressing the appetite. It is about balancing your fat metabolism.
+                                starving or suppressing the appetite. It is about balancing your fat metabolism.
+
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
                                 <Link href="/lake-resorts-in-kumarakom/offers/weight-management-programme/"
@@ -252,9 +250,8 @@ const AyurvedaPackageContent = () => {
                         <p>
                             Rejuvenation – The term itself means “reversing the aging process”
                             <br />
-                            and
-                            <br />
-                            this program aims at making one feel younger.
+                            and this program aims at making one feel younger.
+
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/rejuvenation-package-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
@@ -304,9 +301,8 @@ const AyurvedaPackageContent = () => {
                         <p>
                             A Detoxification programme is vital to help you to prevent disease
                             <br />
-                            and to
-                            <br />s
-                            facilitate an incredible sense of well-being and happiness
+                            and to  facilitate an incredible sense of well-being and happiness
+
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/detoxification-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
@@ -332,9 +328,8 @@ const AyurvedaPackageContent = () => {
 
                             From the perspective of Ayurveda, losing weight is not about
                             <br />
-                            starving or
-                            <br />
-                            suppressing the appetite. It is about balancing your fat metabolism.
+                            starving or suppressing the appetite. It is about balancing your fat metabolism.
+
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/weight-management-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
