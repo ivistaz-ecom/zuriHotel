@@ -30,9 +30,9 @@ const AyurvedaPackageContent = () => {
                             <p>
                                 Rejuvenation – The term itself means “reversing the aging process”
                                 <br />
-                                and
-                                <br />
-                                this program aims at making one feel younger.
+                                and  this program aims at making one feel younger.
+
+
                             </p>
                             <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2'>
                                 <Link href="/lake-resorts-in-kumarakom/offers/rejuvenation-package-programme/"
@@ -86,17 +86,16 @@ const AyurvedaPackageContent = () => {
                         <Col md={7} className='text-md-end text-center pe-md-4'>
                             <Col className='d-inline-block'>
                                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
-                                <h6 className='text-center'>DETOXIFICATION PACKAGE</h6>
+                                <h6 className='text-center'>SKIN CARE AND BEAUTY CARE PROGRAMME</h6>
                             </Col>
                             <p>
-                                A Detoxification programme is vital to help you to prevent disease
+                                Beauty is not just about skin color or tone.
                                 <br />
-                                and to
-                                <br />
-                                facilitate an incredible sense of well-being and happiness.
+                                According to Ayurveda, our skin health reflects our physical, mental, and spiritual well-being
+
                             </p>
                             <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2'>
-                                <Link href="/lake-resorts-in-kumarakom/offers/detoxification-programme/"
+                                <Link href="/lake-resorts-in-kumarakom/offers/skin-care-and-beauty-care-programme/"
                                     className='bg-black text-center rounded-circle text-decoration-none '>
                                     <p
                                         className='m-0 lh-sm text-white btn-circle'
@@ -107,7 +106,7 @@ const AyurvedaPackageContent = () => {
                             </Col>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center '>
-                            <Image src='/kumarkom/offers/detoxification_package_thumb_3.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/skincare_package.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -127,9 +126,8 @@ const AyurvedaPackageContent = () => {
                             <p>
                                 From the perspective of Ayurveda, losing weight is not about
                                 <br />
-                                starving or
-                                <br />
-                                suppressing the appetite. It is about balancing your fat metabolism.
+                                starving or suppressing the appetite. It is about balancing your fat metabolism.
+
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
                                 <Link href="/lake-resorts-in-kumarakom/offers/weight-management-programme/"
@@ -172,7 +170,7 @@ const AyurvedaPackageContent = () => {
                             />
                         </Col>
                     </Col>
-
+{/* 
                     <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
                             <Image src='/kumarkom/offers/antiaging_package_thumb_6.jpg' alt='' roundedCircle width={180} height={180}
@@ -200,9 +198,9 @@ const AyurvedaPackageContent = () => {
                                 </Link>
                             </Col>
                         </Col>
-                    </Col>
+                    </Col> */}
 
-                    <Col className='d-flex flex-md-row pt-4'>
+                    {/* <Col className='d-flex flex-md-row pt-4'>
                         <Col md={7} className='text-md-end text-center pe-md-4'>
                             <Col className='d-inline-block'>
                                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
@@ -229,7 +227,7 @@ const AyurvedaPackageContent = () => {
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
-                    </Col>
+                    </Col> */}
 
                 </Col>
             </Container>
@@ -252,9 +250,8 @@ const AyurvedaPackageContent = () => {
                         <p>
                             Rejuvenation – The term itself means “reversing the aging process”
                             <br />
-                            and
-                            <br />
-                            this program aims at making one feel younger.
+                            and this program aims at making one feel younger.
+
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/rejuvenation-package-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
@@ -291,24 +288,25 @@ const AyurvedaPackageContent = () => {
                         </Link>
                     </Col>
 
+
+
                     <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
-                            <h6 className='py-2 text-center'>DETOXIFICATION PACKAGE</h6>
+                            <h6 className='py-2 text-center'>SKIN CARE AND BEAUTY CARE PROGRAMME</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/kumarkom/offers/detoxification_package_thumb_3.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/skincare_package.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
                         <p>
-                            A Detoxification programme is vital to help you to prevent disease
+                            Beauty is not just about skin color or tone.
                             <br />
-                            and to
-                            <br />s
-                            facilitate an incredible sense of well-being and happiness
+                            According to Ayurveda, our skin health reflects our physical, mental, and spiritual well-being
+
                         </p>
-                        <Link href="/lake-resorts-in-kumarakom/offers/detoxification-programme/"
+                        <Link href="/lake-resorts-in-kumarakom/offers/skin-care-and-beauty-care-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
                             <p
                                 className='m-0 lh-sm text-white '
@@ -332,9 +330,8 @@ const AyurvedaPackageContent = () => {
 
                             From the perspective of Ayurveda, losing weight is not about
                             <br />
-                            starving or
-                            <br />
-                            suppressing the appetite. It is about balancing your fat metabolism.
+                            starving or suppressing the appetite. It is about balancing your fat metabolism.
+
                         </p>
                         <Link href="/lake-resorts-in-kumarakom/offers/weight-management-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
@@ -371,7 +368,7 @@ const AyurvedaPackageContent = () => {
                         </Link>
                     </Col>
 
-                    <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
+                    {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>ANTIAGING PACKAGE</h6>
@@ -394,9 +391,9 @@ const AyurvedaPackageContent = () => {
                                 KNOW<br /> MORE
                             </p>
                         </Link>
-                    </Col>
+                    </Col> */}
 
-                    <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
+                    {/* <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>KARKIDAKAM AYURVEDA TREATMENT</h6>
@@ -419,7 +416,7 @@ const AyurvedaPackageContent = () => {
                                 KNOW<br /> MORE
                             </p>
                         </Link>
-                    </Col>
+                    </Col> */}
                 </Col>
             </Container>
         </>
