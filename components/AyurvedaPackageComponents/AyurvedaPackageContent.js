@@ -86,16 +86,16 @@ const AyurvedaPackageContent = () => {
                         <Col md={7} className='text-md-end text-center pe-md-4'>
                             <Col className='d-inline-block'>
                                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
-                                <h6 className='text-center'>DETOXIFICATION PACKAGE</h6>
+                                <h6 className='text-center'>SKIN CARE AND BEAUTY CARE PROGRAMME</h6>
                             </Col>
                             <p>
-                                A Detoxification programme is vital to help you to prevent disease
+                                Beauty is not just about skin color or tone.
                                 <br />
-                                and to facilitate an incredible sense of well-being and happiness.
+                                According to Ayurveda, our skin health reflects our physical, mental, and spiritual well-being
 
                             </p>
                             <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2'>
-                                <Link href="/lake-resorts-in-kumarakom/offers/detoxification-programme/"
+                                <Link href="/lake-resorts-in-kumarakom/offers/skin-care-and-beauty-care-programme/"
                                     className='bg-black text-center rounded-circle text-decoration-none '>
                                     <p
                                         className='m-0 lh-sm text-white btn-circle'
@@ -106,7 +106,7 @@ const AyurvedaPackageContent = () => {
                             </Col>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center '>
-                            <Image src='/kumarkom/offers/detoxification_package_thumb_3.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/skincare_package.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -288,23 +288,25 @@ const AyurvedaPackageContent = () => {
                         </Link>
                     </Col>
 
+
+
                     <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
                             <h6 className='py-2 text-center'>DETOXIFICATION PACKAGE</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/kumarkom/offers/detoxification_package_thumb_3.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/kumarkom/offers/skincare_package.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
                         <p>
-                            A Detoxification programme is vital to help you to prevent disease
+                            Beauty is not just about skin color or tone.
                             <br />
-                            and to  facilitate an incredible sense of well-being and happiness
+                            According to Ayurveda, our skin health reflects our physical, mental, and spiritual well-being
 
                         </p>
-                        <Link href="/lake-resorts-in-kumarakom/offers/detoxification-programme/"
+                        <Link href="/lake-resorts-in-kumarakom/offers/skin-care-and-beauty-care-programme/"
                             className='bg-black text-center rounded-circle text-decoration-none btn-circle'>
                             <p
                                 className='m-0 lh-sm text-white '
