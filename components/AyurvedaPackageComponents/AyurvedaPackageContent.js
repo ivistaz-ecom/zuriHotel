@@ -288,6 +288,8 @@ const AyurvedaPackageContent = () => {
                         </Link>
                     </Col>
 
+
+
                     <Col className='d-flex flex-column justify-content-center align-items-center text-center py-4'>
                         <Col className='d-flex flex-column align-items-center gap-4'>
                             <Image src='/cl.png' alt='' fluid />
