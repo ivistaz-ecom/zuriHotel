@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const PanchakarmaPackageBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/kumarkom/offers/panchakarma_package_banner.jpg')`,
+        backgroundImage: `url('/kumarkom/offers/ayurvedha_panchakarma.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
