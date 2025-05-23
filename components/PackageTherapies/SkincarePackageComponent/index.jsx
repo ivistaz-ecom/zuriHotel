@@ -7,8 +7,8 @@ import '../../StyledComponents'
 import SkincareContentWordpress from './SkinkareContentWordpress'
 import NextSeo from '@/components/SeoComponents/Seo'
 
-const title = "Rejuvenation Package: Resorts With Ayurvedic Rejuvenation Packages in Kerala, India - Zuri Hotels & Resorts	";
-const description = "Is the hustle and bustle of daily life bogging you down? Take a break and visit the God's own country to relax and rejoice. Choose a viable rejuvenation package in Kerala and watch as your stress melts away at the end of the short getaway";
+const title = "Ayurvedic Skin Care Treatment in Kumarakom | Lakeside Beauty Programme | Zuri Hotels";
+const description = "Rejuvenate naturally with our Ayurvedic skin care treatment in Kumarakom, set by the tranquil Vembanad Lake. Discover one of the finest lakeside resorts with Ayurvedic treatments in Kumarakom, offering personalised beauty and wellness programmes in a serene, luxurious setting.";
 const path = "https://www.thezurihotels.com/lake-resorts-in-kumarakom/offers/skin-care-and-beauty-care-programme/";
 const metaImage = "/zuri_logo_social_media.png";
 
