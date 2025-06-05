@@ -314,7 +314,7 @@ const ContactUsTap = () => {
                     </a>
                   </p>
 
-                  <p>Ms. Lisel Rodrigues</p>
+                  {/* <p>Ms. Lisel Rodrigues</p>
 
                   <p className="mb-0">
                     Email:{" "}
@@ -333,7 +333,7 @@ const ContactUsTap = () => {
                     >
                       +91 976 555 7925{" "}
                     </a>
-                  </p>
+                  </p> */}
                 </Col>
               </Row>
 
@@ -438,25 +438,25 @@ const ContactUsTap = () => {
               <Row className="mt-4 justify-content-start">
                 <Col className="text-center">
                   <p className="purple-clr">CHENNAI SALES OFFICE:</p>
-                  <p>Mr. Lyndon Trousse</p>
+                  <p>Mr. Vishnu Soman</p>
                   <p className="mb-0">
                     Email:{" "}
                     <a
                       className="text-decoration-none text-black"
-                      href="mailto:lyndon.trousse@thezurihotels.com"
+                      href="mailto:vishnu.soman@thezurihotels.com"
                     >
-                      lyndon.trousse@thezurihotels.com
+                      vishnu.soman@thezurihotels.com
                     </a>
                   </p>
                   <p>
                     Tel:
                     <a className="text-decoration-none text-black" href="tel:">
-                      +91 998 037 3006{" "}
+                      +91 994 610 5511{" "}
                     </a>
                   </p>
                 </Col>
                 <Col className="d-none d-md-block"></Col>
-<Col className="d-none d-md-block"></Col>
+                <Col className="d-none d-md-block"></Col>
 
               </Row>
             </Col>
