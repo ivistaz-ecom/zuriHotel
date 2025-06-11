@@ -6,6 +6,7 @@
 // }
 
 // import Head from "next/head";
+import MetaPixel from "@/components/MetaPixel";
 import Script from "next/script";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <head>
         <meta name="google-site-verification" content="R23Ey1YcgVLq43ENjiGfVOrj2kWAltzGzqy9TEolc7M" />
         {/* Meta Pixel Script */}
-        <script
+        <Script
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -32,7 +33,7 @@ export default function RootLayout({ children }) {
             `,
           }}
         />
-        <noscript>
+        {/* <noscript>
           <img
             height="1"
             width="1"
@@ -40,7 +41,7 @@ export default function RootLayout({ children }) {
             src="https://www.facebook.com/tr?id=442139957376778&ev=PageView&noscript=1"
             alt=""
           />
-        </noscript>
+        </noscript> */}
       </head>
       <body>
         {children}
@@ -87,6 +88,7 @@ export default function RootLayout({ children }) {
         </noscript>
         {/* End Google Tag Manager (noscript) */}
 
+        <MetaPixel />
       </body>
     </html>
   )
