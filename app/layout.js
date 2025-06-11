@@ -5,7 +5,7 @@
 //   description: 'Welcome to one of the best Luxury 5 star hotels & resorts in India for an experience ‘far beyond expectations’. And discover the true meaning of ‘Zuri’.',
 // }
 
-import Head from "next/head";
+// import Head from "next/head";
 import Script from "next/script";
 import "react-datepicker/dist/react-datepicker.css";
 
@@ -13,7 +13,7 @@ import "react-datepicker/dist/react-datepicker.css";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
+      <head>
         <meta name="google-site-verification" content="R23Ey1YcgVLq43ENjiGfVOrj2kWAltzGzqy9TEolc7M" />
         {/* Meta Pixel Script */}
         <script
@@ -41,7 +41,7 @@ export default function RootLayout({ children }) {
             alt=""
           />
         </noscript>
-      </Head>
+      </head>
       <body>
         {children}
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
