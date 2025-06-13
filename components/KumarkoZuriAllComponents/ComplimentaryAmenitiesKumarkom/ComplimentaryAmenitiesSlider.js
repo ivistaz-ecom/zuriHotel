@@ -55,13 +55,13 @@ const ComplimentaryAmenitiesSlider = () => {
                     <Col className='text-center d-flex flex-column align-items-center gap-4' lg={3}>
                         <Image src='/kumarkom/complimentary-amenities/ca_thumb_2.jpg' alt='' roundedCircle width={180} height={180} />
                         <p>
-                            Fishing in the lagoon between 09:00 am – 06:00 pm
+                            Fishing in the lagoon between <br /> 09:00 am – 06:00 pm
                         </p>
                     </Col>
                     <Col className='text-center d-flex flex-column align-items-center gap-4' lg={3}>
-                        <Image src='/kumarkom/complimentary-amenities/ca_thumb_3.jpg' alt='' roundedCircle width={180} height={180} />
+                        <Image src='/kumarkom/complimentary-amenities/ZKumarakom_Complementary_Gym.jpg' alt='' roundedCircle width={180} height={180} />
                         <p>
-                            Complimentary use of Gym, Sauna, Jacuzzi & Steam bath 09:00 am – 06:00 pm
+                        Complimentary use of Gym <br /> 07:00 am – 08:00 pm
                         </p>
                     </Col>
                     <Col className='text-center pt-md-2 d-flex flex-column align-items-center gap-4' lg={12}>
