@@ -1,132 +1,24 @@
-# Luxury 5 Star Hotels & Resorts in India - Zuri Hotels & Resorts
+# llms.txt for https://www.thezurihotels.com/
+# This file allows all major AI bots to access and use website content for training.
 
-Welcome to one of the best Luxury 5 star hotels & resorts in India for an experience ‘far beyond expectations’. And discover the true meaning of ‘Zuri’.
+# ✅ Allow OpenAI's GPTBot
+User-agent: GPTBot
+Allow: /
 
-## Resorts Overview
+# ✅ Allow OpenAI’s ChatGPT-User (used in browsing mode)
+User-agent: ChatGPT-User
+Allow: /
 
-### [The Zuri Kumarakom, Kerala Resort & Spa](https://www.thezurihotels.com/lake-resorts-in-kumarakom)
-A luxurious resort located in Kumarakom, Kerala, offering a serene environment and a range of wellness services, including Ayurvedic treatments.
+# ✅ Allow Google's Gemini (Google-Extended)
+User-agent: Google-Extended
+Allow: /
 
-### [The Zuri White Sands, Goa Resort & Casino](https://www.thezurihotels.com/beach-resorts-in-goa)
-This resort combines luxury with entertainment, featuring a casino and direct access to beautiful beaches in Goa.
+# ✅ Allow Claude (Anthropic)
+User-agent: anthropic-ai
+Allow: /
 
-### [The Zuri Whitefield, Bengaluru](https://www.thezurihotels.com/hotels-in-bengaluru)
-A premium hotel in Bengaluru, known for its modern amenities and proximity to the city's business districts.
+# ✅ Allow Common Crawl (used by multiple AI training projects)
+User-agent: CCBot
+Allow: /
 
-## Special Offers
-
-### [Stay Offers](https://www.thezurihotels.com/offers/stay-offers)
-Explore various packages and discounts available for guests looking to enjoy a luxurious stay at Zuri Hotels.
-
-### [Dining Offers](https://www.thezurihotels.com/offers/dining-offers)
-Discover exclusive dining experiences and offers available at Zuri Hotels, enhancing your culinary journey.
-
-### [Ayurveda Packages](https://www.thezurihotels.com/offers/ayurveda-package)
-Specialized wellness packages focusing on traditional Ayurvedic treatments, available at Zuri Kumarakom.
-
-## Membership and Contact
-
-### [Membership](https://www.thezurihotels.com/offers/membership)
-Join the Zuri Hotels membership program for exclusive benefits and offers.
-
-### [Contact Us](https://www.thezurihotels.com/contact-us)
-For inquiries and reservations, reach out to the Zuri Hotels team.
-
-## Additional Resources
-
-### [Blog](https://www.thezurihotels.com/blog)
-Stay updated with the latest news, tips, and stories from Zuri Hotels through their blog.
-
-### [Testimonials](https://www.thezurihotels.com/testimonial)
-Read reviews and experiences shared by guests who have stayed at Zuri Hotels.
-
-### [Careers](https://www.thezurihotels.com/careers)
-Explore career opportunities and join the Zuri Hotels team.
-
-### [Gallery](https://www.thezurihotels.com/gallery)
-View stunning images showcasing the beauty and luxury of Zuri Hotels.
-
-### [Privacy policy](https://www.thezurihotels.com/privacy-policy)
-Understand how Zuri Hotels protects your personal information and privacy.
-
-## Related Links
-
-### [About Us](https://www.thezurihotels.com/about-us)
-Learn more about the history and mission of Zuri Hotels.
-
-### [Awards](https://www.thezurihotels.com/awards)
-Discover the accolades and recognitions received by Zuri Hotels for excellence in hospitality.
-
-### [Sitemap](https://www.thezurihotels.com/sitemap)
-Navigate through the Zuri Hotels website with ease using the sitemap.
-
-### [Modify / Cancel Reservation](https://be.synxis.com/?_ga=2.164956023.936920120.1702967799-2038087003.1664255723&adult=1&arrive=2023-12-20&chain=17869&child=0&currency=INR&depart=2023-12-21&hotel=64786&level=hotel&locale=en-US&rooms=1&shell=GCF&start=searchres&template=GCF)
-Manage your bookings easily with options to modify or cancel reservations.
-
-### [VIEW MORE](https://www.thezurihotels.com/lake-resorts-in-kumarakom/offers/honeymoon-package)
-Explore additional offers and packages available at Zuri Hotels.
-
-### [VIEW MORE](https://www.thezurihotels.com/lake-resorts-in-kumarakom/gallery)
-Check out more details about the services and amenities offered.
-
-### [VIEW MORE](https://www.thezurihotels.com/beach-resorts-in-goa/gallery)
-Find out more about the unique experiences at Zuri Hotels.
-
-### [VIEW MORE](https://www.thezurihotels.com/hotels-in-bengaluru/gallery)
-Discover further information on special events and promotions.
-
-### [Read More](https://www.thezurihotels.com/customer-review)
-Access in-depth articles and insights related to Zuri Hotels.
-
-## Specific Locations
-
-### [Luxury Hotels in Whitefield, Bangalore India - Zuri](https://www.thezurihotels.com/hotels-in-bengaluru/)
-A detailed overview of luxury accommodations available in Whitefield, Bangalore.
-
-### [Best Ayurvedic & Wellness Resorts in Kerala, India - Zuri Hotels](https://www.thezurihotels.com/offers/ayurveda-package/)
-Highlighting the top wellness resorts in Kerala, focusing on Ayurvedic practices.
-
-### [Luxury Houseboat in Kumarakom - Zuri Hotels](https://www.thezurihotels.com/blog/the-houseboat-experience)
-Experience the unique luxury of staying in a houseboat in Kumarakom.
-
-### [Holiday Destination & Tourist Places in Bangalore - Zuri Hotels](https://www.thezurihotels.com/hotels-in-bengaluru/destination/)
-Explore popular tourist attractions and holiday destinations in and around Bangalore.
-
-### [Luxury Hotels & Beach Resorts in Goa, India - Zuri White Sands](https://www.thezurihotels.com/beach-resorts-in-goa/)
-A guide to the luxurious beach resorts available in Goa.
-
-### [Wonders of Kumarakom – Zuri Hotels & Resorts in Kumarakom, Kerala](https://www.thezurihotels.com/blog/wonders-of-kumarakom)
-Discover the natural beauty and attractions of Kumarakom.
-
-### [Best Hotel Offers, Deals & Packages in Bangalore - Zuri Whitefield](https://www.thezurihotels.com/hotels-in-bengaluru/offers/)
-Find the best deals and packages available at Zuri Whitefield.
-
-### [Corporate Event & Function Space in Zuri Whitefield, Bengaluru](https://www.thezurihotels.com/hotels-in-bengaluru/events/)
-Information on venues and facilities for corporate events at Zuri Whitefield.
-
-### [Best Restaurants in Whitefield - Zuri Hotels & Resorts](https://www.thezurihotels.com/hotels-in-bengaluru/restaurants/)
-A guide to the top dining options available at Zuri Hotels in Whitefield.
-
-### [Photo Gallery - The Zuri Whitefield, Bengaluru](https://www.thezurihotels.com/hotels-in-bengaluru/gallery/)
-Browse through a collection of photos showcasing the Zuri Whitefield.
-
-### [Dudhsagar's Symphony: Experience the Nature Sounds of Goa](https://thezurihotels.com/blog/dudhsagars-symphony-a-soundscape-adventure)
-An immersive experience highlighting the natural sounds and beauty of Goa.
-
-### [Five Star Hotel in Bangalore, India - Zuri Whitefield](https://www.thezurihotels.com/hotels-in-bengaluru/rooms-suites/)
-An overview of the five-star accommodations and services offered at Zuri Whitefield.
-
-### [Luxury Spa Hotels in Whitefield, Bangalore | Maya Spa in Zuri](https://www.thezurihotels.com/hotels-in-bengaluru/maya-spa/)
-Explore the luxurious spa services available at Zuri Hotels.
-
-### [A Day in Kumarakom, Kerala – Zuri Hotels & Resorts](https://www.thezurihotels.com/blog/a-day-in-kumarakom)
-A detailed itinerary for experiencing a day in Kumarakom.
-
-### [Events, Meetings & Conferences in Zuri Whitefield, Bengaluru](https://www.thezurihotels.com/hotels-in-bengaluru/events/meetings)
-Information on hosting events and conferences at Zuri Whitefield.
-
-### [Hotel Deals in Goa | Offers & Packages at Zuri Whitesands](https://www.thezurihotels.com/beach-resorts-in-goa/offers/)
-Check out the latest deals and packages available at Zuri Whitesands.
-
-### [Hotel Deals in Kerala: Offers & Packages at Zuri Kumarakom Hotels](https://www.thezurihotels.com/lake-resorts-in-kumarakom/offers/)
-Explore special offers and packages available at Zuri Kumarakom Hotels.
+# ✅ Allow Perplex
