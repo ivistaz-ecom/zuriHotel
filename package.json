@@ -6,13 +6,15 @@
     "dev": "next dev -p 3002",
     "build": "next build",
     "start": "next start -p 3002",
-    "lint": "next lint"
+    "lint": "next lint",
+    "optimize-images": "node scripts/optimize-images.js"
   },
   "dependencies": {
     "axios": "^1.6.8",
     "bootstrap": "^5.3.2",
     "bootstrap-icons": "^1.11.2",
     "cheerio": "^1.0.0-rc.12",
+    "keen-slider": "^6.8.6",
     "next": "^14.0.4",
     "next-seo": "^6.4.0",
     "photoswipe": "^5.4.3",
@@ -29,6 +31,7 @@
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.0.4"
+    "eslint-config-next": "14.0.4",
+    "sharp": "^0.33.5"
   }
 }

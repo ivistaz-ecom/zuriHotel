@@ -1,15 +1,14 @@
+import './globals.css'
 
-
-// export const metadata = {
-//   title: 'Luxury 5 Star Hotels & Resorts in India - Zuri Hotels & Resorts	',
-//   description: 'Welcome to one of the best Luxury 5 star hotels & resorts in India for an experience ‘far beyond expectations’. And discover the true meaning of ‘Zuri’.',
-// }
+export const metadata = {
+  title: 'Zuri Hotels & Resorts - Luxury 5 Star Hotels & Resorts in India',
+  description: 'Welcome to one of the best Luxury 5 star hotels & resorts in India for an experience far beyond expectations. Discover the true meaning of Zuri.',
+}
 
 // import Head from "next/head";
 import MetaPixel from "@/components/MetaPixel";
 import Script from "next/script";
 import "react-datepicker/dist/react-datepicker.css";
-
 
 export default function RootLayout({ children }) {
   return (
@@ -42,6 +41,18 @@ export default function RootLayout({ children }) {
             alt=""
           />
         </noscript> */}
+        {/* Preload critical resources */}
+        <link rel="preload" href="/home/zuri_slider_banner_01.jpg" as="image" />
+        <link rel="preload" href="/home/mobile_zuri_slider_banner_1.jpg" as="image" media="(max-width: 768px)" />
+        {/* Preconnect and optimize Google Fonts - combined request */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=YourOtherFont:wght@400;700&display=swap" />
+        {/* Example: Inline critical CSS for above-the-fold content (optional, for best LCP) */}
+        {/* <style>{`body { background: #fff; } .header { ... }`}</style> */}
+        {/* Example: Defer non-critical CSS (replace with your actual non-critical CSS files) */}
+        {/* <link rel="stylesheet" href="/css/non-critical.css" media="print" onLoad="this.media='all'" /> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>
         {children}
