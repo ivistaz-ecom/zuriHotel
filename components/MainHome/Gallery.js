@@ -1,7 +1,8 @@
 'use client'
 import React, { useState } from 'react'
+import Image from 'next/image'
 
-import { Col, Container, Image } from 'react-bootstrap'
+import { Col, Container } from 'react-bootstrap'
 import Link from 'next/link';
 
 const Gallery = () => {
@@ -112,7 +113,7 @@ const Gallery = () => {
             {/* Desktop View */}
             <Container className='p-0 py-5 d-md-flex flex-column d-none' >
                 <Col className='d-flex flex-column align-items-center'>
-                    <Image src='/cl.png' alt='' fluid />
+                    <Image src='/cl.png' alt='' width={50} height={50} />
                     <h6 className='py-2'>GALLERY</h6>
                 </Col>
 
@@ -222,7 +223,7 @@ const Gallery = () => {
             {/* Mobile View */}
             <Container className='p-0 py-5 d-md-none flex-column d-flex' >
                 <Col className='d-flex flex-column align-items-center'>
-                    <Image src='/cl.png' alt='' fluid />
+                    <Image src='/cl.png' alt='' width={50} height={50} />
                     <h6 className='py-2'>GALLERY</h6>
                 </Col>
 

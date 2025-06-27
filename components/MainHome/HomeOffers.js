@@ -1,8 +1,9 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import Carousel from 'react-multi-carousel';
 
@@ -34,13 +35,21 @@ const HomeOffers = () => {
             {/* Desktop View */}
             <Container className='p-0 d-md-flex d-none mt-md-5 flex-column gap-2'>
                 <Col className='d-flex flex-column align-items-center' >
-                    <Image src='/cl.png' alt='' fluid />
+                    <Image src='/cl.png' alt='' width={50} height={50} />
                     <h6 className='py-2'>OFFERS</h6>
                 </Col>
 
                 <Row className='p-0 gap-1'>
                     <Col md={4} className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/weekend_package.jpg" alt='' width="100%" />
+                        <Image
+                            src="/home/weekend_package.jpg"
+                            alt='Weekend Packages'
+                            width={400}
+                            height={300}
+                            className='w-100'
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <div className='arrow-up'></div>
                             <h6>
@@ -87,7 +96,15 @@ const HomeOffers = () => {
                                     </Link>
                                 </Col>
                                 <Col>
-                                    <Image src='/home/wellness_package.jpg' alt='' width="100%" />
+                                    <Image
+                                        src='/home/wellness_package.jpg'
+                                        alt='Wellness Packages'
+                                        width={200}
+                                        height={150}
+                                        className='w-100'
+                                        sizes="(max-width: 768px) 100vw, 25vw"
+                                        quality={85}
+                                    />
                                 </Col>
                             </Col>
 
@@ -105,7 +122,15 @@ const HomeOffers = () => {
                                     </p>
                                 </Col>
                                 <Col>
-                                    <Image src='/home/dinning_offers.jpg' alt='' width="100%" height="100%" />
+                                    <Image
+                                        src='/home/dinning_offers.jpg'
+                                        alt='Dining Offers'
+                                        width={200}
+                                        height={150}
+                                        className='w-100'
+                                        sizes="(max-width: 768px) 100vw, 25vw"
+                                        quality={85}
+                                    />
                                 </Col>
                                 <Col className='d-flex justify-content-center align-items-md-start position-absolute bottom-0 start-50 translate-middle'>
                                     <Link href="/offers/dining-offers/"
@@ -137,7 +162,15 @@ const HomeOffers = () => {
                                         </p>
                                     </Col>
                                     <Col>
-                                        <Image src='/home/stay_offers.jpg' alt='' width="100%" height="100%" />
+                                        <Image
+                                            src='/home/stay_offers.jpg'
+                                            alt='Stay Offers'
+                                            width={200}
+                                            height={150}
+                                            className='w-100'
+                                            sizes="(max-width: 768px) 100vw, 25vw"
+                                            quality={85}
+                                        />
                                     </Col>
                                     <Col className='d-flex justify-content-center align-items-md-start position-absolute bottom-0 start-50 translate-middle'>
                                         <Link href="/offers/stay-offers/"
@@ -175,7 +208,15 @@ const HomeOffers = () => {
                                         </Link>
                                     </Col>
                                     <Col>
-                                        <Image src='/home/honeymoon_package.jpg' alt='' width="100%" />
+                                        <Image
+                                            src='/home/honeymoon_package.jpg'
+                                            alt='Honeymoon Packages'
+                                            width={200}
+                                            height={150}
+                                            className='w-100'
+                                            sizes="(max-width: 768px) 100vw, 25vw"
+                                            quality={85}
+                                        />
                                     </Col>
                                 </Col>
                             </Col>
@@ -189,7 +230,7 @@ const HomeOffers = () => {
             {/* Mobile View */}
             <Container className='p-0 d-md-none d-flex flex-column mt-5'>
                 <Col className='d-flex flex-column align-items-center' >
-                    <Image src='/cl.png' alt='' fluid />
+                    <Image src='/cl.png' alt='' width={50} height={50} />
                     <h6 className='py-2'>OFFERS</h6>
                 </Col >
                 <Carousel className=''
@@ -201,7 +242,15 @@ const HomeOffers = () => {
                 // autoPlay={true}
                 >
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/weekend_package.jpg" alt='' width="100%" height={340} />
+                        <Image
+                            src="/home/weekend_package.jpg"
+                            alt='Weekend Packages'
+                            width={400}
+                            height={340}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <div className='arrow-up'></div>
                             <h6 className='text-black'>
@@ -227,7 +276,15 @@ const HomeOffers = () => {
                     </Col>
 
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/wellness_package.jpg" alt='' width="100%" height={340} />
+                        <Image
+                            src="/home/wellness_package.jpg"
+                            alt='Wellness Packages'
+                            width={400}
+                            height={340}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <h6 className='text-black'>
                                 WELLNESS
@@ -254,7 +311,15 @@ const HomeOffers = () => {
                     </Col>
 
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/dinning_offers.jpg" alt='' width="100%" height={340} />
+                        <Image
+                            src="/home/dinning_offers.jpg"
+                            alt='Dining Offers'
+                            width={400}
+                            height={340}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <h6 className='text-black'>DINING
                                 <br />
@@ -278,7 +343,15 @@ const HomeOffers = () => {
                     </Col>
 
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/stay_offers.jpg" alt='' width="100%" height={340} />
+                        <Image
+                            src="/home/stay_offers.jpg"
+                            alt='Stay Offers'
+                            width={400}
+                            height={340}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <h6 className='text-black'>STAY
                                 <br />
@@ -302,7 +375,15 @@ const HomeOffers = () => {
                     </Col>
 
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/honeymoon_package.jpg" alt='' width="100%" height={340} />
+                        <Image
+                            src="/home/honeymoon_package.jpg"
+                            alt='Honeymoon Packages'
+                            width={400}
+                            height={340}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <h6 className='text-black'>HONEYMOON
                                 <br />

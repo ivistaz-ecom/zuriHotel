@@ -1,8 +1,9 @@
 'use client'
 import Link from 'next/link'
 import React from 'react'
+import Image from 'next/image'
 
-import { Col, Container, Image, Row } from 'react-bootstrap'
+import { Col, Container, Row } from 'react-bootstrap'
 
 import Carousel from 'react-multi-carousel';
 
@@ -31,7 +32,7 @@ const PropertiesSlider = ({ section2Ref }) => {
             {/* Desktop and Mobile Heading */}
             <Container className='p-0 my-5 d-flex flex-column align-items-center gap-3'>
 
-                <Image src='/cl.png' alt='' fluid className='text-center' />
+                <Image src='/cl.png' alt='' width={50} height={50} className='text-center' />
 
                 <h6>ZURI PROPERTIES</h6>
 
@@ -46,13 +47,21 @@ const PropertiesSlider = ({ section2Ref }) => {
                 <Row className='p-0 d-flex flex-row'>
                     <Col className='d-flex flex-column border border-2 border-light-subtle p-0 m-2'>
                         <Col>
-                            <Image src='/home/kumarakom_properties_comp.jpg' alt='' width="100%" />
+                            <Image
+                                src='/home/kumarakom_properties_comp.jpg'
+                                alt='The Zuri Kumarakom, Kerala Resort & Spa'
+                                width={400}
+                                height={300}
+                                className='w-100'
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                quality={85}
+                            />
                         </Col>
                         <Col className='d-flex flex-row p-3'>
                             <Col md={9}>
                                 <h6 className='text-black'>THE ZURI KUMARAKOM, KERALA RESORT & SPA</h6>
                                 <p>
-                                    Nestled in God’s Own Country, on the banks of the picturesque Vembanad Lake, The Zuri Kumarakom, a luxury hotel, resort and spa, offers an 18-acre paradise for travelers to relax and unwind in.
+                                    Nestled in God's Own Country, on the banks of the picturesque Vembanad Lake, The Zuri Kumarakom, a luxury hotel, resort and spa, offers an 18-acre paradise for travelers to relax and unwind in.
                                 </p>
                             </Col>
                             <Col className='d-flex flex-column align-items-center justify-content-center'>
@@ -72,7 +81,15 @@ const PropertiesSlider = ({ section2Ref }) => {
 
                     <Col className='d-flex flex-column border border-2 border-light-subtle p-0 m-2'>
                         <Col>
-                            <Image src='/home/zuri_goa_facade_main_page.jpg' alt='' width="100%" />
+                            <Image
+                                src='/home/zuri_goa_facade_main_page.jpg'
+                                alt='The Zuri White Sands, Goa Resort & Casino'
+                                width={400}
+                                height={300}
+                                className='w-100'
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                quality={85}
+                            />
                         </Col>
                         <Col className='d-flex flex-row p-3'>
                             <Col md={9}>
@@ -98,7 +115,15 @@ const PropertiesSlider = ({ section2Ref }) => {
 
                     <Col className='d-flex flex-column border border-2 border-light-subtle p-0 m-2'>
                         <Col>
-                            <Image src='/home/bengaluru_properties.jpg' alt='' width="100%" />
+                            <Image
+                                src='/home/bengaluru_properties.jpg'
+                                alt='The Zuri Whitefield, Bengaluru'
+                                width={400}
+                                height={300}
+                                className='w-100'
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                                quality={85}
+                            />
                         </Col>
                         <Col className='d-flex flex-row p-3'>
                             <Col md={9}>
@@ -135,14 +160,22 @@ const PropertiesSlider = ({ section2Ref }) => {
                 // autoPlay={true}
                 >
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src='/home/kumarakom_properties_comp.jpg' alt='' width="100%" />
+                        <Image
+                            src='/home/kumarakom_properties_comp.jpg'
+                            alt='The Zuri Kumarakom, Kerala Resort & Spa'
+                            width={400}
+                            height={300}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <div className='arrow-up'></div>
                             <h6 className='text-black'>
                                 THE ZURI KUMARAKOM, KERALA RESORT & SPA
                             </h6>
                             <p className='p-0 m-0'>
-                                Nestled in God’s Own Country, on the banks of the picturesque Vembanad Lake, The Zuri Kumarakom, a luxury hotel, resort and spa, offers an 18-acre paradise for travelers to relax and unwind in.
+                                Nestled in God's Own Country, on the banks of the picturesque Vembanad Lake, The Zuri Kumarakom, a luxury hotel, resort and spa, offers an 18-acre paradise for travelers to relax and unwind in.
                             </p>
                         </Col>
                         <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start align-items-center p-0 pe-2 pb-2'>
@@ -161,7 +194,15 @@ const PropertiesSlider = ({ section2Ref }) => {
                     </Col>
 
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src='/home/zuri_goa_facade_main_page.jpg' alt='' width="100%" />
+                        <Image
+                            src='/home/zuri_goa_facade_main_page.jpg'
+                            alt='The Zuri White Sands, Goa Resort & Casino'
+                            width={400}
+                            height={300}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <h6
                                 className='text-black'
@@ -188,7 +229,15 @@ const PropertiesSlider = ({ section2Ref }) => {
                     </Col>
 
                     <Col className='border border-1 shadow-sm p-0'>
-                        <Image src="/home/dinning_offers.jpg" alt='' width="100%" height={305} />
+                        <Image
+                            src="/home/dinning_offers.jpg"
+                            alt='The Zuri Whitefield, Bengaluru'
+                            width={400}
+                            height={305}
+                            className='w-100'
+                            sizes="100vw"
+                            quality={85}
+                        />
                         <Col className='p-2 pb-0'>
                             <h6 className='text-black'>
                                 THE ZURI WHITEFIELD, BENGALURU
