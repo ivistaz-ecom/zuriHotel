@@ -44,8 +44,10 @@ export default function RootLayout({ children }) {
         {/* Preload critical resources */}
         <link rel="preload" href="/home/zuri_slider_banner_01.jpg" as="image" />
         <link rel="preload" href="/home/mobile_zuri_slider_banner_1.jpg" as="image" media="(max-width: 768px)" />
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        {/* Preconnect and optimize Google Fonts */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
       <body>

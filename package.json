@@ -30,7 +30,6 @@
     "video-react": "^0.16.0"
   },
   "devDependencies": {
-    "@next/bundle-analyzer": "^15.3.4",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
     "sharp": "^0.33.5"

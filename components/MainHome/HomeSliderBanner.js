@@ -23,18 +23,24 @@ const HomeSliderBanner = () => {
         {
             desktop: '/home/zuri_slider_banner_01.jpg',
             mobile: '/home/mobile_zuri_slider_banner_1.jpg',
+            width: 1920,
+            height: 700,
             caption: "TROPICAL DESTINATION",
             subCaption: "The Zuri White Sands, Goa Resort & Casino"
         },
         {
             desktop: '/home/zuri_slider_banner_02.jpg',
             mobile: '/home/mobile_zuri_slider_banner_2.jpg',
+            width: 1920,
+            height: 700,
             caption: "GOD'S OWN COUNTRY",
             subCaption: "The Zuri Kumarakom, Kerala Resort & Spa"
         },
         {
             desktop: '/home/zuri_slider_banner_03.jpg',
             mobile: '/home/mobile_zuri_slider_banner_3.jpg',
+            width: 1920,
+            height: 700,
             caption: "PREFERRED BUSINESS DESTINATION",
             subCaption: "The Zuri Whitefield, Bengaluru"
         },
@@ -60,25 +66,36 @@ const HomeSliderBanner = () => {
                 <Carousel interval={2500} fade={true}>
                     {BannerImages.map((image, index) => {
                         const imageSrc = isMobile ? image.mobile : image.desktop;
-
                         return (
                             <Carousel.Item key={index}>
                                 <div style={{ position: 'relative', width: '100%', height: isMobile ? '60vh' : '100vh' }}>
-                                    <Image
-                                        src={imageSrc}
-                                        alt={image.caption}
-                                        fill
-                                        priority={index === 0}
-                                        sizes="100vw"
-                                        quality={85}
-                                        placeholder="blur"
-                                        blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
-                                        style={{
-                                            objectFit: 'cover',
-                                        }}
-                                    />
+                                    {isMobile ? (
+                                        <Image
+                                            src={imageSrc}
+                                            alt={image.caption}
+                                            width={image.width}
+                                            height={image.height}
+                                            priority={index === 0}
+                                            sizes="100vw"
+                                            style={{ width: '100%', height: 'auto' }}
+                                            quality={85}
+                                            placeholder="blur"
+                                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                                        />
+                                    ) : (
+                                        <Image
+                                            src={imageSrc}
+                                            alt={image.caption}
+                                            fill
+                                            priority={index === 0}
+                                            sizes="100vw"
+                                            style={{ objectFit: 'cover' }}
+                                            quality={85}
+                                            placeholder="blur"
+                                            blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R//2Q=="
+                                        />
+                                    )}
                                 </div>
-
                                 <Carousel.Caption className='p-0 position-absolute start-0 bottom-0 top-0 end-0'>
                                     <Col className='text-center position-relative d-flex' style={{ height: isMobile ? '60vh' : '100vh' }}>
                                         <Col className='d-flex flex-column flex-wrap align-items-center justify-content-center align-content-center'>
@@ -98,7 +115,6 @@ const HomeSliderBanner = () => {
                     })}
                 </Carousel>
             </Container>
-
             <div ref={section2Ref} />
         </>
     );

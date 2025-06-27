@@ -45,7 +45,7 @@ const HomeOffers = () => {
                             src="/home/weekend_package.jpg"
                             alt='Weekend Packages'
                             width={400}
-                            height={300}
+                            height={220}
                             className='w-100'
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             quality={85}
@@ -100,7 +100,7 @@ const HomeOffers = () => {
                                         src='/home/wellness_package.jpg'
                                         alt='Wellness Packages'
                                         width={200}
-                                        height={150}
+                                        height={200}
                                         className='w-100'
                                         sizes="(max-width: 768px) 100vw, 25vw"
                                         quality={85}
@@ -126,7 +126,7 @@ const HomeOffers = () => {
                                         src='/home/dinning_offers.jpg'
                                         alt='Dining Offers'
                                         width={200}
-                                        height={150}
+                                        height={200}
                                         className='w-100'
                                         sizes="(max-width: 768px) 100vw, 25vw"
                                         quality={85}
@@ -166,7 +166,7 @@ const HomeOffers = () => {
                                             src='/home/stay_offers.jpg'
                                             alt='Stay Offers'
                                             width={200}
-                                            height={150}
+                                            height={200}
                                             className='w-100'
                                             sizes="(max-width: 768px) 100vw, 25vw"
                                             quality={85}
@@ -212,7 +212,7 @@ const HomeOffers = () => {
                                             src='/home/honeymoon_package.jpg'
                                             alt='Honeymoon Packages'
                                             width={200}
-                                            height={150}
+                                            height={200}
                                             className='w-100'
                                             sizes="(max-width: 768px) 100vw, 25vw"
                                             quality={85}
