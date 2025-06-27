@@ -5,7 +5,7 @@ import { Col, Container } from 'react-bootstrap'
 const AboutUsBannerAndContent = () => {
     const BannerImg = {
         backgroundImage: `url('/about_us.jpg')`,
-        height: 460,
+        height: 460, 
         backgroundSize: 'cover'
     }
     return (
