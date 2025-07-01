@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const MonsoonPackageManager = () => {
     const BannerImg = {
-        backgroundImage: `url('/goa/offers/monsoon_mania_ap_banner.jpg')`,
+        backgroundImage: `url('/goa/offers/monsoon_ Indulgence_map_banner.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
@@ -14,7 +14,7 @@ const MonsoonPackageManager = () => {
 
             <Col className='text-center pb-3'>
                 <h3 className='text-custom-grey'>
-                    Monsoon Mania AP Package
+                     Monsoon Indulgence MAP package
                 </h3>
             </Col>
 
