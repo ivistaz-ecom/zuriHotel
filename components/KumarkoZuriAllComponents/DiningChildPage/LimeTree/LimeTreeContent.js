@@ -16,7 +16,7 @@ const LimeTreeContent = () => {
                     You can choose to sit under the wide expanse of the sky mirrored in the lagoon or sit inside the restaurant awash with soft lights and tranquil ambience.
                 </p>
                 <Link
-                    href="/kumarkom/restarents/pdf/Lime_Tree_New.pdf"
+                    href="/kumarkom/restarents/pdf/Lime_Tree_Menu.pdf"
                     target='_blank'>
                     <p className='bg-purple px-5 py-2 rounded-4 d-inline-block text-white'>
                         Menu
