@@ -33,7 +33,7 @@ const ComplimentaryAmenitiesContent = () => {
                     <li>Cycling in the resort between 09:00 am – 06:00pm</li>
                     <li>Fishing in the lagoon between 09:00 am – 06:00pm</li>
                     <li>Wireless internet access to one device/Laptop across the resort and in your guest room as well</li>
-                    <li>Complimentary use of Gym, Sauna, Jacuzzi & Steam bath 09:00 am – 06:00pm</li>
+                    <li>Gym (07:00 am – 08:00 pm)</li>
                     <li>Iron board and iron box (On request)</li>
                     <li>Bath Amenities such as soaps, shampoo, conditioner, moisturizer along with a dental and shaving kit</li>
                     <li>Bath, Hand and Face Towels. Pool Towels for use at the pool</li>
