@@ -22,9 +22,6 @@ const LastMinuteBengaluruContent = () => {
                         Complimentary WI-FI for 3 devices
                     </p>
                     <p>
-                        Complimentary Beer (2 Pints Daily From Minibar Only)
-                    </p>
-                    <p>
                         15% Discount on Food & Soft Beverages, SPA & Laundry. Package Includes Buffet Breakfast, Wi-Fi & Complimentary Beer (2 Pints daily from the Minibar only).
                     </p>
                     <h6 className='text-custom-grey'>
