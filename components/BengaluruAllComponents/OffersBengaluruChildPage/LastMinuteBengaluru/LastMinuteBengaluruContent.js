@@ -22,19 +22,13 @@ const LastMinuteBengaluruContent = () => {
                         Complimentary WI-FI for 3 devices
                     </p>
                     <p>
-                        15% Discount on Food & Soft Beverages, SPA & Laundry. Package Includes Buffet Breakfast, Wi-Fi & Complimentary Beer (2 Pints daily from the Minibar only).
+                        10% Discount on Food & Soft Beverages & Laundry. Package Includes Buffet Breakfast & Wi-Fi.
                     </p>
                     <h6 className='text-custom-grey'>
                         BOOK A CLUB ROOM FOR BELOW ADDITIONAL INCLUSIONS:
                     </h6>
                     <p>
                         One Way Airport Transfer
-                    </p>
-                    <p>
-                        Meal Credit of INR 750 Once during the stay in <Link href="/hotels-in-bengaluru/restaurants/incanto/" className='text-decoration-none text-black'>Incanto our Italian Fine Dine</Link>
-                    </p>
-                    <p>
-                        SPA Credit of INR 750 Once during the stay in Maya Spa
                     </p>
                     <p>
                         Cocktail Hours (60Min/Unlimited/IMFL)
@@ -46,7 +40,7 @@ const LastMinuteBengaluruContent = () => {
                         Fruit Platter
                     </p>
                     <p>
-                        15% Discount on Food & Soft Beverages, SPA & Laundry. Package Includes Buffet Breakfast, Wi-Fi, Cocktail Hours, ONE Way Airport transfers, 2 Pieces of Laundry per day & CUT Fruit Platter.
+                        15% Discount on Food, Soft Beverages & Laundry. Package Includes Buffet Breakfast, Wi-Fi, Cocktail Hours, ONE Way Airport transfers, 2 Pieces of Laundry per day & CUT Fruit Platter.
                     </p>
 
 
