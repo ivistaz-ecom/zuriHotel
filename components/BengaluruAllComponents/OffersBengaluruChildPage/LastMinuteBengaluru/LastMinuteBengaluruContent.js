@@ -10,7 +10,7 @@ const LastMinuteBengaluruContent = () => {
                 <Col className='py-4'>
                     <h6 className='text-black'>LAST MINUTE STEAL</h6>
                     <p>
-                        Book your stay at the Whitefield, Bengaluru 0-7 days in advance and enjoy a 15% off your room.
+                        Book your stay at the Whitefield, Bengaluru 0-7 days in advance and enjoy a 15% off your room
                     </p>
                     <h6 className='text-custom-grey'>
                         BOOK A ZURI ROOM FOR THE BELOW INCLUSIONS:
@@ -22,7 +22,7 @@ const LastMinuteBengaluruContent = () => {
                         Complimentary WI-FI for 3 devices
                     </p>
                     <p>
-                        10% Discount on Food & Soft Beverages & Laundry. Package Includes Buffet Breakfast & Wi-Fi.
+                        10% Discount on Food & Soft Beverages & Laundry Package Includes Buffet Breakfast & Wi-Fi
                     </p>
                     <h6 className='text-custom-grey'>
                         BOOK A CLUB ROOM FOR BELOW ADDITIONAL INCLUSIONS:
@@ -37,10 +37,10 @@ const LastMinuteBengaluruContent = () => {
                         2 piece laundry per day
                     </p>
                     <p>
-                        Fruit Platter
+                        Cut Fruit Platter
                     </p>
                     <p>
-                        15% Discount on Food, Soft Beverages & Laundry. Package Includes Buffet Breakfast, Wi-Fi, Cocktail Hours, ONE Way Airport transfers, 2 Pieces of Laundry per day & CUT Fruit Platter.
+                        15% Discount on Food, Soft Beverages & Laundry Package Includes Buffet Breakfast & Wi-Fi
                     </p>
 
 
