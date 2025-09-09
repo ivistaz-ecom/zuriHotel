@@ -179,7 +179,7 @@ const ZuriGoaRoomSuitesSlider = () => {
                         </Link>
                     </Col>
                     <Col className='text-center pt-md-5 d-flex flex-column align-items-center gap-4 ps-lg-5 ms-lg-5'>
-                        <Image src='/goa/room-suites/zuri-suite-new-4.jpg' alt='' roundedCircle width={180} height={180}
+                        <Image src='/goa/room-suites/executive_suite_thumb.jpg' alt='' roundedCircle width={180} height={180}
                             className='rounded-circle kumarkom-image-overlay'
                         />
 
@@ -261,7 +261,7 @@ const ZuriGoaRoomSuitesSlider = () => {
                         </Link>
                     </Col>
                     <Col className='text-center pt-md-5 d-flex flex-column align-items-center gap-4 ps-lg-5 ms-lg-5'>
-                        <Image src='/goa/room-suites/zuri-suite-new-4.jpg' alt='' roundedCircle width={180} height={180}
+                        <Image src='/goa/room-suites/executive_suite_thumb.jpg' alt='' roundedCircle width={180} height={180}
                             className='rounded-circle kumarkom-image-overlay'
                         />
 

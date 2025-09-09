@@ -4,7 +4,7 @@ import { Container, Col } from 'react-bootstrap'
 
 const ExecutiveSuiteRoomGoaBanner = () => {
     const BannerImg = {
-        backgroundImage: `url('/goa/room-suites/executive_suite_banner.jpg')`,
+        backgroundImage: `url('/goa/room-suites/executive_suite_banner_new.jpg')`,
         height: 466,
         backgroundSize: 'cover'
     }
