@@ -295,7 +295,7 @@ const ZuriGoaRoomSuitesSlider = () => {
             </Container>
 
             {/* Stay Offers */}
-            <Container className='p-0 pt-5'>
+            {/* <Container className='p-0 pt-5'>
                 <Col className='d-flex flex-column align-items-center '>
                     <h6 className='py-2 text-center border border-2 border-top-0 border-end-0 border-start-0'>STAY OFFERS</h6>
                 </Col>
@@ -354,7 +354,7 @@ const ZuriGoaRoomSuitesSlider = () => {
                         </Col>
                     </Col>
                 </Col>
-            </Container>
+            </Container> */}
 
 
             {/* Mobile View */}
