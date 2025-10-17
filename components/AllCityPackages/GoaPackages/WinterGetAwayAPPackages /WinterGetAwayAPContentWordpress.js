@@ -14,7 +14,7 @@ const WinterGetAwayApContentWordpress = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const pageId = '7139'; // Replace with the actual page ID
+    const pageId = '6430'; // Replace with the actual page ID
 
     const siteUrl = DomainUrl.wpPageApi;
 

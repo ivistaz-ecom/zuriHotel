@@ -14,7 +14,7 @@ const WinterGetAwayApPackagesBanner = () => {
 
             <Col className='text-center pb-3'>
                 <h3 className='text-custom-grey'>
-                    WINTER GETAWAY PACKAGE ON AP
+                Winter AP package 
                 </h3>
             </Col>
 
