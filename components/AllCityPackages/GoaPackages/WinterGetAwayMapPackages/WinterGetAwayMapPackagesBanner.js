@@ -14,7 +14,7 @@ const WinterGetAwayMapPackagesBanner = () => {
 
             <Col className='text-center pb-3'>
                 <h3 className='text-custom-grey'>
-                    WINTER GETAWAY PACKAGE ON MAP
+                    WINTER PACKAGE ON MAP
                 </h3>
             </Col>
 
