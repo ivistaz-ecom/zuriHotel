@@ -1,7 +1,8 @@
 import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
-
 import Link from 'next/link'
+
+
 
 
 const OffersGoaContent = () => {
@@ -40,7 +41,7 @@ const OffersGoaContent = () => {
                             </Col>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center '>
-                        <Image src='/goa/offers/Beach-Bon-Fire-4.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/goa/offers/monsoon_indulgence_map_thumb.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -49,7 +50,7 @@ const OffersGoaContent = () => {
 
                     <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
-                        <Image src='/goa/offers/Beach-Bon-Fire-3.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/goa/offers/monsoon_mania_ap_thumb.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -106,7 +107,7 @@ const OffersGoaContent = () => {
 
                     <Col className='d-flex flex-row mt-5'>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3' md={4}>
-                            <Image src='/goa/offers/Beach-Bon-Fire-4.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/goa/offers/monsoon_indulgence_map_thumb.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -200,7 +201,7 @@ const OffersGoaContent = () => {
                             <h6 className='py-2 text-center'>Winter AP package</h6>
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
-                            <Image src='/goa/offers/Beach-Bon-Fire-4.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/goa/offers/monsoon_indulgence_map_thumb.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
@@ -222,7 +223,7 @@ const OffersGoaContent = () => {
                         </Col>
                         <Col className='d-flex flex-wrap align-content-center justify-content-end p-3'>
 
-                            <Image src='/goa/offers/Beach-Bon-Fire-3.jpg' alt='' roundedCircle width={180} height={180}
+                            <Image src='/goa/offers/monsoon_mania_ap_thumb.jpg' alt='' roundedCircle width={180} height={180}
                                 className='rounded-circle kumarkom-image-overlay'
                             />
                         </Col>
