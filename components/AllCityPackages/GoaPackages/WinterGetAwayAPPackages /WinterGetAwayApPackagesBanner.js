@@ -4,7 +4,7 @@ import { Col, Container } from 'react-bootstrap'
 
 const WinterGetAwayApPackagesBanner = () => {
     const BannerImg1 = {
-        backgroundImage: `url('/goa/offers/Beach-Bon-Fire-4.jpg')`,
+        backgroundImage: `url('/goa/offers/monsoon_ Indulgence_map_banner.jpg')`,
         height: 460,
         backgroundSize: 'cover'
     }
@@ -14,7 +14,7 @@ const WinterGetAwayApPackagesBanner = () => {
 
             <Col className='text-center pb-3'>
                 <h3 className='text-custom-grey'>
-                    WINTER GETAWAY PACKAGE ON AP
+                Winter AP package 
                 </h3>
             </Col>
 

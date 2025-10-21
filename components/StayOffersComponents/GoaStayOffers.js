@@ -28,11 +28,13 @@ const GoaStayOffers = () => {
                             <Col md={7} className='text-md-end text-center pe-md-4'>
                                 <Col className='d-inline-block'>
                                     <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
-                                    <h6 className='text-center'>Monsoon Indulgence MAP package </h6>
+                                    <h6 className='text-center'>Winter AP package</h6>
                                 </Col>
-                                <p> Valid from 1st July’25 till 30th Sept’25</p>
+                                <p>
+                                    Winter AP package rates are valid from 16th Oct’25 till 31st Mar’26
+                                </p>
                                 <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2'>
-                                    <Link href="/beach-resorts-in-goa/offers/monsoon-indulgence-map-package"
+                                    <Link href="/beach-resorts-in-goa/offers/winter-getaway-package-on-ap"
                                         className='bg-black text-center text-decoration-none btn-circle'
                                     >
                                         <p
@@ -60,14 +62,14 @@ const GoaStayOffers = () => {
                                 <Col className='d-inline-block'>
                                     <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
                                     <h6 className='text-center'>
-                                        Monsoon Mania AP package
+                                        Winter MAP package
                                     </h6>
                                 </Col>
                                 <p>
-                                    Valid from 1st July’25 till 30th Sept’25
+                                    Winter MAP package rates are valid from 16th Oct’25 till 31st Mar’26
                                 </p>
                                 <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
-                                    <Link href="/beach-resorts-in-goa/offers/monsoon-mania-ap-package"
+                                    <Link href="/beach-resorts-in-goa/offers/winter-getaway-package-on-map"
                                         className='bg-black text-center text-decoration-none btn-circle'
                                     >
                                         <p className=' mb-0 font11px lh-sm text-white'
@@ -238,7 +240,7 @@ const GoaStayOffers = () => {
                                 Package Valid from 1st July 2024 till 30th Sept 2024
                             </p>
                             <Col className='d-flex justify-md-content-center  align-items-md-start p-0 pe-2'>
-                                <Link href="/beach-resorts-in-goa/offers/monsoon-mania-ap-package/"
+                                <Link href="/beach-resorts-in-goa/offers/winter-getaway-package-on-map/"
                                     className='bg-black text-center text-decoration-none btn-circle'
                                 >
                                     <p className=' mb-0 font11px lh-sm text-white'
@@ -297,7 +299,7 @@ const GoaStayOffers = () => {
                             />
                         </Col>
                         <p>valid from 1st July’25 till 30th Sept’25</p>
-                        <Link href="/beach-resorts-in-goa/offers/monsoon-indulgence-map-package/"
+                        <Link href="/beach-resorts-in-goa/offers/winter-getaway-package-on-ap"
                             className='bg-black text-center rounded-circle text-decoration-none p-1'>
                             <p
                                 className='m-0 lh-sm text-white btn-circle'
@@ -320,7 +322,7 @@ const GoaStayOffers = () => {
                             />
                         </Col>
                         <p>Valid from 1st July’25 till 30th Sept’25</p>
-                        <Link href="/beach-resorts-in-goa/offers/monsoon-mania-ap-package"
+                        <Link href="/beach-resorts-in-goa/offers/winter-getaway-package-on-map"
                             className='bg-black text-center rounded-circle text-decoration-none p-1'>
                             <p
                                 className='m-0 lh-sm text-white btn-circle'
@@ -425,7 +427,7 @@ const GoaStayOffers = () => {
                             />
                         </Col>
                         <p>Package Valid from 1st July 2024 till 30th Sept 2024</p>
-                        <Link href="/beach-resorts-in-goa/offers/monsoon-mania-ap-package/"
+                        <Link href="/beach-resorts-in-goa/offers/winter-getaway-package-on-map/"
                             className='bg-black text-center rounded-circle text-decoration-none p-1'>
                             <p
                                 className='m-0 lh-sm text-white btn-circle'
