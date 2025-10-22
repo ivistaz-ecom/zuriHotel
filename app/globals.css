@@ -866,7 +866,8 @@ ul.features-list-offer {
 
   .custom-mayaspa-box {
     box-shadow: -1px 0 1px -1px silver;
-    height: 329px;
+    /* height: 329px; */
+    height: 300px;
   }
 
   /* .search-txt.col {

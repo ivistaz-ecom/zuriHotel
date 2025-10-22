@@ -35,9 +35,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 or 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 / 6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     A firm, yet gentle European massage which improves circulation, eases muscle aches and tension. Oils: yes; Pressure: medium.
                                 </p>
@@ -49,9 +49,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 or 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 / 6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     The massage releases chronic muscle tension from the deeper layers of the muscle tissue greatly enhancing blood circulation. Oils: Yes; Pressure: Medium to deep.
                                 </p>
@@ -63,9 +63,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 45 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     2500 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     This soothing body massage uses a combination of popular western techniques designed to drain away the stress and strain of everyday life. Oils: Yes; Pressure: Medium to firm.
                                 </p>
@@ -77,9 +77,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     2000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     A deep scalp massage using the pressure point technique. Boosts the strength of the hair roots while the oil conditions hair, providing lustre and shine. Oils: Yes; Pressure: Medium to deep.
                                 </p>
@@ -92,9 +92,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     2000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     A deep scalp massage using the pressure point technique. Boosts the strength of the hair roots while the oil conditions hair, providing lustre and shine. Oils: Yes; Pressure: Medium to deep.
                                 </p>
@@ -106,9 +106,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Warmed granite stones that fit the shape of the body, in combination with Neroli, lavender and rosemary essential oils relieve muscular and mental stress. Oils: Yes; Pressure: Medium.
                                 </p>
@@ -120,9 +120,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 or 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 / 6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     With a unique blend of acupressure, reflexology and aromatic essential oils, the massage uses a variety of holistic massage techniques in calming nerves and healing the body. Oils: Yes; Pressure: Medium to firm.
                                 </p>
@@ -134,9 +134,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000  INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     This is a unique therapy that combines plant-derived aromatic essential oils with a soft relaxing massage for a calming and energising effect. Oils: yes; Pressure: Light & gentle.
                                 </p>
@@ -148,9 +148,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     2000
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     A variety of massage techniques are used to release the knotted muscles across the spine and back thus providing relief from aches and tension. Oils: Yes; Pressure: Medium to deep.
                                 </p>
@@ -163,9 +163,9 @@ const WesternTherapiesTab = () => {
                                     Duration: 30 or 60 minutes
 
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     2500 / 4000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Reflexology involves massaging the pressure points on your feet which correspond to a part of the body. Specific manipulation and pressure on these points eliminates blockages in the corresponding organs, glands and other parts of the body. Oils: Yes; Pressure: Medium to deep.
                                 </p>
@@ -178,9 +178,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 30 or 60 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     2500 / 4000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Reflexology involves massaging the pressure points on your feet which correspond to a part of the body. Specific manipulation and pressure on these points eliminates blockages in the corresponding organs, glands and other parts of the body. Oils: Yes; Pressure: Medium to deep.
                                 </p>
@@ -192,9 +192,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 or 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 / 6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Increases flexibility, relieves muscle and joint tension and balances the body’s energy systems by using passive, rhythmic stretching, bodily movements and gentle pressure along the body’s energy lines. Oils: no; Pressure: Medium to deep.
                                 </p>
@@ -212,9 +212,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Replenishes the vitality of dry skin by maintaining the moisture level. Nourishes and tones, leaving the skin soft, supple and well-hydrated.
                                 </p>
@@ -226,9 +226,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Carefully selected natural extracts in light, textured, non-greasy formulations ensure a matte, shine-free, refined complexion with unclogged pores.
                                 </p>
@@ -240,51 +240,51 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     This specifically-formulated-for-men skin mask counteracts the ageing process with its rejuvenating Caviar and repairing freeze-dried Esculox. We recommend that men shave a few hours prior to their facial appointment.
                                 </p>
                             </Col>
-                            <Col className='text-center p-3 custom-mayaspa-box' md={4}>
+                            <Col className='text-center p-3 custom-mayaspa-box' md={4} style={bgLightBlue}>
                                 <h6 className='text-custom-megenta'>
                                     PLANTOMER MASK
                                 </h6>
                                 <p>
                                     Duration: 75 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4500 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     This refreshing lift-off mask combines the hydrating benefits of Seaweed with Propolis, a natural healing and desensitising substance to soothe, nourish and augment your skin’s texture.
                                 </p>
                             </Col>
-                            <Col className='text-center p-3 custom-mayaspa-box' md={4} style={bgLightBlue}>
+                            <Col className='text-center p-3 custom-mayaspa-box' md={4} >
                                 <h6 className='text-custom-megenta'>
                                     FACIAL FOR NORMAL TO COMBINATION SKIN
                                 </h6>
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     A facial for combination skin that normalises that oily T-Zone while combating dehydration.
                                 </p>
                             </Col>
-                            <Col className='text-center p-3 custom-mayaspa-box' md={4}>
+                            <Col className='text-center p-3 custom-mayaspa-box' md={4} style={bgLightBlue}>
                                 <h6 className='text-custom-megenta'>
                                     MYOXY CAVIAR’ & PEARL
                                 </h6>
                                 <p>
                                     Duration: 90 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     6000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     This anti-ageing treatment is a blend of Caviar extract, Pearl extract and phyto-extracts which increase skin oxygenation and suppleness, visibly reducing facial lines and wrinkles.
                                 </p>
@@ -296,9 +296,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 75 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     5000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     This potent blend of stabilised vitamin ‘C’ and a specialised formulation of freeze-dried Seaweed gives a firm and smooth complexion with a luminous glow.
                                 </p>
@@ -310,9 +310,9 @@ const WesternTherapiesTab = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black fw-bold'>
+                                {/* <p className='text-black fw-bold'>
                                     4000 INR
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     French rose essential oil, chamomile and allantoin restore the skin’s hypersensitivity and defenses
                                 </p>
