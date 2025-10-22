@@ -343,9 +343,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 45 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         2800 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         This unique body scrub carefully deep cleanses and exfoliates to eliminate dead skin cells, skin-bound toxins, impurities and sebum accumulation. Recommended for all skin types.
                                     </p>
@@ -357,9 +357,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 45 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         2800 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         The salt mousse scrub with sea minerals and fruit enzymes removes dead skin cells resulting in a more radiant appearance. Suits all skin types.
                                     </p>
@@ -376,9 +376,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         5000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         This slimming and toning wrap stimulates your body’s ability to break down fat, increase metabolism and eliminate water retention.
                                     </p>
@@ -390,9 +390,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         5000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Volcanic ash, historically recognised as a purifying paste for skin cleansing and moisture retention is used alongside warm purifying mud for a gentle exfoliation and delightful rejuvenation.
                                     </p>
@@ -404,9 +404,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 30 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         1500 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         This specialised treatment fights wrinkles, reduces dark circles and relieves puffiness making eyes refreshed and radiant.
                                     </p>
@@ -418,9 +418,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         5000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         A warm, soaking bath with micronised seaweed to eliminate toxins and revitalise your body after a deep cleansing body exfoliation.
                                     </p>
@@ -432,9 +432,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 30 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         2000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         A warm, soaking bath in a hydrotherapy tub with a choice of micronised seaweed or natural moor mud after any of our body massages or skin treatments.
                                     </p>
@@ -446,9 +446,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 180 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         21000 / 10000 (Single) INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Romantic Getaway, the Spa Way (Couple) Experience a couple package that consists of a refreshing body scrub of your choice, a hydrating body wrap, a massage of your choice from the Western spa menu and finally a romantic floral bath in the Jacuzzi with the aroma of fresh roses. You can opt for a 60 minute facial instead of the body wrap. Also available individually.
                                     </p>
@@ -460,9 +460,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 75 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         10000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         An hour’s massage of your choice from the Western Spa menu together in the privacy of a candle-lit couple’s spa suite with soothing music. It ends with a head or foot massage and a floral bath in the private Jacuzzi. Oils: Yes; Pressure: Light, medium to deep.
                                     </p>
@@ -474,9 +474,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         6000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Soothing body massage with aromatic oils follows a relaxing body palming and a back massage with warmed stones to ease the deeply tensed muscles.
                                     </p>
@@ -514,9 +514,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         5000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Soothes sore muscles, aches and pains by stimulating your body’s circulation. Ideal for those prone to chronic pain or fatigue, rheumatism / arthritis pain and post sports injuries.
                                     </p>
@@ -528,9 +528,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 60 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         4000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Cooling and desensitising water lilies, green tea and chamomile relieve the discomfort of skin over-exposed to the sun.
                                     </p>
@@ -542,9 +542,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 30 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         6000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Combines the herbo-mineral and thermal aspects to the healing power of water as you soak in a hydro bath-tub with water jet streams. Stimulates sensory receptors on the skin, boosts blood circulation and releases muscle tension.
                                     </p>
@@ -556,9 +556,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         5000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Aromatic body polish followed by a warm soaking bath with natural moor mud to alleviate aches and pains.
                                     </p>
@@ -570,9 +570,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 15 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         1000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         A cascade of water hitting your body through gentle sprays of Vichy shower (a shower with seven shower heads) energises your body chakras, eases muscle tension, cleanses and hydrates. (It can easily be enjoyed separately or following any body massages or skin treatments for a complete Spa experience.)
                                     </p>
@@ -584,9 +584,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 90 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         6000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Lying on a Nuvola, a dry, floatation water bed after a relaxing full-body massage with a special lighting system creating a sequence of colours, provides deep relaxation and healing.
                                     </p>
@@ -598,9 +598,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 60 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         5000 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Choice of Western or Oriental full-body massage drains away stress and calms your body and senses. Ends in a floral bath in a private Jacuzzi.
                                     </p>
@@ -612,9 +612,9 @@ const WesternTherapiesTab = () => {
                                     <p>
                                         Duration: 120 minutes
                                     </p>
-                                    <p className='text-black fw-bolder'>
+                                    {/* <p className='text-black fw-bolder'>
                                         7500 INR
-                                    </p>
+                                    </p> */}
                                     <p className='d-none d-md-block'>
                                         Starts with a refreshing body scrub, rejuvenating body exfoliation and relaxing under the gentle sprays of Vichy shower. Ends with a deeply relaxing body massage.
                                     </p>
