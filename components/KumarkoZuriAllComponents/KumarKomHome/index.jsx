@@ -33,7 +33,7 @@ const Kumarkom = () => {
             <HomeHeroBanner />
             <KumarkomResort />
             <KumarkomGallery />
-            {/* <KumarkomHomePopup /> */}
+            <KumarkomHomePopup />
             <WhatsappWidgetKumarkom />
 
             <Footer />

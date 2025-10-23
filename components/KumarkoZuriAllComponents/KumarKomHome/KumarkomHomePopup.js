@@ -34,10 +34,18 @@ const KumarkomHomePopup = () => {
                             className='position-absolute top-0 bottom-0 start-0 end-0 bg-dark bg-opacity-50'
                             onClick={handleClick}
                         ></span>
-                        <Col className='position-absolute translate-middle start-50 top-50 d-lg-block d-none d-lg-flex flex-column align-items-center bg-white shadow-lg rounded p-4 w-50'>
-                            <p className='text-center text-secondary mt-3'>
-                                Our main pool and kids' pool will be under maintenance from 1st April to 8th April 2025.
-                            </p>
+                        <Col className='position-absolute translate-middle start-50 top-50 d-lg-block d-none d-lg-flex flex-column align-items-start bg-white shadow-lg rounded p-4 w-50'>
+                            <p class=" text-secondary mt-3">
+                                TiEcon Kerala 2025 will be held at <strong>The Zuri Kumarakom, Kerala Resort &amp; Spa</strong>
+                                on <strong>21st and 22nd November 2025</strong>.</p>
+                            <p>For room reservations during the event, please contact the undersigned.</p>
+                            <p><strong>Reshma</strong></p>
+                            <p>Mobile: <a href="tel:+918129367122">+91 81293 67122</a></p>
+                            <p>E-mail: <a href="mailto:accounts@tiekerala.org">accounts@tiekerala.org</a></p>
+                            <p><strong>Vishnu</strong></p>
+                            <p>Mobile: <a href="tel:+919946105511">+91 99461 05511</a></p>
+                            <p>E-mail: <a href="mailto:vishnu.soman@thezurihotels.com">vishnu.soman@thezurihotels.com</a></p>
+
                             <span className='position-absolute end-0 top-0'>
                                 <i className="bi bi-x fs-4 cursor-pointer" onClick={handleClick}></i>
                             </span>
