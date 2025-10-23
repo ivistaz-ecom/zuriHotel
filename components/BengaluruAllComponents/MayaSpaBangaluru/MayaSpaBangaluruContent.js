@@ -71,9 +71,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>1800 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Feel refreshingly renewed with a neck & back massage.
                                 </p>
@@ -84,9 +84,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>1320 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Discover a deeper sense of clarity when you take a moment to simply let go.
                                 </p>
@@ -97,9 +97,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>1200 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Respect these hard-working extremities with a refreshing & restorative massage that revives tired feet.
                                 </p>
@@ -111,9 +111,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 30 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>1500 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     A deep exfoliating & cleansing facial to refine skin, unclog pores & brighten complexion.
                                     <br />
@@ -131,9 +131,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>3200 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Achieve an elevated sense of balance with this curative aromatherapy massage that restores the body for a deeper feeling of relaxation & enhanced Sleep.
                                 </p>
@@ -144,9 +144,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>3500 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Enjoy a welcome sense of sense of renewal for sore muscles from this intensely satisfying, powerful massage that reaches the deeper structures of the body.
                                 </p>
@@ -157,9 +157,9 @@ const MayaSpaBangaluruContent = () => {
                                 <p>
                                     Duration: 60 minutes
                                 </p>
-                                <p className='text-black'>
+                                {/* <p className='text-black'>
                                     <b>3200 INR</b>
-                                </p>
+                                </p> */}
                                 <p className='d-none d-md-block'>
                                     Experience the subtle difference between being relaxed & being restored with this profoundly heating massage designed to dissolve stress & tension.
                                 </p>
