@@ -42,9 +42,9 @@ const KumarkomHomePopup = () => {
                                 on <strong>21st and 22nd November 2025</strong>.
                             </p>
                             <p>For room reservations during the event, please contact the undersigned.</p>
-                            <p><strong>Reshma</strong></p>
+                            {/* <p><strong>Reshma</strong></p>
                             <p>Mobile: <a href="tel:+918129367122">+91 81293 67122</a></p>
-                            <p>E-mail: <a href="mailto:accounts@tiekerala.org">accounts@tiekerala.org</a></p>
+                            <p>E-mail: <a href="mailto:accounts@tiekerala.org">accounts@tiekerala.org</a></p> */}
                             <p><strong>Vishnu</strong></p>
                             <p>Mobile: <a href="tel:+919946105511">+91 99461 05511</a></p>
                             <p>E-mail: <a href="mailto:vishnu.soman@thezurihotels.com">vishnu.soman@thezurihotels.com</a></p>
