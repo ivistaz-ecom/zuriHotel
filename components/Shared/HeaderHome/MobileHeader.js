@@ -244,12 +244,12 @@ const MobileHeader = () => {
                                             <h6 className='font11px'>Stay Offers</h6>
                                         </Link>
 
-                                        <Link
+                                        {/* <Link
                                             href="/offers/dining-offers"
                                             className='text-decoration-none text-black'
                                         >
                                             <h6 className='font11px'>Dining Offers</h6>
-                                        </Link>
+                                        </Link> */}
 
                                         <Link
                                             href="/offers/ayurveda-package"

@@ -30,7 +30,7 @@ const index = () => {
             <DiningGoaBanner />
             <DiningGoaContent />
             <DiningGoaSlider />
-            <DiningGoaOffers />
+            {/* <DiningGoaOffers /> */}
 
             <Footer />
         </>

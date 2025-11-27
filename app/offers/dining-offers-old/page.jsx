@@ -5,7 +5,7 @@ import DiningOffersAllComponents from '../../../components/DiningOffers'
 const diningoffers = () => {
     return (
         <>
-            <DiningOffersAllComponents />
+            {/* <DiningOffersAllComponents /> */}
         </>
     )
 }

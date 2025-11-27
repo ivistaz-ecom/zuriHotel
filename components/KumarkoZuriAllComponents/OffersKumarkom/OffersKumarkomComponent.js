@@ -76,7 +76,7 @@ const OffersKumarkomComponent = () => {
               <Col className='d-inline-block'>
                 <Image src='/cl.png' alt='' fluid className='object-fit-none px-md-5 pb-md-3' />
                 <h6 className='text-center'>
-                  ADVANCE BOOKING OFFER
+                  ADVANCE BOOKING OFFER 
                 </h6>
               </Col>
               <p>

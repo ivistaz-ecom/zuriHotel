@@ -113,17 +113,17 @@ const HomeOffers = () => {
                                     <h6
                                         className='p-2'
                                     >
-                                        DINING OFFERS
+                                       ADVANCE BOOKING OFFER 
                                     </h6>
                                     <p
                                         className='p-2'
                                     >
-                                        A true treat for the taste buds, our signature dishes will leave you asking for more.
+                                       Book 21 days in advance and avail 25% discount on room with breakfast bookings
                                     </p>
                                 </Col>
                                 <Col>
                                     <Image
-                                        src='/home/dinning_offers.jpg'
+                                        src='/stay_offers/advance_booking_tumbnail.jpg'
                                         alt='Dining Offers'
                                         width={200}
                                         height={200}
@@ -133,7 +133,7 @@ const HomeOffers = () => {
                                     />
                                 </Col>
                                 <Col className='d-flex justify-content-center align-items-md-start position-absolute bottom-0 start-50 translate-middle'>
-                                    <Link href="/offers/dining-offers/"
+                                    <Link href="/lake-resorts-in-kumarakom/offers/advance-booking-offer"
                                         className='bg-black text-center text-decoration-none btn-circle'
                                     >
                                         <p className=' mb-0 font11px lh-sm text-white'>
@@ -312,7 +312,7 @@ const HomeOffers = () => {
 
                     <Col className='border border-1 shadow-sm p-0'>
                         <Image
-                            src="/home/dinning_offers.jpg"
+                            src="/stay_offers/advance_booking_tumbnail.jpg"
                             alt='Dining Offers'
                             width={400}
                             height={340}
@@ -321,15 +321,15 @@ const HomeOffers = () => {
                             quality={85}
                         />
                         <Col className='p-2 pb-0'>
-                            <h6 className='text-black'>DINING
+                            <h6 className='text-black'> ADVANCE BOOKING
                                 <br />
                                 OFFERS</h6>
                             <p>
-                                A true treat for the taste buds, our signature dishes will leave you asking for more.
+                            Book 21 days in advance and avail 25% discount on room with breakfast bookings
                             </p>
                         </Col>
                         <Col className='d-flex justify-md-content-center justify-content-end align-items-md-start p-0 pe-2 pb-2'>
-                            <Link href="/offers/dining-offers/"
+                            <Link href="/lake-resorts-in-kumarakom/offers/advance-booking-offer"
                                 className='bg-black text-decoration-none btn-circle'>
                                 <p
                                     className='m-0 lh-sm text-white font11px  text-center'
