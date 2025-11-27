@@ -260,12 +260,12 @@ const DesktopHeader = () => {
                                 <h6 className="header-font">Stay Offers</h6>
                               </Link>
 
-                              <Link
+                              {/* <Link
                                 href="/offers/dining-offers/"
                                 className="text-decoration-none text-white"
                               >
                                 <h6 className="header-font">Dining Offers</h6>
-                              </Link>
+                              </Link> */}
 
                               <Link
                                 href="/offers/ayurveda-package"
