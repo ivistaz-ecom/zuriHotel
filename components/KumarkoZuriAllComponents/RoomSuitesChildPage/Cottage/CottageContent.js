@@ -15,7 +15,7 @@ const CottageContent = () => {
         <>
             <Container className='p-0 py-4 text-center'>
                 <Image src='/cl.png' alt='' fluid />
-                <h6 className='py-2 text-center'>ZURI DELUXE ROOM</h6>
+                <h6 className='py-2 text-center'>ZURI LAGOON VIEW COTTAGE</h6>
 
                 <Col className='px-5'>
                     <p>
