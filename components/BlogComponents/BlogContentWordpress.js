@@ -1,7 +1,7 @@
 'use client'
 import React, { useState, useEffect } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-import BlogPostsByCategory from './ BlogPostsByCategory';
+import BlogPostsByCategory from './BlogPostsByCategory';
 import Link from 'next/link';
 
 import DomainUrl from '../../config';
@@ -31,6 +31,67 @@ const BlogContentWordpress = () => {
         }
     }, []);
 
+    // Helper: remove video elements / embeds / shortcodes from HTML string
+    const stripVideoFromHtml = (html) => {
+        if (!html) return '';
+
+        // run only in browser (client)
+        if (typeof window === 'undefined' || typeof DOMParser === 'undefined') {
+            // fallback: simple regex removal of common tags/shortcodes (not perfect)
+            return html
+                .replace(/\[video[^\]]*\]/gi, '')
+                .replace(/<iframe[\s\S]*?<\/iframe>/gi, '')
+                .replace(/<video[\s\S]*?<\/video>/gi, '')
+                .replace(/<embed[\s\S]*?<\/embed>/gi, '')
+                .replace(/<object[\s\S]*?<\/object>/gi, '');
+        }
+
+        try {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+
+            const selectors = [
+                'video',
+                'iframe',
+                'embed',
+                'object',
+                'figure.wp-block-video',
+                'div.wp-block-video',
+                'div[data-type="video"]',
+                'figure.embed-video', // generic
+                'figure.wp-video' // other WP variants
+            ];
+
+            selectors.forEach(sel => {
+                doc.querySelectorAll(sel).forEach(node => node.remove());
+            });
+
+            // Remove leftover shortcodes like [video src="..."] or [embed]...[/embed]
+            let cleaned = doc.body.innerHTML.replace(/\[video[^\]]*\]/gi, '');
+            cleaned = cleaned.replace(/\[\/?embed[^\]]*\]/gi, '');
+
+            // Also remove any empty wrappers left (e.g., empty <p> or <div>)
+            // parse again and remove empty paragraphs/divs that contain only whitespace
+            const cleanedDoc = parser.parseFromString(cleaned, 'text/html');
+            cleanedDoc.querySelectorAll('p, div').forEach(el => {
+                if (!el.textContent.trim() && el.querySelectorAll('*').length === 0) {
+                    el.remove();
+                }
+            });
+
+            return cleanedDoc.body.innerHTML;
+        } catch (err) {
+            // on error fall back to regex removal
+            return html
+                .replace(/\[video[^\]]*\]/gi, '')
+                .replace(/<iframe[\s\S]*?<\/iframe>/gi, '')
+                .replace(/<video[\s\S]*?<\/video>/gi, '')
+                .replace(/<embed[\s\S]*?<\/embed>/gi, '')
+                .replace(/<object[\s\S]*?<\/object>/gi, '');
+        }
+    };
+
+
     useEffect(() => {
         const fetchAllCategories = async () => {
             try {
@@ -54,9 +115,21 @@ const BlogContentWordpress = () => {
                 const data = await response.json();
 
                 // Filter ONLY on live site
-                const filteredPosts = isStaging 
+                let filteredPosts = isStaging 
                     ? data 
                     : data.filter(p => p.slug !== BLOCKED_SLUG);
+
+                // For listing: strip video content from each post's rendered content
+                filteredPosts = filteredPosts.map(p => {
+                    return {
+                        ...p,
+                        // keep original content in case you need full version elsewhere
+                        content: {
+                            ...p.content,
+                            rendered_stripped: stripVideoFromHtml(p.content?.rendered || '')
+                        }
+                    };
+                });
 
                 setAllPosts(filteredPosts);
 
@@ -83,9 +156,17 @@ const BlogContentWordpress = () => {
 
                 const data = await response.json();
 
-                const filteredMostViewed = isStaging 
+                let filteredMostViewed = isStaging 
                     ? data 
                     : data.filter(p => p.slug !== BLOCKED_SLUG);
+
+                filteredMostViewed = filteredMostViewed.map(p => ({
+                    ...p,
+                    content: {
+                        ...p.content,
+                        rendered_stripped: stripVideoFromHtml(p.content?.rendered || '')
+                    }
+                }));
 
                 setMostViewPosts(filteredMostViewed);
 
@@ -160,7 +241,7 @@ const BlogContentWordpress = () => {
                                         <Row key={post.id}>
                                             <Col>
                                                 <Link href={`/blog/${post.slug}`} className='text-decoration-none' target='_blank'>
-                                                    <Image src={post.acf.list_page_image.url} alt={post.title.rendered} fluid />
+                                                    <Image src={post.acf?.list_page_image?.url} alt={post.title.rendered} fluid />
                                                 </Link>
                                             </Col>
 
@@ -175,7 +256,8 @@ const BlogContentWordpress = () => {
                                                             dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
                                                     </Link>
 
-                                                    <p className="post-content font15px" dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                                    {/* Use stripped HTML (no video) for listing */}
+                                                    <p className="post-content font15px" dangerouslySetInnerHTML={{ __html: post.content?.rendered_stripped || '' }} />
                                                 </Col>
 
                                                 <Col className='d-flex flex-column justify-content-end border border-3 border-top-0 border-start-0 border-end-0'>
@@ -229,7 +311,7 @@ const BlogContentWordpress = () => {
                                 {mostViewPosts.map(post => (
                                     <Row key={post.id} className='border border-3 border-top-0 border-start-0 border-end-0'>
                                         <Col md={4}>
-                                            <Image src={post.acf.side_bar_image.url} alt={post.title.rendered} fluid />
+                                            <Image src={post.acf?.side_bar_image?.url} alt={post.title.rendered} fluid />
                                         </Col>
 
                                         <Col className='p-2 d-flex flex-column justify-content-between'>
@@ -241,8 +323,9 @@ const BlogContentWordpress = () => {
                                                 <p className='font15px text-purple text-uppercase'
                                                     dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
 
+                                                {/* Use stripped HTML for most viewed too */}
                                                 <p className='post-content font15px'
-                                                    dangerouslySetInnerHTML={{ __html: post.content.rendered }} />
+                                                    dangerouslySetInnerHTML={{ __html: post.content?.rendered_stripped || '' }} />
                                             </Col>
 
                                             <Col className='d-flex flex-column justify-content-end'>
