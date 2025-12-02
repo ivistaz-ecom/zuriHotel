@@ -95,8 +95,8 @@ const Posts = ({ slug }) => {
                 </head>
 
                 <Container className='custom-kumarkom-menu-container py-5'>
-                    <Row className="justify-content-center">
-                        <Col md={8} className="text-center">
+                    <Row className="justify-content-center mt-5">
+                        <Col md={8} className="text-center mt-5">
                             <h2 className="text-uppercase" style={{ color: '#913065' }}>
                                 This post is not available on the live site
                             </h2>
