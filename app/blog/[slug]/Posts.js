@@ -1,23 +1,24 @@
 'use client'
 import React, { useEffect, useState } from 'react'
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Container, Image, Row, Button } from 'react-bootstrap';
 
 import config from '../../../config'
 
 import '../../../components/StyledComponents'
 import Link from 'next/link';
 
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 
 const Posts = ({ slug }) => {
     const pathname = usePathname(); // e.g. /blog/<slug>
-    const router = useRouter();
 
     const [fullUrl, setFullUrl] = useState('');
     const [data, setData] = useState([]);
     const [isStaging, setIsStaging] = useState(false);
-    const [blocked, setBlocked] = useState(false); // true when we redirected / blocked render
+    const [blocked, setBlocked] = useState(false); // true when we block render for this slug on live
+    const [loading, setLoading] = useState(true);
+    const [fetchError, setFetchError] = useState(null);
 
     const siteUrl = config.apiUrl;
 
@@ -25,7 +26,7 @@ const Posts = ({ slug }) => {
     const TARGET_SLUG = 'tiecon-kerala-2025-at-the-zuri-kumarakom-a-landmark-celebration-of-entrepreneurship';
     const STAGING_HOST = 'staging.thezurihotels.com';
 
-    // detect environment & perform redirect for the single slug if on LIVE
+    // Detect environment and decide whether to block (no redirect)
     useEffect(() => {
         if (typeof window === 'undefined') return;
 
@@ -36,26 +37,33 @@ const Posts = ({ slug }) => {
         const staging = hostname.includes('staging') || hostname === STAGING_HOST;
         setIsStaging(staging);
 
-        // If this is the protected slug AND we are NOT on staging -> redirect to staging equivalent
+        // If live and this is the protected slug -> block (do not fetch)
         if (!staging && slug && slug === TARGET_SLUG) {
-            // build the staging url that mirrors the current path
-            const stagingUrl = `https://${STAGING_HOST}${pathname || window.location.pathname}`;
-            // Use replace so user won't get the live page in history
-            window.location.replace(stagingUrl);
-            setBlocked(true); // stop component from rendering / fetching
+            setBlocked(true);
+            setLoading(false);
+        } else {
+            setBlocked(false);
         }
     }, [slug, pathname]);
 
 
-    // fetch post only when not blocked (i.e., not redirecting)
+    // fetch post only when not blocked (i.e., not the protected slug on live)
     const FetchPost = async () => {
+        setLoading(true);
+        setFetchError(null);
         try {
             const URL_Fetchpost = `${siteUrl}/wp-json/wp/v2/posts?_embed&slug=${slug}`;
-            let result = await fetch(URL_Fetchpost);
-            result = await result.json();
+            const res = await fetch(URL_Fetchpost);
+            if (!res.ok) {
+                throw new Error(`Failed to fetch post (status ${res.status})`);
+            }
+            const result = await res.json();
             setData(result);
         } catch (err) {
             console.error('FetchPost error', err);
+            setFetchError(err.message || 'Fetch error');
+        } finally {
+            setLoading(false);
         }
     }
 
@@ -72,9 +80,59 @@ const Posts = ({ slug }) => {
         return new Date(dateString).toLocaleDateString(undefined, options);
     };
 
-    // if we've redirected/blocked, render nothing to avoid flicker
-    if (blocked) return null;
+    // --- BLOCKED UI (live + protected slug) ---
+    if (blocked) {
+        // create the staging URL that mirrors the current path
+        const stagingUrl = `https://${STAGING_HOST}${pathname || (new URL(fullUrl || window.location.href)).pathname}`;
 
+        return (
+            <>
+                {/* Basic noindex meta to avoid indexing blocked page on live */}
+                <head>
+                    <meta name="robots" content="noindex, nofollow" />
+                    <link rel="canonical" href={stagingUrl} />
+                    <title>Post not available on live</title>
+                </head>
+
+                <Container className='custom-kumarkom-menu-container py-5'>
+                    <Row className="justify-content-center">
+                        <Col md={8} className="text-center">
+                            <h2 className="text-uppercase" style={{ color: '#913065' }}>
+                                This post is not available on the live site
+                            </h2>
+
+                            <p style={{ color: '#555' }}>
+                                The content you are trying to view is only published on the staging environment.
+                                If you need to access it, please view it on staging or contact the content owner.
+                            </p>
+
+                            <div className="my-3">
+                                <a href={stagingUrl} target="_blank" rel="noreferrer">
+                                    <Button variant="outline-primary">Open on Staging</Button>
+                                </a>
+                            </div>
+
+                            <p style={{ fontSize: 12, color: '#777' }}>
+                                If you are the site administrator and want this post live, publish it from the CMS or remove the staging-only flag.
+                            </p>
+                        </Col>
+                    </Row>
+                </Container>
+            </>
+        );
+    }
+
+
+    // --- Normal loading / error states ---
+    if (loading) {
+        return <div style={{ padding: 40, textAlign: 'center' }}>Loading...</div>;
+    }
+
+    if (fetchError) {
+        return <div style={{ padding: 40, textAlign: 'center' }}>Error loading post: {fetchError}</div>;
+    }
+
+    // --- Normal post render (staging OR non-protected slug on live) ---
     return (
         <>
             <style>
