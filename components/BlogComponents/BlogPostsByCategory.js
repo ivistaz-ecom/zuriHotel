@@ -2,11 +2,11 @@
 // BlogPostsByCategory.js
 
 import React, { useState, useEffect } from 'react';
-import { Col, Container, Image, Row } from 'react-bootstrap';
+import { Col, Row, Image } from 'react-bootstrap';
 import DomainUrl from '../../config';
 import Link from 'next/link';
 
-const BlogPostsByCategory = ({ categoryId }) => {
+const BlogPostsByCategory = ({ categoryId, blockedSlug = '', isStaging = false }) => {
     const siteUrl = DomainUrl.wpApiUrl;
     const postsPerPage = 4;
 
@@ -16,165 +16,214 @@ const BlogPostsByCategory = ({ categoryId }) => {
     const [isLoading, setIsLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    // ---------------------------
+    // REMOVE VIDEOS FROM HTML
+    // ---------------------------
+    const stripVideoFromHtml = (html) => {
+        if (!html) return "";
+
+        if (typeof DOMParser === "undefined") {
+            return html
+                .replace(/<iframe[\s\S]*?<\/iframe>/gi, "")
+                .replace(/<video[\s\S]*?<\/video>/gi, "")
+                .replace(/<embed[\s\S]*?<\/embed>/gi, "")
+                .replace(/<object[\s\S]*?<\/object>/gi, "")
+                .replace(/\[video[^\]]*\]/gi, "");
+        }
+
+        try {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+
+            const selectors = [
+                "video",
+                "iframe",
+                "embed",
+                "object",
+                "figure.wp-block-video",
+                "div.wp-block-video",
+                "div[data-type='video']",
+                "figure.embed-video"
+            ];
+
+            selectors.forEach(sel => {
+                doc.querySelectorAll(sel).forEach(node => node.remove());
+            });
+
+            let cleaned = doc.body.innerHTML
+                .replace(/\[video[^\]]*\]/gi, '')
+                .replace(/\[\/?embed[^\]]*\]/gi, '');
+
+            const cleanDoc = parser.parseFromString(cleaned, "text/html");
+            cleanDoc.querySelectorAll("p, div").forEach(el => {
+                if (!el.textContent.trim() && el.querySelectorAll("*").length === 0) {
+                    el.remove();
+                }
+            });
+
+            return cleanDoc.body.innerHTML;
+        } catch {
+            return html
+                .replace(/<iframe[\s\S]*?<\/iframe>/gi, "")
+                .replace(/<video[\s\S]*?<\/video>/gi, "")
+                .replace(/<embed[\s\S]*?<\/embed>/gi, "")
+                .replace(/<object[\s\S]*?<\/object>/gi, "");
+        }
+    };
+
+    // ---------------------------
+    // FALLBACK CONTENT PREVIEW
+    // ---------------------------
+    const getSafePreviewText = (html, maxChars = 200) => {
+        if (!html) return "";
+
+        try {
+            const temp = document.createElement("div");
+            temp.innerHTML = html;
+
+            const selectors = ["p", "h2", "h3", "h4", "span", "li"];
+            for (let sel of selectors) {
+                const el = temp.querySelector(sel);
+                if (el && el.textContent.trim()) {
+                    const text = el.textContent.trim();
+                    return text.length > maxChars ? text.slice(0, maxChars) + "..." : text;
+                }
+            }
+
+            const allText = (temp.textContent || '').trim();
+            return allText.length > maxChars ? allText.slice(0, maxChars) + "..." : allText;
+        } catch {
+            const fallback = html.replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim();
+            return fallback.length > maxChars ? fallback.slice(0, maxChars) + "..." : fallback;
+        }
+    };
+
+    // ---------------------------
+    // FETCH POSTS
+    // ---------------------------
     useEffect(() => {
         const fetchPostsByCategory = async () => {
+            setIsLoading(true);
             try {
-                let endpoint;
-
-                // Check if a category is selected
-                if (categoryId !== null) {
-                    endpoint = `${siteUrl}/posts?categories=${categoryId}&per_page=${postsPerPage}&page=${currentPage}`;
-                } else {
-                    // Fetch all posts when no category is selected
-                    endpoint = `${siteUrl}/posts?per_page=${postsPerPage}&page=${currentPage}`;
-                }
+                const endpoint =
+                    categoryId !== null
+                        ? `${siteUrl}/posts?categories=${categoryId}&per_page=${postsPerPage}&page=${currentPage}`
+                        : `${siteUrl}/posts?per_page=${postsPerPage}&page=${currentPage}`;
 
                 const response = await fetch(endpoint);
-
-                if (!response.ok) {
-                    throw new Error('Failed to fetch posts');
-                }
-
+                if (!response.ok) throw new Error("Failed to fetch posts");
                 const data = await response.json();
-                setPosts(data);
-                // console.log(data);
-                if (categoryId !== null) {
-                    const totalPagesHeader = response.headers.get('X-WP-TotalPages');
-                    setTotalPages(totalPagesHeader ? parseInt(totalPagesHeader, 10) : 1);
-                }
-            } catch (error) {
-                setError(error.message);
+
+                // Hide blocked slug on LIVE only
+                let filteredPosts = isStaging ? data : data.filter(p => p.slug !== blockedSlug);
+
+                // Clean video content & create preview
+                filteredPosts = filteredPosts.map(p => {
+                    const stripped = stripVideoFromHtml(p.content?.rendered || "");
+                    let preview = stripped && stripped.trim() !== "" ? stripped : getSafePreviewText(p.content?.rendered || "");
+
+                    // ensure preview is HTML
+                    if (preview && !/^<[^>]+>/.test(preview)) {
+                        preview = `<p>${preview}</p>`;
+                    }
+
+                    return {
+                        ...p,
+                        content: {
+                            ...p.content,
+                            rendered_stripped: preview
+                        }
+                    };
+                });
+
+                setPosts(filteredPosts);
+
+                const totalPagesHeader = response.headers.get("X-WP-TotalPages");
+                setTotalPages(totalPagesHeader ? parseInt(totalPagesHeader, 10) : 1);
+            } catch (err) {
+                setError(err.message || "Error fetching posts");
             } finally {
                 setIsLoading(false);
             }
         };
 
         fetchPostsByCategory();
-    }, [categoryId, currentPage, isLoading]);
-
+    }, [categoryId, currentPage, isStaging, blockedSlug]);
 
     const handlePageChange = (newPage) => {
-        if (newPage >= 1 && newPage <= totalPages) {
-            setCurrentPage(newPage);
-        }
+        if (newPage >= 1 && newPage <= totalPages) setCurrentPage(newPage);
     };
 
-    const maxPagesToShow = 4; // Adjust the number of pages to show as needed
-
+    const maxPagesToShow = 4;
     const getPageRange = () => {
-        if (totalPages <= maxPagesToShow) {
-            return Array.from({ length: totalPages }, (_, index) => index + 1);
-        }
-
+        if (totalPages <= maxPagesToShow) return Array.from({ length: totalPages }, (_, i) => i + 1);
         const startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
-        const endPage = Math.min(totalPages, startPage + maxPagesToShow);
-
-        if (endPage === totalPages) {
-            return Array.from({ length: maxPagesToShow }, (_, index) => totalPages - maxPagesToShow + 1 + index);
-        }
-
-        return Array.from({ length: endPage - startPage + 1 }, (_, index) => startPage + index);
+        const endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
+        return Array.from({ length: endPage - startPage + 1 }, (_, i) => startPage + i);
     };
 
-    if (isLoading) {
-        return <div>Loading...</div>;
-    }
+    if (isLoading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error}</div>;
 
-    if (error) {
-        return <div>Error: {error}</div>;
-    }
-
+    // NOTE: This component does NOT render its own Container/Col wrapper.
+    // It expects to be placed within parent layout (like the main blog page),
+    // so the column widths match across both listing and category views.
     return (
-        <Container>
-            <Col
-                md={7}
-                className='p-4'
-            >
-                <Col
-                    className='d-flex flex-column gap-4 p-4'
-                    style={{ background: '#fbfcfe' }}
-                >
-                    {posts.map(post => (
-                        <Row key={post.id}>
-                            <Col>
-                                <Image
-                                    src={post['acf']['list_page_image']['url']}
-                                    alt={post.title.rendered}
-                                    fluid
-                                    width="100%"
-                                />
-                            </Col>
+        <>
+            <style>{`
+                .category-post-row { padding-bottom: 30px; border-bottom: 1px solid #e6e6e6; margin-bottom: 24px; }
+                .category-post-img img { width: 100%; height: auto; object-fit: cover; display: block; }
+                .category-post-content .post-content { color: #666; line-height: 1.6; }
+            `}</style>
 
-                            <Col className='p-2 d-flex flex-column justify-content-between align-ite'>
-                                <Col>
-                                    <p>
-                                        {
-                                            new Date(post.date).toLocaleDateString
-                                                ('en-US',
-                                                    {
-                                                        year: 'numeric', month: 'long', day: 'numeric'
-                                                    }
-                                                )
-                                        }
-                                    </p>
+            {posts.map(post => (
+                <Row key={post.id} className="category-post-row align-items-center">
+                    {/* Left image column - same as main listing (md=4) */}
+                    <Col md={4} className="category-post-img mb-3 mb-md-0">
+                        <Link href={`/blog/${post.slug}`} className="text-decoration-none">
+                            <Image src={post.acf?.list_page_image?.url || ''} alt={post.title.rendered} fluid />
+                        </Link>
+                    </Col>
 
-                                    <p
-                                        className='font19px text-purple text-uppercase'
-                                    >
-                                        {post.title.rendered}
-                                    </p>
-                                    <p
-                                        className="post-content font15px"
-                                        style={{ fontSize: '15px' }}
-                                        dangerouslySetInnerHTML={{ __html: post.content.rendered }}
-                                    />
-                                </Col>
-                                <Col className='d-flex flex-column justify-content-end border border-3 border-top-0 border-start-0 border-end-0'>
-                                    <Link
-                                        href={`/blog/${post.slug}`}
-                                        className='text-decoration-none'
-                                    >
-                                        <p>
-                                            READ MORE
-                                            <i
-                                                className="bi bi-arrow-right text-purple"
-                                            >
-                                            </i>
-                                        </p>
+                    {/* Right content column */}
+                    <Col md={8} className="category-post-content">
+                        <p style={{ marginBottom: 6, color: '#777' }}>
+                            {new Date(post.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+                        </p>
 
-                                    </Link>
-                                </Col>
-                            </Col>
-                        </Row>
+                        <Link href={`/blog/${post.slug}`} className="text-decoration-none">
+                            <h3 className="font19px text-purple text-uppercase" dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+                        </Link>
+
+                        {/* cleaned content (no video) */}
+                        <div className="post-content font15px" dangerouslySetInnerHTML={{ __html: post.content?.rendered_stripped || '' }} />
+
+                        <div style={{ marginTop: 12 }}>
+                            <Link href={`/blog/${post.slug}`} className="text-decoration-none">
+                                <span style={{ color: '#913065', fontWeight: 600 }}>
+                                    READ MORE &nbsp;<i className="bi bi-arrow-right"></i>
+                                </span>
+                            </Link>
+                        </div>
+                    </Col>
+                </Row>
+            ))}
+
+            {totalPages > 1 && (
+                <div style={{ marginTop: 12 }}>
+                    {currentPage > 1 && <button onClick={() => handlePageChange(currentPage - 1)}>Previous</button>}
+
+                    {getPageRange().map(page => (
+                        <button key={page} onClick={() => handlePageChange(page)} disabled={currentPage === page} style={{ margin: '0 6px' }}>
+                            {page}
+                        </button>
                     ))}
-                </Col>
-                {totalPages > 1 && ( // Check if there's more than one page
-                    <div>
-                        {currentPage > 1 && (
-                            <button onClick={() => handlePageChange(currentPage - 1)}>
-                                Previous
-                            </button>
-                        )}
-                        {getPageRange().map(page => (
-                            <button
-                                key={page}
-                                onClick={() => handlePageChange(page)}
-                                disabled={currentPage === page}
-                            >
-                                {page}
-                            </button>
-                        ))}
-                        {currentPage < totalPages && (
-                            <button onClick={() => handlePageChange(currentPage + 1)}>
-                                Next
-                            </button>
-                        )}
-                    </div>
-                )}
-            </Col>
-        </Container>
-    );
 
+                    {currentPage < totalPages && <button onClick={() => handlePageChange(currentPage + 1)}>Next</button>}
+                </div>
+            )}
+        </>
+    );
 };
 
 export default BlogPostsByCategory;
