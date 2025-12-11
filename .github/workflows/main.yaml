@@ -19,9 +19,9 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH password
 
           script: |
-            cd /home/react-staging/thezurihotels
-            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /home/react-staging/thezurihotels
+            cd /var/www/zuri-staging
+            echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /var/www/zuri-staging
             echo ${{ secrets.PASSWORD }} | sudo -S git pull origin main
             echo ${{ secrets.PASSWORD }} | sudo -S npm install
             echo ${{ secrets.PASSWORD }} | sudo -S npm run build
-            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 2
+            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 3
