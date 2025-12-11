@@ -19,9 +19,11 @@ jobs:
           passphrase: ${{ secrets.SSH_PASSPHRASE }} # Your server's SSH password
 
           script: |
+            export NVM_DIR="$HOME/.nvm"
+            source "$NVM_DIR/nvm.sh"
             cd /var/www/zuri-staging
             echo ${{ secrets.PASSWORD }} | sudo -S git config --global --add safe.directory /var/www/zuri-staging
             echo ${{ secrets.PASSWORD }} | sudo -S git pull origin main
             echo ${{ secrets.PASSWORD }} | sudo -S npm install
             echo ${{ secrets.PASSWORD }} | sudo -S npm run build
-            echo ${{ secrets.PASSWORD }} | sudo -S pm2 restart 3
+            pm2 restart 3
