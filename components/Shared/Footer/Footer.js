@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import Link from 'next/link'
@@ -6,12 +7,9 @@ import StaticStarRating from './StaticStarRating'; // Import the StaticStarRatin
 
 const Footer = ({ rating }) => {
 
-    // const currentYear = new Date().getUTCFullYear();
-    const currentYearIST = new Date().toLocaleString("en-IN", {
-        year: "numeric",
-        timeZone: "Asia/Kolkata",
-      });
-    
+    // Get current year dynamically on client side
+    const currentYear = new Date().getFullYear();
+
 
     // Ensure rating is defined before accessing its properties
     const ratingValue = rating !== undefined ? rating : 4.5;
@@ -211,7 +209,7 @@ const Footer = ({ rating }) => {
             </Container>
 
             <Container fluid className='p-3 text-center bg-black'>
-                <h6 className='text-white'>© {currentYearIST} ZURI HOTELS & RESORTS, All rights Reserved.</h6>
+                <h6 className='text-white'>© {currentYear} ZURI HOTELS & RESORTS, All rights Reserved.</h6>
             </Container>
         </>
     )
